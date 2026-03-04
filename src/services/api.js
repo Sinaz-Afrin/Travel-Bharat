@@ -1,0 +1,101 @@
+import axios from 'axios';
+
+const API_BASE_URL = 'http://localhost:5000/api';
+
+const apiClient = axios.create({
+  baseURL: API_BASE_URL,
+  timeout: 10000,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+/**
+ * Fetch all places from the backend
+ * @returns {Promise<Array>} Array of place objects
+ */
+export const getAllPlaces = async () => {
+  try {
+    const response = await apiClient.get('/places');
+    return response.data.data || [];
+  } catch (error) {
+    console.error('Error fetching all places:', error);
+    throw error;
+  }
+};
+
+/**
+ * Fetch places filtered by region
+ * @param {string} region - Region name
+ * @returns {Promise<Array>} Array of filtered place objects
+ */
+export const getPlacesByRegion = async (region) => {
+  try {
+    const response = await apiClient.get('/places', {
+      params: { region },
+    });
+    return response.data.data || [];
+  } catch (error) {
+    console.error(`Error fetching places by region (${region}):`, error);
+    throw error;
+  }
+};
+
+/**
+ * Fetch places filtered by category
+ * @param {string} category - Category name
+ * @returns {Promise<Array>} Array of filtered place objects
+ */
+export const getPlacesByCategory = async (category) => {
+  try {
+    const response = await apiClient.get('/places', {
+      params: { category },
+    });
+    return response.data.data || [];
+  } catch (error) {
+    console.error(`Error fetching places by category (${category}):`, error);
+    throw error;
+  }
+};
+
+/**
+ * Fetch a single place by ID
+ * @param {string|number} id - Place ID
+ * @returns {Promise<Object>} Place object
+ */
+export const getPlaceById = async (id) => {
+  try {
+    const response = await apiClient.get(`/places/${id}`);
+    return response.data.data || response.data;
+  } catch (error) {
+    console.error(`Error fetching place with ID (${id}):`, error);
+    throw error;
+  }
+};
+
+/**
+ * Get unique categories from all places
+ * @returns {Promise<Array>} Array of unique categories
+ */
+export const getCategories = async () => {
+  try {
+    const places = await getAllPlaces();
+    const uniqueCategories = new Map();
+
+    places.forEach((place) => {
+      if (place.category && !uniqueCategories.has(place.category)) {
+        uniqueCategories.set(place.category, {
+          name: place.category,
+          slug: place.category.toLowerCase().replace(/\s+/g, '-'),
+        });
+      }
+    });
+
+    return Array.from(uniqueCategories.values());
+  } catch (error) {
+    console.error('Error extracting categories:', error);
+    throw error;
+  }
+};
+
+export default apiClient;

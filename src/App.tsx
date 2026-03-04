@@ -1,0 +1,23 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import RegionPage from './pages/RegionPage.jsx';
+import CategoryPage from './pages/CategoryPage.jsx';
+import PlaceDetails from './pages/PlaceDetails.jsx';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/region/:regionName" element={<RegionPage />} />
+        <Route path="/category/:categoryName" element={<CategoryPage />} />
+        <Route path="/place/:id" element={<PlaceDetails />} />
+        <Route path="/gallery" element={<div style={{ padding: '4rem', textAlign: 'center' }}><h1>Gallery - Coming Soon</h1></div>} />
+        <Route path="/about" element={<div style={{ padding: '4rem', textAlign: 'center' }}><h1>About Us - Coming Soon</h1></div>} />
+        <Route path="/contact" element={<div style={{ padding: '4rem', textAlign: 'center' }}><h1>Contact - Coming Soon</h1></div>} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
