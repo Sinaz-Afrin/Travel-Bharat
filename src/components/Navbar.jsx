@@ -1,11 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import { MapPin } from 'lucide-react';
+import MegaMenu from './MegaMenu';
 import '../styles/navbar.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const regions = ['North East', 'North', 'South', 'East', 'West', 'Central', 'Union Territories'];
   const plans = ['Heritage', 'Adventure', 'Nature', 'Wildlife', 'Wedding', 'Honeymoons', 'Gastronomy'];
 
   return (
@@ -17,17 +17,13 @@ const Navbar = () => {
         </div>
 
         <ul className="navbar-menu">
-          <li className="navbar-item dropdown">
+          <li className="navbar-item dropdown mega-dropdown-container">
             <span className="navbar-link">
               Destinations <span className="dropdown-arrow">▼</span>
             </span>
-            <ul className="dropdown-menu">
-              {regions.map((region) => (
-                <li key={region} onClick={() => navigate(`/region/${region.toLowerCase().replace(' ', '-')}`)}>
-                  {region}
-                </li>
-              ))}
-            </ul>
+            <div className="mega-dropdown">
+              <MegaMenu />
+            </div>
           </li>
 
           <li className="navbar-item dropdown">
