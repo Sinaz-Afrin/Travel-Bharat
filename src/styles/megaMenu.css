@@ -35,7 +35,7 @@ margin-bottom: 0.5rem;
 .state-link {
 color: #4b5563;
 text-decoration: none;
-font-size: 0.85rem;
+font-size: 0.95rem;
 transition: all 0.2s ease;
 display: block;
 padding: 0.15rem 0;
@@ -44,6 +44,7 @@ padding: 0.15rem 0;
 .state-link:hover {
 color: #2563eb;
 background: #f3f4f6;
+font-weight: bold;
 padding-left: 0.5rem;
 border-radius: 4px;
 }
