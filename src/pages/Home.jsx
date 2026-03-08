@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar.jsx';
 import HeroCarousel from '../components/HeroCarousel.jsx';
-import TopDestinations from '../components/TopDestinations.jsx';
+import TopDestinationsCarousel from '../components/TopDestinationsCarousel.jsx';
 import TrendingCategories from '../components/TrendingCategories.jsx';
 import ExploreByRegion from '../components/ExploreByRegion.jsx';
 import WhyChooseUs from '../components/WhyChooseUs.jsx';
@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <Navbar />
       <HeroCarousel />
-      <TopDestinations />
+      <TopDestinationsCarousel />
       <TrendingCategories />
       <ExploreByRegion />
       <WhyChooseUs />

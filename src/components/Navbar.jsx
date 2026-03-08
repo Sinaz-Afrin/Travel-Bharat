@@ -1,12 +1,38 @@
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { MapPin } from 'lucide-react';
+import { MapPin, Menu, X, ChevronDown } from 'lucide-react';
 import MegaMenu from './MegaMenu';
 import '../styles/navbar.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileDestinationsOpen, setMobileDestinationsOpen] = useState(false);
+  const [mobilePlansOpen, setMobilePlansOpen] = useState(false);
 
   const plans = ['Heritage', 'Adventure', 'Nature', 'Wildlife', 'Wedding', 'Honeymoon', 'Gastronomy'];
+  const regions = ['North', 'South', 'East', 'West', 'Central', 'UT'];
+
+  // Close mobile menu when clicking outside or on a link
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isMobileMenuOpen && !event.target.closest('.navbar-container')) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isMobileMenuOpen]);
+
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleMobileLinkClick = (path) => {
+    navigate(path);
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <nav className="navbar">
@@ -55,7 +81,94 @@ const Navbar = () => {
         <button className="contact-btn" onClick={() => navigate('/contact')}>
           Contact
         </button>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="mobile-menu-btn"
+          onClick={handleMobileMenuToggle}
+          aria-label="Toggle mobile menu"
+        >
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div className="mobile-menu-overlay">
+          <div className="mobile-menu">
+            <div className="mobile-menu-item" onClick={() => handleMobileLinkClick('/')}>
+              Home
+            </div>
+
+            {/* Mobile Destinations Dropdown */}
+            <div className="mobile-menu-dropdown">
+              <div
+                className="mobile-dropdown-header"
+                onClick={() => setMobileDestinationsOpen(!mobileDestinationsOpen)}
+              >
+                Destinations
+                <ChevronDown
+                  size={16}
+                  className={`mobile-dropdown-arrow ${mobileDestinationsOpen ? 'rotated' : ''}`}
+                />
+              </div>
+              {mobileDestinationsOpen && (
+                <div className="mobile-dropdown-content">
+                  {regions.map((region) => (
+                    <div
+                      key={region}
+                      className="mobile-menu-item mobile-submenu-item"
+                      onClick={() => handleMobileLinkClick(`/region/${region.toLowerCase()}`)}
+                    >
+                      {region}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Mobile Plans Dropdown */}
+            <div className="mobile-menu-dropdown">
+              <div
+                className="mobile-dropdown-header"
+                onClick={() => setMobilePlansOpen(!mobilePlansOpen)}
+              >
+                Plans
+                <ChevronDown
+                  size={16}
+                  className={`mobile-dropdown-arrow ${mobilePlansOpen ? 'rotated' : ''}`}
+                />
+              </div>
+              {mobilePlansOpen && (
+                <div className="mobile-dropdown-content">
+                  {plans.map((plan) => (
+                    <div
+                      key={plan}
+                      className="mobile-menu-item mobile-submenu-item"
+                      onClick={() => handleMobileLinkClick(`/category/${plan.toLowerCase()}`)}
+                    >
+                      {plan}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className="mobile-menu-item" onClick={() => handleMobileLinkClick('/gallery')}>
+              Gallery
+            </div>
+            <div className="mobile-menu-item disabled" onClick={() => setIsMobileMenuOpen(false)}>
+              Itinerary
+            </div>
+            <div className="mobile-menu-item" onClick={() => handleMobileLinkClick('/about')}>
+              About Us
+            </div>
+            <div className="mobile-menu-item contact-mobile-btn" onClick={() => handleMobileLinkClick('/contact')}>
+              Contact
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
