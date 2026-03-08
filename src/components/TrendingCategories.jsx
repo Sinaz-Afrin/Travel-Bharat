@@ -11,7 +11,7 @@ const categoryIcons = {
   nature: '🌿',
   wildlife: '🦁',
   wedding: '💍',
-  honeymoons: '❤️',
+  honeymoon: '❤️',
   gastronomy: '🍛',
   beach: '🏖️',
   mountain: '⛰️',

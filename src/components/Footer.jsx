@@ -6,7 +6,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const quickLinks = ['Home', 'About Us', 'Gallery', 'Contact'];
-  const categories = ['Heritage', 'Adventure', 'Nature', 'Wildlife', 'Wedding', 'Honeymoons', 'Gastronomy'];
+  const categories = ['Heritage', 'Adventure', 'Nature', 'Wildlife', 'Wedding', 'Honeymoon', 'Gastronomy'];
   const regions = ['North', 'South', 'East', 'West', 'North East', 'Central', 'Union Territories'];
 
   return (

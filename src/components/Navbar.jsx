@@ -6,7 +6,7 @@ import '../styles/navbar.css';
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const plans = ['Heritage', 'Adventure', 'Nature', 'Wildlife', 'Wedding', 'Honeymoons', 'Gastronomy'];
+  const plans = ['Heritage', 'Adventure', 'Nature', 'Wildlife', 'Wedding', 'Honeymoon', 'Gastronomy'];
 
   return (
     <nav className="navbar">
