@@ -2,22 +2,38 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AlertCircle } from 'lucide-react';
 import { getAllPlaces } from '../services/api';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faLandmark,
+  faMountain,
+  faLeaf,
+  faPaw,
+  faRing,
+  faHeart,
+  faUtensils,
+  faUmbrellaBeach,
+  faPlaceOfWorship,
+  faPalette,
+  faPersonHiking,
+  faImage
+} from '@fortawesome/free-solid-svg-icons';
 import '../styles/sections.css';
 
 // Icon mapping for categories
 const categoryIcons = {
-  heritage: '🏛️',
-  adventure: '🏔️',
-  nature: '🌿',
-  wildlife: '🦁',
-  wedding: '💍',
-  honeymoon: '❤️',
-  gastronomy: '🍛',
-  beach: '🏖️',
-  mountain: '⛰️',
-  temple: '🕉️',
-  culture: '🎨',
-  trekking: '🥾',
+  heritage: faLandmark,
+  adventure: faMountain,
+  nature: faLeaf,
+  wildlife: faPaw,
+  wedding: faRing,
+  honeymoon: faHeart,
+  gastronomy: faUtensils,
+  beach: faUmbrellaBeach,
+  mountain: faMountain,
+  temple: faPlaceOfWorship,
+  culture: faPalette,
+  trekking: faPersonHiking,
+  landscape: faImage
 };
 
 const TrendingCategories = () => {
@@ -42,7 +58,7 @@ const TrendingCategories = () => {
               id: uniqueCategories.size + 1,
               name: place.category,
               slug: categorySlug,
-              icon: categoryIcons[categorySlug] || '✨',
+              icon: categoryIcons[categorySlug] || faImage,
               tagline: `Discover amazing ${place.category.toLowerCase()} experiences`,
               count: 0,
             });
@@ -110,7 +126,9 @@ const TrendingCategories = () => {
                 className="category-card"
                 onClick={() => navigate(`/category/${category.slug}`)}
               >
-                <div className="category-icon">{category.icon}</div>
+                <div className="category-icon">
+                  <FontAwesomeIcon icon={category.icon} />
+                </div>
                 <h3 className="category-name">{category.name}</h3>
                 <p className="category-tagline">{category.tagline}</p>
                 {category.count > 0 && (
