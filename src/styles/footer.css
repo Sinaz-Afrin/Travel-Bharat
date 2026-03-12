@@ -59,6 +59,7 @@
 
 .social-icon:hover {
   background: #ffffff;
+  color: #222222;
   transform: translateY(-3px);
 }
 
