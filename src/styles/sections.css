@@ -4,7 +4,7 @@
 }
 
 .section-alt {
-  background: #f9fafb;
+  background: #F8F1E5;
 }
 
 .container {
@@ -17,7 +17,7 @@
   font-size: 2.5rem;
   font-weight: 800;
   text-align: center;
-  color: #111827;
+  color: #0B3C5D;
   margin-bottom: 1rem;
 }
 
@@ -75,7 +75,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #2563eb;
+  color: #FF7A18;
   font-size: 0.9rem;
   font-weight: 500;
   margin-bottom: 0.75rem;
@@ -84,7 +84,7 @@
 .card-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #111827;
+  color: #0B3C5D;
   margin-bottom: 0.75rem;
 }
 
@@ -97,7 +97,7 @@
 
 .card-btn {
   width: 100%;
-  background: #2563eb;
+  background: linear-gradient(160deg, #FF7A18, #FF7A18, #FFC107);  
   color: #ffffff;
   padding: 0.75rem;
   border-radius: 8px;
@@ -107,7 +107,7 @@
 }
 
 .card-btn:hover {
-  background: #1d4ed8;
+  background: linear-gradient(160deg, #E86400, #FFB300);
 }
 
 .category-grid {
@@ -127,9 +127,9 @@
 }
 
 .category-card:hover {
-  border-color: #2563eb;
+  border-color: #FFC107;
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+  box-shadow: 0 8px 20px rgba(255, 122, 24, 0.25);
 }
 
 .category-icon {
@@ -140,7 +140,7 @@
 .category-name {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #111827;
+  color: #0B3C5D;
   margin-bottom: 0.5rem;
 }
 
@@ -227,7 +227,7 @@
 }
 
 .feature-icon {
-  color: #2563eb;
+  color: #FF7A18;
   margin-bottom: 1.5rem;
   display: flex;
   justify-content: center;
@@ -236,7 +236,7 @@
 .feature-title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #111827;
+  color: #0B3C5D;
   margin-bottom: 0.75rem;
 }
 
@@ -292,7 +292,7 @@
 
 .category-count {
   font-size: 0.85rem;
-  color: #2563eb;
+  color: #FF7A18;
   margin-top: 0.5rem;
   font-weight: 600;
 }

@@ -16,7 +16,7 @@ padding: 0 0.5rem;
 .region-title {
 font-size: 1.1rem;
 font-weight: 600;
-color: #2563eb;
+color: #06038D;
 margin-bottom: 1rem;
 border-bottom: 2px solid #e5e7eb;
 padding-bottom: 0.5rem;
@@ -42,8 +42,8 @@ padding: 0.15rem 0;
 }
 
 .state-link:hover {
-color: #2563eb;
-background: #f3f4f6;
+color: #FF7A18;
+background: #F8F1E5;
 font-weight: bold;
 padding-left: 0.5rem;
 border-radius: 4px;

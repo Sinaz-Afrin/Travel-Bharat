@@ -63,7 +63,7 @@ const HeroCarousel = () => {
           <div className="hero-content">
             <h1 className="hero-title">{slide.title}</h1>
             <p className="hero-subtitle">{slide.subtitle}</p>
-            <button className="hero-cta" onClick={() => navigate('/destinations')}>
+            <button className="hero-cta" onClick={() => navigate('/region')}>
               Start Exploring
             </button>
           </div>
