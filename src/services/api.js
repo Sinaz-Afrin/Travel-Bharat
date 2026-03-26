@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { statesData, getStateByName } from '../data/statesData';
 
 const API_BASE_URL = 'http://localhost:5000/api';
 
@@ -94,6 +95,47 @@ export const getCategories = async () => {
     return Array.from(uniqueCategories.values());
   } catch (error) {
     console.error('Error extracting categories:', error);
+    throw error;
+  }
+};
+
+/**
+ * Get state data by state name (uses local data)
+ * @param {string} stateName - State name or ID
+ * @returns {Promise<Object>} State data object
+ */
+export const getStateData = async (stateName) => {
+  try {
+    // In future, this can be replaced with an API call:
+    // const response = await apiClient.get(`/states/${stateName}`);
+    // return response.data.data || response.data;
+
+    // For now, use local data
+    const state = getStateByName(stateName);
+    if (!state) {
+      throw new Error(`State not found: ${stateName}`);
+    }
+    return state;
+  } catch (error) {
+    console.error(`Error fetching state data (${stateName}):`, error);
+    throw error;
+  }
+};
+
+/**
+ * Get all states data (uses local data)
+ * @returns {Promise<Array>} Array of state objects
+ */
+export const getAllStates = async () => {
+  try {
+    // In future, this can be replaced with an API call:
+    // const response = await apiClient.get('/states');
+    // return response.data.data || [];
+
+    // For now, use local data
+    return statesData;
+  } catch (error) {
+    console.error('Error fetching all states:', error);
     throw error;
   }
 };

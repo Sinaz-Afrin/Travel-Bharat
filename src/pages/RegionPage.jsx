@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getPlacesByRegion } from '../services/api';
+import Navbar from '../components/Navbar';
 import PlaceCard from '../components/PlaceCard';
+import Footer from '../components/Footer';
 import '../styles/sections.css';
 
 const RegionPage = () => {
@@ -31,24 +33,28 @@ const RegionPage = () => {
   }, [regionName]);
 
   return (
-    <section className="section">
-      <div className="container">
-        <h2 className="section-title">Region: {regionName}</h2>
-        <p className="section-subtitle">Places located in {regionName}</p>
+    <div>
+      <Navbar />
+      <section className="section">
+        <div className="container">
+          <h2 className="section-title">Region: {regionName}</h2>
+          <p className="section-subtitle">Places located in {regionName}</p>
 
-        {loading && <p className="loading-text">Loading places...</p>}
-        {error && <p className="error-text">{error}</p>}
-        {!loading && !error && places.length === 0 && (
-          <p className="no-results">No places found in {regionName}</p>
-        )}
+          {loading && <p className="loading-text">Loading places...</p>}
+          {error && <p className="error-text">{error}</p>}
+          {!loading && !error && places.length === 0 && (
+            <p className="no-results">No places found in {regionName}</p>
+          )}
 
-        <div className="card-grid">
-          {places.map((place) => (
-            <PlaceCard key={place._id} place={place} />
-          ))}
+          <div className="card-grid">
+            {places.map((place) => (
+              <PlaceCard key={place._id} place={place} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <Footer />
+    </div>
   );
 };
 

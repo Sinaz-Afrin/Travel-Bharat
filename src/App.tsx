@@ -3,12 +3,14 @@ import Home from './pages/Home.jsx';
 import RegionPage from './pages/RegionPage.jsx';
 import CategoryPage from './pages/CategoryPage.jsx';
 import PlaceDetails from './pages/PlaceDetails.jsx';
+import StatePage from './pages/StatePage.jsx';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/state/:stateName" element={<StatePage />} />
         <Route path="/region/:regionName" element={<RegionPage />} />
         <Route path="/category/:categoryName" element={<CategoryPage />} />
         <Route path="/place/:id" element={<PlaceDetails />} />

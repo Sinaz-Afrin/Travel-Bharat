@@ -76,7 +76,7 @@
 }
 
 .hero-cta:hover {
-  background: #2563eb;
+  background: #06038D;
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(37, 100, 235, 0.589);;
 }
