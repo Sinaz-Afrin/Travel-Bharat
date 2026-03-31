@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { ChevronLeft, ChevronRight, AlertCircle } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SectionTitle from '../components/SectionTitle';
@@ -14,7 +14,6 @@ const StatePage = () => {
   const { stateName } = useParams();
   const state = getStateByName(stateName);
   const [isExpanded, setIsExpanded] = useState(false);
-  const [galleryIndex, setGalleryIndex] = useState(0);
   const [loading, setLoading] = useState(false);
 
   if (loading) {
@@ -47,14 +46,6 @@ const StatePage = () => {
       </div>
     );
   }
-
-  const nextGalleryImage = () => {
-    setGalleryIndex((prev) => (prev + 1) % state.gallery.length);
-  };
-
-  const prevGalleryImage = () => {
-    setGalleryIndex((prev) => (prev - 1 + state.gallery.length) % state.gallery.length);
-  };
 
   return (
     <div className="bg-white">
@@ -187,50 +178,17 @@ const StatePage = () => {
             <p className="state-section-subtitle" style={{ color: 'rgba(255,255,255,0.8)' }}>Visual journey through the state</p>
           </div>
 
-          {/* Main Gallery Image */}
-          <div className="state-gallery-main-wrapper">
-            <div className="state-gallery-main">
-              <img
-                src={state.gallery[galleryIndex]}
-                alt={`gallery-${galleryIndex}`}
-                className="state-gallery-image"
-              />
-              <div className="state-gallery-overlay"></div>
-            </div>
-
-            {/* Navigation Buttons */}
-            <button
-              onClick={prevGalleryImage}
-              className="state-gallery-nav-btn state-gallery-prev"
-              aria-label="Previous image"
-            >
-              <ChevronLeft size={24} />
-            </button>
-            <button
-              onClick={nextGalleryImage}
-              className="state-gallery-nav-btn state-gallery-next"
-              aria-label="Next image"
-            >
-              <ChevronRight size={24} />
-            </button>
-
-            {/* Image Counter */}
-            <div className="state-gallery-counter">
-              {galleryIndex + 1} / {state.gallery.length}
-            </div>
-          </div>
-
-          {/* Gallery Thumbnails */}
-          <div className="state-gallery-thumbnails">
+          {/* Gallery Grid */}
+          <div className="state-gallery-grid">
             {state.gallery.map((image, index) => (
-              <button
+              <div
                 key={index}
-                onClick={() => setGalleryIndex(index)}
-                className={`state-gallery-thumbnail ${index === galleryIndex ? 'active' : ''}`}
-                aria-label={`View gallery image ${index + 1}`}
+                className="state-gallery-grid-item"
+                aria-label={`Gallery image ${index + 1}`}
               >
-                <img src={image} alt={`thumb-${index}`} />
-              </button>
+                <img src={image} alt={`gallery-${index}`} />
+                <div className="state-gallery-grid-overlay"></div>
+              </div>
             ))}
           </div>
         </div>
