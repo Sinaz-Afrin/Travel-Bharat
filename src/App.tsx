@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/state/:stateName" element={<StatePage />} />
+        <Route path="/state/:slug" element={<StatePage />} />
         <Route path="/region/:regionName" element={<RegionPage />} />
         <Route path="/category/:categoryName" element={<CategoryPage />} />
         <Route path="/place/:id" element={<PlaceDetails />} />

@@ -7,12 +7,12 @@ import SectionTitle from '../components/SectionTitle';
 import AttractionCard from '../components/AttractionCard';
 import BestTimeCard from '../components/BestTimeCard';
 import TravelTipCard from '../components/TravelTipCard';
-import { getStateByName } from '../data/statesData';
+import { getStateBySlug } from '../data/statesData';
 import '../styles/statePage.css';
 
 const StatePage = () => {
-  const { stateName } = useParams();
-  const state = getStateByName(stateName);
+  const { slug } = useParams();
+  const state = slug ? getStateBySlug(slug) : null;
   const [isExpanded, setIsExpanded] = useState(false);
   const [loading, setLoading] = useState(false);
 

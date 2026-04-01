@@ -1,7 +1,16 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { statesData } from '../data/statesData';
+import { createSlug } from '../utils/slugUtils';
 import '../styles/megaMenu.css';
 
 const MegaMenu = () => {
+  const location = useLocation();
+  
+  // Extract slug from URL (e.g., /state/andhra-pradesh → andhra-pradesh)
+  const currentSlug = location.pathname.startsWith('/state/')
+    ? location.pathname.replace('/state/', '')
+    : null;
+
   const regions = {
     'North': [
       'Himachal Pradesh',
@@ -56,8 +65,13 @@ const MegaMenu = () => {
     ]
   };
 
-  const createSlug = (name) => {
-    return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  /**
+   * Get state slug - first try to find in statesData for accuracy,
+   * fallback to createSlug utility for any names not in data
+   */
+  const getStateSlug = (stateName) => {
+    const state = statesData.find(s => s.state === stateName);
+    return state ? state.slug : createSlug(stateName);
   };
 
   return (
@@ -66,13 +80,21 @@ const MegaMenu = () => {
         <div key={region} className="mega-column">
           <h3 className="region-title">{region}</h3>
           <ul className="state-list">
-            {states.map((state) => (
-              <li key={state}>
-                <Link to={`/state/${createSlug(state)}`} className="state-link">
-                  {state}
-                </Link>
-              </li>
-            ))}
+            {states.map((state) => {
+              const stateSlug = getStateSlug(state);
+              const isActive = currentSlug === stateSlug;
+              
+              return (
+                <li key={state}>
+                  <Link
+                    to={`/state/${stateSlug}`}
+                    className={`state-link ${isActive ? 'active' : ''}`}
+                  >
+                    {state}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       ))}
