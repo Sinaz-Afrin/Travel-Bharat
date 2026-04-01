@@ -1117,8 +1117,8 @@ export const statesData = [
 },
 {
   id: "delhi",
-  state: "Delhi (National Capital Territory)",
-  slug: "delhi-national-capital-territory",
+  state: "Delhi",
+  slug: "delhi",
   description: "The Capital of India - A blend of history, culture, and modern life.",
   fullDescription: "Delhi is a vibrant city with historical monuments, markets, and modern attractions. It reflects India's past and present.",
   heroImage: "https://images.unsplash.com/photo-1582550945154-66ea8fff25e1?w=1200&h=600&fit=crop",
