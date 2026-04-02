@@ -38,11 +38,3 @@ export const normalizeSlug = (slug) => {
   if (!slug) return '';
   return slug.toLowerCase().trim();
 };
-
-/**
- * Example usage and transformations:
- * "Andhra Pradesh" -> "andhra-pradesh"
- * "Jammu & Kashmir" -> "jammu-and-kashmir"
- * "Andaman and Nicobar Islands" -> "andaman-and-nicobar-islands"
- * "Delhi (National Capital Territory)" -> "delhi-national-capital-territory"
- */

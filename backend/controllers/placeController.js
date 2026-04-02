@@ -72,6 +72,29 @@ export const getPlaceById = async (req, res) => {
   }
 };
 
+// @desc    Get places by stateSlug
+// @route   GET /api/places/state/:slug
+export const getPlacesByState = async (req, res) => {
+  try {
+    const { slug } = req.params;
+
+    const places = await Place.find({
+      stateSlug: slug,
+    });
+
+    res.status(200).json({
+      success: true,
+      count: places.length,
+      data: places,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      error: error.message,
+    });
+  }
+};
+
 // @desc    Create a new place
 // @route   POST /api/places
 export const createPlace = async (req, res) => {

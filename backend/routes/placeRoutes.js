@@ -2,6 +2,7 @@ import express from "express";
 import {
   getAllPlaces,
   getPlaceById,
+  getPlacesByState,
   createPlace,
   updatePlace,
   deletePlace,
@@ -14,6 +15,9 @@ router.get("/", getAllPlaces);
 
 // GET single place by ID
 router.get("/:id", getPlaceById);
+
+// GET places by stateSlug
+router.get("/state/:slug", getPlacesByState);
 
 // POST create new place
 router.post("/", createPlace);

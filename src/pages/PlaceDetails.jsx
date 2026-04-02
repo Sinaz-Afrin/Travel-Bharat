@@ -1,12 +1,17 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
 import { getPlaceById } from '../services/api';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import '../styles/sections.css';
+import ImageSlider from '../components/PlaceDetails/ImageSlider';
+import InfoCard from '../components/PlaceDetails/InfoCard';
+import NearbyPlaces from '../components/PlaceDetails/NearbyPlaces';
+import '../styles/placeDetails.css';
 
 const PlaceDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [place, setPlace] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -35,9 +40,13 @@ const PlaceDetails = () => {
     return (
       <div>
         <Navbar />
-        <section className="section">
-          <div className="container">
-            <p className="loading-text">Loading place details...</p>
+        <section className="place-details-section">
+          <div className="place-details-container">
+            <div className="flex items-center justify-center py-24">
+              <div className="animate-spin">
+                <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full"></div>
+              </div>
+            </div>
           </div>
         </section>
         <Footer />
@@ -49,9 +58,17 @@ const PlaceDetails = () => {
     return (
       <div>
         <Navbar />
-        <section className="section">
-          <div className="container">
-            <p className="error-text">{error}</p>
+        <section className="place-details-section">
+          <div className="place-details-container">
+            <div className="text-center py-24">
+              <p className="text-red-500 text-lg">{error}</p>
+              <button
+                onClick={() => navigate('/')}
+                className="mt-4 inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+              >
+                <ArrowLeft size={20} /> Go to Home
+              </button>
+            </div>
           </div>
         </section>
         <Footer />
@@ -68,45 +85,108 @@ const PlaceDetails = () => {
     );
   }
 
+  // Prepare images array (handle both 'images' array and 'image' single field)
+  const images = place.images && Array.isArray(place.images) ? place.images : (place.image ? [place.image] : []);
+
   return (
     <div>
       <Navbar />
-      <section className="section">
-        <div className="container">
-          <h2 className="section-title">{place.name}</h2>
-          <div className="gallery-grid">
-            {(place.images || []).map((img, idx) => (
-              <div
-                key={idx}
-                className="gallery-item"
-                style={{ backgroundImage: `url(${img})` }}
-              />
-            ))}
-          </div>
+      <section className="place-details-section">
+        {/* Back Button */}
+        <div className="place-details-container">
+          <button
+            onClick={() => navigate(-1)}
+            className="place-details-back-btn"
+          >
+            <ArrowLeft size={20} /> Back
+          </button>
+        </div>
 
-          <div className="details-content">
-            <p>{place.description}</p>
+        {/* Image Slider */}
+        <div className="place-details-container" style={{ marginBottom: '2rem' }}>
+          <ImageSlider images={images} />
+        </div>
 
-            <ul className="details-list">
-              {place.state && <li><strong>State:</strong> {place.state}</li>}
-              {place.region && <li><strong>Region:</strong> {place.region}</li>}
-              {place.category && <li><strong>Category:</strong> {place.category}</li>}
-              {place.bestTimeToVisit && <li><strong>Best Time to Visit:</strong> {place.bestTimeToVisit}</li>}
-              {place.entryFee && <li><strong>Entry Fee:</strong> {place.entryFee}</li>}
-              {place.nearbyAttractions && (
-                <li>
-                  <strong>Nearby Attractions:</strong> {place.nearbyAttractions.join(', ')}
-                </li>
+        {/* Main Content - 2 Column Layout */}
+        <div className="place-details-container">
+          <div className="place-details-main-grid">
+            {/* Left Column (70%) - Main Content */}
+            <div className="place-details-left-column">
+              {/* Title & Quick Info */}
+              <div className="place-details-title-section">
+                <h1 className="place-details-title">{place.name}</h1>
+                <div className="place-details-tags">
+                  {place.category && (
+                    <span className="place-details-tag" style={{ color: '#D97706' }}>
+                      {place.category}
+                    </span>
+                  )}
+                  {place.region && (
+                    <span className="place-details-tag" style={{ color: '#1f2937' }}>
+                      {place.region}
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              {/* Description */}
+              <div className="place-details-description-box">
+                <h2>About</h2>
+                <p>
+                  {place.description}
+                </p>
+              </div>
+
+              {/* Highlights / Key Features */}
+              {place.highlights && Array.isArray(place.highlights) && place.highlights.length > 0 && (
+                <div className="place-details-highlights">
+                  <h2>Key Highlights</h2>
+                  <div className="place-details-highlights-list">
+                    {place.highlights.map((highlight, idx) => (
+                      <div key={idx} className="place-details-highlights-item">
+                        <span className="place-details-highlights-check">✓</span>
+                        <span className="place-details-highlights-text">{highlight}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               )}
-              {place.locationLink && (
-                <li>
-                  <strong>Map:</strong>{' '}
-                  <a href={place.locationLink} target="_blank" rel="noopener noreferrer">
-                    View on Google Maps
-                  </a>
-                </li>
+
+              {/* Additional Details */}
+              {(place.openingHours || place.closedOn || place.duration) && (
+                <div className="place-details-details">
+                  <h2>Details</h2>
+                  <div className="place-details-details-grid">
+                    {place.openingHours && (
+                      <div className="place-details-details-item">
+                        <div className="place-details-details-label">Opening Hours</div>
+                        <div className="place-details-details-value">{place.openingHours}</div>
+                      </div>
+                    )}
+                    {place.closedOn && (
+                      <div className="place-details-details-item">
+                        <div className="place-details-details-label">Closed On</div>
+                        <div className="place-details-details-value">{place.closedOn}</div>
+                      </div>
+                    )}
+                    {place.duration && (
+                      <div className="place-details-details-item">
+                        <div className="place-details-details-label">Recommended Duration</div>
+                        <div className="place-details-details-value">{place.duration}</div>
+                      </div>
+                    )}
+                  </div>
+                </div>
               )}
-            </ul>
+
+              {/* Nearby Attractions */}
+              <NearbyPlaces currentPlace={place} state={place.state} limit={4} />
+            </div>
+
+            {/* Right Column (30%) - Info Card */}
+            <div className="place-details-right-column">
+              <InfoCard place={place} />
+            </div>
           </div>
         </div>
       </section>

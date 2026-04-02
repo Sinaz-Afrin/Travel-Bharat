@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MapPin, Menu, X, ChevronDown } from 'lucide-react';
 import MegaMenu from './MegaMenu';
+import SearchBar from './SearchBar';
 import '../styles/navbar.css';
 
 const Navbar = () => {
@@ -10,7 +11,8 @@ const Navbar = () => {
   const [mobileDestinationsOpen, setMobileDestinationsOpen] = useState(false);
   const [mobilePlansOpen, setMobilePlansOpen] = useState(false);
 
-  const plans = ['Heritage', 'Adventure', 'Nature', 'Wildlife', 'Wedding', 'Honeymoon', 'Gastronomy'];
+  const plans = ['Adventure', 'Art', 'Beach', 'City', 'Culture', 'Entertainment', 'Event', 'Festival', 'Heritage', 'Museum', 'Nature', 'Shopping', 'Spiritual', 'Wildlife'];
+
   const regions = ['North', 'South', 'East', 'West', 'Central', 'UT'];
 
   // Close mobile menu when clicking outside or on a link
@@ -69,14 +71,12 @@ const Navbar = () => {
             <span className="navbar-link">Gallery</span>
           </li>
 
-          <li className="navbar-item disabled">
-            <span className="navbar-link">Itinerary</span>
-          </li>
-
           <li className="navbar-item" onClick={() => navigate('/about')}>
             <span className="navbar-link">About Us</span>
           </li>
         </ul>
+
+        <SearchBar />
 
         <button className="contact-btn" onClick={() => navigate('/contact')}>
           Contact

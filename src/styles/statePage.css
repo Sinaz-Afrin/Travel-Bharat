@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #D97706 0%, #8ca24b 100%);
 }
 
 .state-hero img {
@@ -163,44 +163,6 @@
 
 .state-about-image {
   animation: slideInRight 0.6s ease-out;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  position: relative;
-}
-
-.state-about-image::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(217, 119, 6, 0.2), transparent);
-  z-index: 10;
-}
-
-.state-about-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.state-about-image:hover img {
-  transform: scale(1.05);
-}
-
-.state-category-badge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: #d97706;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  z-index: 20;
-  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
 }
 
 /* Section Titles */
@@ -370,6 +332,19 @@
   color: #b45309;
 }
 
+.state-no-places {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #6b7280;
+}
+
+.state-no-places p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
 /* Best Time Cards */
 .state-best-time-grid {
   display: grid;
@@ -526,6 +501,21 @@
   background: linear-gradient(135deg, #1f2937, #111827);
   color: white;
   padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.state-gallery-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(217, 119, 6, 0.1);
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
 }
 
 .state-gallery-grid {
@@ -533,6 +523,39 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Masonry effect - vary item sizes */
+.state-gallery-grid-item:nth-child(4n+1) {
+  grid-column: span 1;
+}
+
+.state-gallery-grid-item:nth-child(4n+2) {
+  grid-column: span 1;
+}
+
+.state-gallery-grid-item:nth-child(4n+3) {
+  grid-column: span 1;
+}
+
+.state-gallery-grid-item:nth-child(4n+4) {
+  grid-column: span 1;
+}
+
+@media (min-width: 1200px) {
+  .state-gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .state-gallery-grid-item:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .state-gallery-grid-item:nth-child(9) {
+    grid-column: span 2;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -562,13 +585,17 @@
   border-radius: 0.75rem;
   aspect-ratio: 1 / 1;
   cursor: pointer;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.2), rgba(217, 119, 6, 0.2));
 }
 
 .state-gallery-grid-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 20px 40px rgba(217, 119, 6, 0.3);
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 25px 50px rgba(217, 119, 6, 0.4);
 }
 
 .state-gallery-grid-item img {
@@ -576,22 +603,24 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .state-gallery-grid-item:hover img {
-  transform: scale(1.1) rotate(1deg);
+  transform: scale(1.15) rotate(3deg);
 }
 
 .state-gallery-grid-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.700));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(217, 119, 6, 0.3));
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s cubic-bezier(0.23, 1, 0.320, 1);
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
+  backdrop-filter: blur(1px);
 }
 
 .state-gallery-grid-item:hover .state-gallery-grid-overlay {

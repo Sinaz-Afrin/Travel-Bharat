@@ -4,36 +4,40 @@ import { AlertCircle } from 'lucide-react';
 import { getAllPlaces } from '../services/api';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faLandmark,
   faMountain,
-  faLeaf,
-  faPaw,
-  faRing,
-  faHeart,
-  faUtensils,
-  faUmbrellaBeach,
-  faPlaceOfWorship,
   faPalette,
-  faPersonHiking,
-  faImage
+  faUmbrellaBeach,
+  faCity,
+  faMasksTheater,
+  faFilm,
+  faCalendarDays,
+  faChampagneGlasses,
+  faLandmark,
+  faBuildingColumns,
+  faLeaf,
+  faBagShopping,
+  faPlaceOfWorship,
+  faPaw
 } from '@fortawesome/free-solid-svg-icons';
+
 import '../styles/sections.css';
 
 // Icon mapping for categories
 const categoryIcons = {
-  heritage: faLandmark,
   adventure: faMountain,
-  nature: faLeaf,
-  wildlife: faPaw,
-  wedding: faRing,
-  honeymoon: faHeart,
-  gastronomy: faUtensils,
+  art: faPalette,
   beach: faUmbrellaBeach,
-  mountain: faMountain,
-  temple: faPlaceOfWorship,
-  culture: faPalette,
-  trekking: faPersonHiking,
-  landscape: faImage
+  city: faCity,
+  culture: faMasksTheater,
+  entertainment: faFilm,
+  event: faCalendarDays,
+  festival: faChampagneGlasses,
+  heritage: faLandmark,
+  museum: faBuildingColumns,
+  nature: faLeaf,
+  shopping: faBagShopping,
+  spiritual: faPlaceOfWorship,
+  wildlife: faPaw
 };
 
 const TrendingCategories = () => {

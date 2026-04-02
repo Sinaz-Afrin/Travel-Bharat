@@ -42,7 +42,7 @@ padding: 0.15rem 0;
 }
 
 .state-link:hover {
-color: #FF7A18;
+color: #d97706;
 background: #F8F1E5;
 font-weight: bold;
 padding-left: 0.5rem;
@@ -50,12 +50,12 @@ border-radius: 4px;
 }
 
 .state-link.active {
-color: #FF7A18;
+color: #d97706;
 background: #FFE4D6;
 font-weight: bold;
 padding-left: 0.5rem;
 border-radius: 4px;
-border-left: 3px solid #FF7A18;
+border-left: 3px solid #d97706;
 }
 
 .state-link.active:hover {

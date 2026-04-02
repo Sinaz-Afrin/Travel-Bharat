@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { AlertCircle } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -7,14 +7,34 @@ import SectionTitle from '../components/SectionTitle';
 import AttractionCard from '../components/AttractionCard';
 import BestTimeCard from '../components/BestTimeCard';
 import TravelTipCard from '../components/TravelTipCard';
+import AttractionCarousel from '../components/AttractionCarousel';
 import { getStateBySlug } from '../data/statesData';
+import { getPlacesByState } from '../services/api';
 import '../styles/statePage.css';
 
 const StatePage = () => {
   const { slug } = useParams();
+  const navigate = useNavigate();
   const state = slug ? getStateBySlug(slug) : null;
   const [isExpanded, setIsExpanded] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [places, setPlaces] = useState([]);
+
+  // Fetch places by state
+  useEffect(() => {
+    if (state) {
+      const fetchPlaces = async () => {
+        try {
+          const fetchedPlaces = await getPlacesByState(slug);
+          setPlaces(fetchedPlaces || []);
+        } catch (error) {
+          console.error('Error fetching places:', error);
+          setPlaces([]);
+        }
+      };
+      fetchPlaces();
+    }
+  }, [state]);
 
   if (loading) {
     return (
@@ -87,17 +107,7 @@ const StatePage = () => {
 
             {/* Right: Image Carousel */}
             <div className="state-about-image">
-              {state.attractions[0] && (
-                <>
-                  <img
-                    src={state.attractions[0].image}
-                    alt="attraction"
-                  />
-                  <div className="state-category-badge">
-                    {state.attractions[0]?.category}
-                  </div>
-                </>
-              )}
+              <AttractionCarousel attractions={state.attractions} />
             </div>
           </div>
         </div>
@@ -111,22 +121,28 @@ const StatePage = () => {
             <p className="state-section-subtitle">Must-visit places and experiences</p>
           </div>
           <div className="state-attractions-grid">
-            {state.attractions.map((attraction) => (
-              <div key={attraction.id} className="state-attraction-card">
-                <div className="state-attraction-image-wrapper">
-                  <img src={attraction.image} alt={attraction.name} className="state-attraction-image-wrapper img" />
-                  <div className="state-attraction-overlay"></div>
+            {places.length > 0 ? (
+              places.map((place) => (
+                <div key={place._id} onClick={() => navigate(`/place/${place._id}`)} className="state-attraction-card">
+                  <div className="state-attraction-image-wrapper">
+                    <img src={place.image || place.images?.[0]} alt={place.name} className="state-attraction-image-wrapper img" />
+                    <div className="state-attraction-overlay"></div>
+                  </div>
+                  <div className="state-attraction-content">
+                    <span className="state-attraction-category">{place.category}</span>
+                    <h3 className="state-attraction-title">{place.name}</h3>
+                    <p className="state-attraction-description">{place.description || 'Discover this amazing place'}</p>
+                    <button className="state-attraction-btn">
+                      Learn More <span>→</span>
+                    </button>
+                  </div>
                 </div>
-                <div className="state-attraction-content">
-                  <span className="state-attraction-category">{attraction.category}</span>
-                  <h3 className="state-attraction-title">{attraction.name}</h3>
-                  <p className="state-attraction-description">{attraction.description}</p>
-                  <button className="state-attraction-btn">
-                    Learn More <span>→</span>
-                  </button>
-                </div>
+              ))
+            ) : (
+              <div className="state-no-places">
+                <p>No attractions available for this state.</p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>

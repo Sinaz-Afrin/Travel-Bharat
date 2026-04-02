@@ -60,6 +60,21 @@ export const getPlacesByCategory = async (category) => {
 };
 
 /**
+ * Fetch places filtered by state (using slug)
+ * @param {string} slug - State slug (e.g., "tamil-nadu")
+ * @returns {Promise<Array>} Array of filtered place objects
+ */
+export const getPlacesByState = async (slug) => {
+  try {
+    const response = await apiClient.get(`/places/state/${slug}`);
+    return response.data.data || [];
+  } catch (error) {
+    console.error(`Error fetching places by state (${slug}):`, error);
+    throw error;
+  }
+};
+
+/**
  * Fetch a single place by ID
  * @param {string|number} id - Place ID
  * @returns {Promise<Object>} Place object

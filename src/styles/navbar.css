@@ -23,8 +23,8 @@
   gap: 0.5rem;
   font-size: 1.5rem;
   font-weight: 700;  
-  color: #FF671F;
-  background: linear-gradient(150deg, #FF671F, #FF671F, #FF671F, #FF671F, #06038D, #046A38, #046A38, #046A38);
+  color: #d97706;
+  background: linear-gradient(150deg, #d97706, #d97706, #FF671F, #d97706, #06038D, #046A38, #046A38, #046A38);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -65,7 +65,7 @@
 }
 
 .navbar-item:not(.disabled):hover .navbar-link {
-  color: #FF7A18;
+  color: #d97706;
 }
 
 .dropdown-arrow {
@@ -109,7 +109,7 @@
 
 .dropdown-menu li:hover {
   background: #F8F1E5;
-  color: #FF7A18;
+  color: #d97706;
   font-weight: bold;
 }
 
@@ -120,7 +120,7 @@
 .mega-dropdown {
   position: absolute;
   top: 100%;
-  left: -500%;
+  left: -300%;
   transform: translateY(-10px);
   width: 90vw;
   background: #ffffff;
@@ -139,7 +139,7 @@
 }
 
 .contact-btn {
-  background: #FF7A18;
+  background: linear-gradient(135deg, #d97706 0%, #FFC107 100%);
   color: #ffffff;
   padding: 0.75rem 2rem;
   border-radius: 8px;
@@ -201,7 +201,7 @@
 }
 
 .mobile-menu-item:hover:not(.disabled) {
-  color: #FF7A18;
+  color: #d97706;
 }
 
 .mobile-menu-item.disabled {
@@ -233,13 +233,13 @@
 }
 
 .mobile-submenu-item:hover {
-  border-left-color: #FF7A18 !important;
+  border-left-color: #d97706 !important;
   background-color: #F8F1E5 !important;
   padding-left: 1.5rem !important;
 }
 
 .contact-mobile-btn {
-  background: #FF7A18;
+  background: linear-gradient(135deg, #d97706 0%, #FFC107 100%);
   color: #ffffff;
   margin-top: 2rem;
   padding: 1rem;
@@ -272,7 +272,7 @@
 }
 
 .mobile-dropdown-header:hover {
-  color: #FF7A18 !important;
+  color: #d97706 !important;
 }
 
 .mobile-dropdown-arrow {
@@ -334,7 +334,6 @@
     gap: 1.5rem;
     font-size: 0.9rem;
   }
-
   .contact-btn {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
