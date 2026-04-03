@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop.jsx';
 import Home from './pages/Home.jsx';
 import RegionPage from './pages/RegionPage.jsx';
 import CategoryPage from './pages/CategoryPage.jsx';
@@ -8,6 +9,7 @@ import StatePage from './pages/StatePage.jsx';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/state/:slug" element={<StatePage />} />
