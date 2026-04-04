@@ -9,27 +9,27 @@ const HeroCarousel = () => {
 
   const slides = [
     {
-      image: 'https://images.pexels.com/photos/1583339/pexels-photo-1583339.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      image: 'https://cdn.pixabay.com/photo/2019/03/12/20/19/india-4051753_1280.jpg',
       title: 'Discover Incredible India',
       subtitle: 'Explore Heritage, Nature & Adventure Across States'
     },
     {
-      image: 'https://images.pexels.com/photos/3581368/pexels-photo-3581368.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      image: 'https://images.unsplash.com/photo-1713682995521-22ec819b50ac?q=80&w=2147',
       title: 'Experience Royal Heritage',
       subtitle: 'Immerse in the grandeur of palaces and forts'
     },
     {
-      image: 'https://images.pexels.com/photos/962464/pexels-photo-962464.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      image: 'https://plus.unsplash.com/premium_photo-1697730314165-2cd71dc3a6a4?q=80&w=1170',
       title: 'Serene Natural Beauty',
       subtitle: 'Find peace in pristine landscapes and backwaters'
     },
     {
-      image: 'https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      image: 'https://cdn.pixabay.com/photo/2023/10/19/15/18/mountains-8326967_1280.jpg',
       title: 'Thrilling Adventures',
       subtitle: 'Conquer mountains, deserts, and untamed wilderness'
     },
     {
-      image: 'https://images.pexels.com/photos/1098460/pexels-photo-1098460.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      image: 'https://images.unsplash.com/photo-1688257609244-3f2a893f19d6?q=80&w=938',
       title: 'Spiritual Journeys',
       subtitle: 'Connect with ancient traditions and sacred sites'
     }
@@ -63,7 +63,7 @@ const HeroCarousel = () => {
           <div className="hero-content">
             <h1 className="hero-title">{slide.title}</h1>
             <p className="hero-subtitle">{slide.subtitle}</p>
-            <button className="hero-cta" onClick={() => navigate('/region/north')}>
+            <button className="hero-cta" onClick={() => navigate('/destinations')}>
               Start Exploring
             </button>
           </div>

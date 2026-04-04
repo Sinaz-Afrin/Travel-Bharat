@@ -92,7 +92,7 @@ const InfoCard = ({ place }) => {
             <div className="info-card-contact">
               <Phone size={20} style={{ color: '#D97706' }} />
               <div>
-                <div className="info-card-item-label">Contact</div>
+                <div className="info-card-item-label" onClick={() => navigate('/contact')}>Contact</div>
                 <a href={`tel:${place.phone}`} className="info-card-phone-link">
                   {place.phone}
                 </a>
@@ -111,12 +111,6 @@ const InfoCard = ({ place }) => {
               View on Map
             </a>
           )}
-
-          {/* Share & Save */}
-          <div className="info-card-actions">
-            <button className="info-card-action-btn">Share</button>
-            <button className="info-card-action-btn">Save</button>
-          </div>
         </div>
       </div>
     </div>

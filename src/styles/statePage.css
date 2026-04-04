@@ -613,18 +613,17 @@
 .state-gallery-grid-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(217, 119, 6, 0.3));
-  opacity: 0;
-  transition: opacity 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.395), rgba(255, 255, 255, 0),  rgba(0, 0, 0, 0.395));
+  opacity: 1;
+  transition: opacity 0.3s cubic-bezier(0.23, 1, 0.320, 1);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
-  backdrop-filter: blur(1px);
 }
 
 .state-gallery-grid-item:hover .state-gallery-grid-overlay {
-  opacity: 1;
+  opacity: 0;
 }
 
 /* Call to Action Section */

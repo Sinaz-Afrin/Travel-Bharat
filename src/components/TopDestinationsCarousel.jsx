@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { MapPin, AlertCircle } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { getAllPlaces } from '../services/api';
+import { getTopDestinations } from '../services/api';
 import '../styles/topDestinationsCarousel.css';
 
 // Import Swiper styles
@@ -11,6 +11,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+/**
+ * TopDestinationsCarousel Component
+ * Displays a static carousel of top destinations
+ * Destinations are fixed and maintain the same order on every page load
+ * Static list: Taj Mahal, Jaipur, Kerala, Varanasi, Goa, Ladakh, Mysore Palace, Amritsar, Rishikesh, Jodhpur
+ */
 const TopDestinationsCarousel = () => {
   const navigate = useNavigate();
   const [destinations, setDestinations] = useState([]);
@@ -18,26 +24,37 @@ const TopDestinationsCarousel = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchDestinations = async () => {
+    const fetchTopDestinations = async () => {
       try {
         setLoading(true);
         setError(null);
-        const data = await getAllPlaces();
-        // Display all destinations in carousel
-        setDestinations(data);
+        
+        // Fetch top destinations from API (static, ordered list)
+        const topDestinations = await getTopDestinations();
+        
+        if (topDestinations.length === 0) {
+          setError('No top destinations found in database');
+          return;
+        }
+        
+        setDestinations(topDestinations);
       } catch (err) {
         setError(err.message || 'Failed to load destinations');
-        console.error('Error loading destinations:', err);
+        console.error('Error loading top destinations:', err);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchDestinations();
+    fetchTopDestinations();
   }, []);
 
   const handleCardClick = (destinationId) => {
     navigate(`/place/${destinationId}`);
+  };
+
+  const handleViewAll = () => {
+    navigate('/destinations');
   };
 
   if (loading) {
@@ -126,6 +143,15 @@ const TopDestinationsCarousel = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        <div className="carousel-footer">
+          <button 
+            className="view-all-btn" 
+            onClick={handleViewAll}
+          >
+            View All Destinations
+          </button>
+        </div>
       </div>
     </section>
   );

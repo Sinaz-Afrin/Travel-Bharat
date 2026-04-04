@@ -4,7 +4,7 @@ export const statesData = [
   state: "Andhra Pradesh",
   slug: "andhra-pradesh",
   description: "The Land of Temples and Coastlines - Andhra Pradesh offers a rich blend of spiritual heritage, scenic beaches, and vibrant culture.",
-  fullDescription: "Andhra Pradesh is known for its ancient temples, long coastline along the Bay of Bengal, and rich cultural traditions. From Tirupati's spiritual aura to Visakhapatnam’s beaches, the state offers diverse travel experiences.",
+  fullDescription: "The Land of Temples and Coastlines - Andhra Pradesh offers a rich blend of spiritual heritage, scenic beaches, and vibrant culture. Andhra Pradesh is known for its ancient temples, long coastline along the Bay of Bengal, and rich cultural traditions. There's a unique blend of history, nature, and culture waiting to be explored in this vibrant state. The state is home to ancient temples like Tirupati Balaji, beautiful beaches in Visakhapatnam, and the scenic Araku Valley. Andhra Pradesh's cuisine is renowned for its spicy flavors and diverse dishes. The state's festivals, such as Ugadi and Sankranti, showcase its vibrant culture and traditions. With its unique blend of history, nature, and culture, Andhra Pradesh offers a memorable travel experience for all types of travelers.",
   heroImage: "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=1200&h=600&fit=crop",
   attractions: [
     {

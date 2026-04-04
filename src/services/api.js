@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { statesData, getStateByName } from '../data/statesData';
+import { getTopDestinations as filterTopDestinations, TOP_DESTINATIONS_LIST } from '../data/topDestinationsConfig';
 
 const API_BASE_URL = 'http://localhost:5000/api';
 
@@ -60,6 +61,27 @@ export const getPlacesByCategory = async (category) => {
 };
 
 /**
+ * Fetch places filtered by category and state
+ * @param {string} category - Category name
+ * @param {string} stateSlug - State slug (e.g., "tamil-nadu")
+ * @returns {Promise<Array>} Array of filtered place objects
+ */
+export const getPlacesByCategoryAndState = async (category, stateSlug) => {
+  try {
+    const response = await apiClient.get('/places', {
+      params: { 
+        category,
+        state: stateSlug
+      },
+    });
+    return response.data.data || [];
+  } catch (error) {
+    console.error(`Error fetching places by category (${category}) and state (${stateSlug}):`, error);
+    throw error;
+  }
+};
+
+/**
  * Fetch places filtered by state (using slug)
  * @param {string} slug - State slug (e.g., "tamil-nadu")
  * @returns {Promise<Array>} Array of filtered place objects
@@ -85,6 +107,23 @@ export const getPlaceById = async (id) => {
     return response.data.data || response.data;
   } catch (error) {
     console.error(`Error fetching place with ID (${id}):`, error);
+    throw error;
+  }
+};
+
+/**
+ * Fetch random places from the backend
+ * @param {number} limit - Number of random places to fetch (default: 6)
+ * @returns {Promise<Array>} Array of random place objects
+ */
+export const getRandomPlaces = async (limit = 6) => {
+  try {
+    const response = await apiClient.get('/places/random', {
+      params: { limit },
+    });
+    return response.data.data || [];
+  } catch (error) {
+    console.error('Error fetching random places:', error);
     throw error;
   }
 };
@@ -151,6 +190,32 @@ export const getAllStates = async () => {
     return statesData;
   } catch (error) {
     console.error('Error fetching all states:', error);
+    throw error;
+  }
+};
+
+/**
+ * Get top destinations in fixed order
+ * Returns destinations from the TOP_DESTINATIONS_LIST in the specified order
+ * Maintains consistency across page loads (no randomization)
+ * 
+ * @returns {Promise<Array>} Array of top destination place objects
+ */
+export const getTopDestinations = async () => {
+  try {
+    // Fetch all places from the API
+    const allPlaces = await getAllPlaces();
+    
+    // Filter using the static list (maintains order)
+    const topDestinations = filterTopDestinations(allPlaces);
+    
+    if (topDestinations.length === 0) {
+      console.warn('No top destinations found in database. Expected:', TOP_DESTINATIONS_LIST);
+    }
+    
+    return topDestinations;
+  } catch (error) {
+    console.error('Error fetching top destinations:', error);
     throw error;
   }
 };

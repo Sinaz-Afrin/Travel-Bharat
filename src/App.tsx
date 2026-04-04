@@ -3,8 +3,13 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 import Home from './pages/Home.jsx';
 import RegionPage from './pages/RegionPage.jsx';
 import CategoryPage from './pages/CategoryPage.jsx';
+import CategoriesPage from './pages/CategoriesPage.jsx';
 import PlaceDetails from './pages/PlaceDetails.jsx';
 import StatePage from './pages/StatePage.jsx';
+import AllDestinations from './pages/AllDestinations.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
+import GalleryPage from './pages/GalleryPage.jsx';
 
 function App() {
   return (
@@ -12,13 +17,15 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/destinations" element={<AllDestinations />} />
+        <Route path="/categories" element={<CategoriesPage />} />
+        <Route path="/region/:slug" element={<RegionPage />} />
         <Route path="/state/:slug" element={<StatePage />} />
-        <Route path="/region/:regionName" element={<RegionPage />} />
         <Route path="/category/:categoryName" element={<CategoryPage />} />
         <Route path="/place/:id" element={<PlaceDetails />} />
-        <Route path="/gallery" element={<div style={{ padding: '4rem', textAlign: 'center' }}><h1>Gallery - Coming Soon</h1></div>} />
-        <Route path="/about" element={<div style={{ padding: '4rem', textAlign: 'center' }}><h1>About Us - Coming Soon</h1></div>} />
-        <Route path="/contact" element={<div style={{ padding: '4rem', textAlign: 'center' }}><h1>Contact - Coming Soon</h1></div>} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/gallery" element={<GalleryPage/>} />
       </Routes>
     </Router>
   );

@@ -76,9 +76,9 @@
 }
 
 .hero-cta:hover {
-  background: #06038D;
+  background: linear-gradient(135deg, #d97706 0%, #FFC107 100%);;
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(37, 100, 235, 0.589);;
+  box-shadow: 0 10px 25px #ffc10782;
 }
 
 .carousel-btn {

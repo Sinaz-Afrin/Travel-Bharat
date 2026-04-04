@@ -156,43 +156,13 @@
 }
 
 .info-card-map-btn:hover {
-  background: linear-gradient(135deg, #5568d3, #5568d3);
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+  background: linear-gradient(135deg, #d97706 0%, #FFC107 100%);;
+  box-shadow: 0 10px 25px #d9770642;
   transform: translateY(-2px);
 }
 
 .info-card-map-btn:active {
   transform: translateY(0);
-}
-
-/* Actions */
-.info-card-actions {
-  display: flex;
-  gap: 0.75rem;
-  padding-top: 1rem;
-  border-top: 1px solid #e5e7eb;
-}
-
-.info-card-action-btn {
-  flex: 1;
-  background: #f3f4f6;
-  color: #1f2937;
-  border: 1px solid #e5e7eb;
-  padding: 0.75rem 1rem;
-  border-radius: 0.75rem;
-  font-weight: 600;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.info-card-action-btn:hover {
-  background: #e5e7eb;
-  border-color: #d1d5db;
-}
-
-.info-card-action-btn:active {
-  transform: scale(0.98);
 }
 
 /* Responsive */

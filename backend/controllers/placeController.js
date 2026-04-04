@@ -197,3 +197,42 @@ export const deletePlace = async (req, res) => {
     });
   }
 };
+
+// @desc    Get random places
+// @route   GET /api/places/random
+// @query   ?limit=6
+export const getRandomPlaces = async (req, res) => {
+  try {
+    const limit = parseInt(req.query.limit) || 6;
+
+    // Step 1: Get random places from MongoDB using aggregation pipeline
+    const randomPlaces = await Place.aggregate([
+      // Stage 1: Sample random documents (get more than needed for filtering)
+      { $sample: { size: limit * 3 } },
+      // Stage 2: Group by state to ensure diversity
+      {
+        $group: {
+          _id: "$state",
+          place: { $first: "$$ROOT" },
+        },
+      },
+      // Stage 3: Unwind the grouped place
+      {
+        $replaceRoot: { newRoot: "$place" },
+      },
+      // Stage 4: Limit to requested amount
+      { $limit: limit },
+    ]);
+
+    res.status(200).json({
+      success: true,
+      count: randomPlaces.length,
+      data: randomPlaces,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      error: error.message,
+    });
+  }
+};

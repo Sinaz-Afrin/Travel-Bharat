@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MapPin, AlertCircle } from 'lucide-react';
-import { getAllPlaces } from '../services/api';
+import { getRandomPlaces } from '../services/api';
 import '../styles/sections.css';
 
 const TopDestinations = () => {
@@ -15,9 +15,9 @@ const TopDestinations = () => {
       try {
         setLoading(true);
         setError(null);
-        const data = await getAllPlaces();
-        // Display first 6 destinations as featured
-        setDestinations(data.slice(0, 6));
+        // Fetch 6 random places from different states
+        const data = await getRandomPlaces(6);
+        setDestinations(data);
       } catch (err) {
         setError(err.message || 'Failed to load destinations');
         console.error('Error loading destinations:', err);

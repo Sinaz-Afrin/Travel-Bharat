@@ -1,148 +1,47 @@
-import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AlertCircle } from 'lucide-react';
-import { getAllPlaces } from '../services/api';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faMountain,
-  faPalette,
-  faUmbrellaBeach,
-  faCity,
-  faMasksTheater,
-  faFilm,
-  faCalendarDays,
-  faChampagneGlasses,
-  faLandmark,
-  faBuildingColumns,
-  faLeaf,
-  faBagShopping,
-  faPlaceOfWorship,
-  faPaw
-} from '@fortawesome/free-solid-svg-icons';
-
+import CategoryCard from './CategoryCard';
+import { getFeaturedCategories } from '../data/categories';
 import '../styles/sections.css';
-
-// Icon mapping for categories
-const categoryIcons = {
-  adventure: faMountain,
-  art: faPalette,
-  beach: faUmbrellaBeach,
-  city: faCity,
-  culture: faMasksTheater,
-  entertainment: faFilm,
-  event: faCalendarDays,
-  festival: faChampagneGlasses,
-  heritage: faLandmark,
-  museum: faBuildingColumns,
-  nature: faLeaf,
-  shopping: faBagShopping,
-  spiritual: faPlaceOfWorship,
-  wildlife: faPaw
-};
 
 const TrendingCategories = () => {
   const navigate = useNavigate();
-  const [categories, setCategories] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const categories = getFeaturedCategories();
 
-  useEffect(() => {
-    const fetchCategories = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-        const places = await getAllPlaces();
-
-        // Extract unique categories from places
-        const uniqueCategories = new Map();
-        places.forEach((place) => {
-          if (place.category && !uniqueCategories.has(place.category)) {
-            const categorySlug = place.category.toLowerCase().replace(/\s+/g, '-');
-            uniqueCategories.set(place.category, {
-              id: uniqueCategories.size + 1,
-              name: place.category,
-              slug: categorySlug,
-              icon: categoryIcons[categorySlug] || faImage,
-              tagline: `Discover amazing ${place.category.toLowerCase()} experiences`,
-              count: 0,
-            });
-          }
-        });
-
-        // Count places per category
-        uniqueCategories.forEach((cat) => {
-          const count = places.filter((p) => p.category === cat.name).length;
-          cat.count = count;
-        });
-
-        setCategories(Array.from(uniqueCategories.values()));
-      } catch (err) {
-        setError(err.message || 'Failed to load categories');
-        console.error('Error loading categories:', err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchCategories();
-  }, []);
-
-  if (loading) {
-    return (
-      <section className="section section-alt">
-        <div className="container">
-          <h2 className="section-title">Trending Categories</h2>
-          <p className="section-subtitle">Find your perfect travel experience</p>
-          <div className="loading-container">
-            <p className="loading-text">Loading categories...</p>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
-  if (error) {
-    return (
-      <section className="section section-alt">
-        <div className="container">
-          <h2 className="section-title">Trending Categories</h2>
-          <p className="section-subtitle">Find your perfect travel experience</p>
-          <div className="error-container">
-            <AlertCircle size={24} />
-            <p className="error-text">Failed to load categories: {error}</p>
-          </div>
-        </div>
-      </section>
-    );
-  }
+  const handleViewAllCategories = () => {
+    navigate('/categories');
+  };
 
   return (
-    <section className="section section-alt">
+    <section className="section">
       <div className="container">
-        <h2 className="section-title">Trending Categories</h2>
-        <p className="section-subtitle">Find your perfect travel experience</p>
+        <div className="section-header-with-button">
+          <div className="section-header">
+            <h2>Trending Categories</h2>
+            <p>Find your perfect travel experience</p>
+          </div>
+        </div>
 
         <div className="category-grid">
           {categories.length > 0 ? (
             categories.map((category) => (
-              <div
-                key={category.id}
-                className="category-card"
-                onClick={() => navigate(`/category/${category.slug}`)}
-              >
-                <div className="category-icon">
-                  <FontAwesomeIcon icon={category.icon} />
-                </div>
-                <h3 className="category-name">{category.name}</h3>
-                <p className="category-tagline">{category.tagline}</p>
-                {category.count > 0 && (
-                  <p className="category-count">{category.count} destinations</p>
-                )}
-              </div>
+            <CategoryCard 
+            key={category.id} 
+            category={category}
+            showCount={false}
+            />
             ))
           ) : (
-            <p className="no-results">No categories found</p>
+          <p className="no-results">No categories found</p>
           )}
+        </div>
+        
+        <div className="section-header-with-button">
+          <button 
+            className="section-header-btn"
+            onClick={handleViewAllCategories}
+          >
+            View All Categories
+          </button>
         </div>
       </div>
     </section>

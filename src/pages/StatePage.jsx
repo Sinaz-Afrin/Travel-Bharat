@@ -220,10 +220,10 @@ const StatePage = () => {
             Plan your journey today and create unforgettable memories in one of India's most beautiful states.
           </p>
           <div className="state-cta-buttons">
-            <button className="state-cta-btn state-cta-btn-primary">
+            <button className="state-cta-btn state-cta-btn-primary" onClick={() => navigate('/contact')}>
               Plan Your Trip
             </button>
-            <button className="state-cta-btn state-cta-btn-secondary">
+            <button className="state-cta-btn state-cta-btn-secondary" onClick={() => navigate('/contact')}>
               Contact Us
             </button>
           </div>

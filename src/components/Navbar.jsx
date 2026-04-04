@@ -18,7 +18,7 @@ const Navbar = () => {
   // Close mobile menu when clicking outside or on a link
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isMobileMenuOpen && !event.target.closest('.navbar-container')) {
+      if (isMobileMenuOpen && !event.target.closest('.navbar-container') && !event.target.closest('.mobile-menu')) {
         setIsMobileMenuOpen(false);
       }
     };
@@ -36,6 +36,13 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const handleOverlayClick = (e) => {
+    // Close menu only if clicking on the overlay background, not on the menu itself
+    if (e.target.classList.contains('mobile-menu-overlay')) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -45,6 +52,10 @@ const Navbar = () => {
         </div>
 
         <ul className="navbar-menu">
+          <li className="navbar-item" onClick={() => navigate('/')}>
+            <span className="navbar-link">Home</span>
+          </li>
+
           <li className="navbar-item dropdown mega-dropdown-container">
             <span className="navbar-link">
               Destinations <span className="dropdown-arrow">▼</span>
@@ -58,7 +69,7 @@ const Navbar = () => {
             <span className="navbar-link">
               Plans <span className="dropdown-arrow">▼</span>
             </span>
-            <ul className="dropdown-menu">
+            <ul className="dropdown-menu plans-dropdown-menu">
               {plans.map((plan) => (
                 <li key={plan} onClick={() => navigate(`/category/${plan.toLowerCase()}`)}>
                   {plan}
@@ -94,7 +105,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="mobile-menu-overlay">
+        <div className="mobile-menu-overlay" onClick={handleOverlayClick}>
           <div className="mobile-menu">
             <div className="mobile-menu-item" onClick={() => handleMobileLinkClick('/')}>
               Home
@@ -156,9 +167,6 @@ const Navbar = () => {
 
             <div className="mobile-menu-item" onClick={() => handleMobileLinkClick('/gallery')}>
               Gallery
-            </div>
-            <div className="mobile-menu-item disabled" onClick={() => setIsMobileMenuOpen(false)}>
-              Itinerary
             </div>
             <div className="mobile-menu-item" onClick={() => handleMobileLinkClick('/about')}>
               About Us

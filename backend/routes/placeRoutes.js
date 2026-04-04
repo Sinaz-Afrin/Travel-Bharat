@@ -3,12 +3,16 @@ import {
   getAllPlaces,
   getPlaceById,
   getPlacesByState,
+  getRandomPlaces,
   createPlace,
   updatePlace,
   deletePlace,
 } from "../controllers/placeController.js";
 
 const router = express.Router();
+
+// GET random places
+router.get("/random", getRandomPlaces);
 
 // GET all places (with optional filtering)
 router.get("/", getAllPlaces);
