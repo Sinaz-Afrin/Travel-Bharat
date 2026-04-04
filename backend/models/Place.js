@@ -13,6 +13,11 @@ const placeSchema = new mongoose.Schema(
       required: [true, "Please provide a state"],
       trim: true,
     },
+    stateSlug: {
+      type: String,
+      trim: true,
+      lowercase: true,
+    },
     region: {
       type: String,
       required: [true, "Please provide a region"],

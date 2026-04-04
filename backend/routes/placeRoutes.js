@@ -11,17 +11,17 @@ import {
 
 const router = express.Router();
 
-// GET random places
+// GET random places (specific route first)
 router.get("/random", getRandomPlaces);
+
+// GET places by stateSlug (specific route before generic :id)
+router.get("/state/:slug", getPlacesByState);
 
 // GET all places (with optional filtering)
 router.get("/", getAllPlaces);
 
-// GET single place by ID
+// GET single place by ID (generic route last)
 router.get("/:id", getPlaceById);
-
-// GET places by stateSlug
-router.get("/state/:slug", getPlacesByState);
 
 // POST create new place
 router.post("/", createPlace);

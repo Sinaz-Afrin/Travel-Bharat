@@ -178,9 +178,6 @@ const PlaceDetails = () => {
                   </div>
                 </div>
               )}
-
-              {/* Nearby Attractions */}
-              <NearbyPlaces currentPlace={place} state={place.state} limit={4} />
             </div>
 
             {/* Right Column (30%) - Info Card */}
@@ -188,6 +185,11 @@ const PlaceDetails = () => {
               <InfoCard place={place} />
             </div>
           </div>
+        </div>
+
+        {/* Nearby Attractions - Full Width Below */}
+        <div className="place-details-container">
+          <NearbyPlaces currentPlace={place} state={place.state} limit={4} />
         </div>
       </section>
       <Footer />

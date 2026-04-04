@@ -86,6 +86,25 @@ export const regions = [
       "madhya-pradesh",
       "chhattisgarh"
     ]
+  },
+  {
+    id: 7,
+    name: "Union Territories",
+    slug: "union-territories",
+    image: "https://images.unsplash.com/photo-1575999502951-4ab25b5ca889?q=80&w=1074",
+    description: "Explore India's unique Union Territory islands and cities",
+    fullDescription: "Discover the diverse Union Territories of India featuring island paradises, coastal beauty, and unique administrative regions. Experience pristine beaches, vibrant cultures, and distinctive island life across Andaman, Lakshadweep, Puducherry, and more.",
+    states: [
+      "andaman-and-nicobar-islands",
+      "chandigarh",
+      "delhi",
+      "dadra-and-nagar-haveli",
+      "daman-and-diu",
+      "jammu-and-kashmir",
+      "lakshadweep",
+      "puducherry",
+      "ladakh"
+    ]
   }
 ];
 

@@ -345,6 +345,40 @@
   margin: 0;
 }
 
+/* View All Places Button */
+.state-view-all-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.state-view-all-btn {
+  background: linear-gradient(135deg, #d97706 0%, #FFC107 100%);
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.state-view-all-btn:hover {
+  background: linear-gradient(135deg, #E86400 0%, #FFB300 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.4);
+}
+
+.state-view-all-btn:active {
+  transform: translateY(0);
+}
+
 /* Best Time Cards */
 .state-best-time-grid {
   display: grid;
@@ -826,6 +860,11 @@
 @media (max-width: 768px) {
   .state-section-padding {
     padding: 2rem 0;
+  }
+
+  .state-view-all-btn {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
   }
 }
 

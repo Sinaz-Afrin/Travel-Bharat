@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import '../../styles/imageSlider.css';
 
@@ -29,6 +29,19 @@ const ImageSlider = ({ images = [] }) => {
   const handleThumbnailClick = (index) => {
     setCurrentIndex(index);
   };
+
+  // Auto-slide every 3 seconds
+  useEffect(() => {
+    if (images.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   return (
     <div className="image-slider-container">
