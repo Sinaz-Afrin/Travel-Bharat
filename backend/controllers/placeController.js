@@ -99,7 +99,7 @@ export const getPlacesByState = async (req, res) => {
 // @route   POST /api/places
 export const createPlace = async (req, res) => {
   try {
-    const { name, state, region, city, category, description, bestTimeToVisit, entryFee, locationLink, images, nearbyAttractions } = req.body;
+    const { name, state, region, city, category, description, bestTimeToVisit, entryFee, locationLink, images, nearbyAttractions, stateSlug } = req.body;
 
     // Validation
     if (!name || !state || !region || !category) {
@@ -112,6 +112,7 @@ export const createPlace = async (req, res) => {
     const place = await Place.create({
       name,
       state,
+      stateSlug: stateSlug || name.toLowerCase().replace(/\s+/g, '-'),
       region,
       city,
       category,

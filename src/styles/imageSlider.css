@@ -50,8 +50,8 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 20;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  background: #ffffff;
+  color: #0B3C5D;
   border: none;
   width: 48px;
   height: 48px;
@@ -62,6 +62,8 @@
   cursor: pointer;
   transition: all 0.3s ease;
   opacity: 0;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .image-slider-main:hover .slider-nav-btn {
@@ -69,8 +71,9 @@
 }
 
 .slider-nav-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: #f0f0f0;
   transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .slider-nav-btn svg {
@@ -117,7 +120,7 @@
 }
 
 .image-slider-thumbnails-toggle:hover {
-  color: #5568d3;
+  color: #0B3C5D;
 }
 
 /* Thumbnails */

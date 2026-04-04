@@ -6,6 +6,7 @@ import CategoryPage from './pages/CategoryPage.jsx';
 import CategoriesPage from './pages/CategoriesPage.jsx';
 import PlaceDetails from './pages/PlaceDetails.jsx';
 import StatePage from './pages/StatePage.jsx';
+import StateAllPlaces from './pages/StateAllPlaces.jsx';
 import AllDestinations from './pages/AllDestinations.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
@@ -22,6 +23,7 @@ function App() {
         <Route path="/region/:slug" element={<RegionPage />} />
         <Route path="/state/:slug" element={<StatePage />} />
         <Route path="/category/:categoryName" element={<CategoryPage />} />
+        <Route path="/place/state/:slug" element={<StateAllPlaces />} />
         <Route path="/place/:id" element={<PlaceDetails />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />

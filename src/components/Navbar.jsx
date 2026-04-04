@@ -13,7 +13,15 @@ const Navbar = () => {
 
   const plans = ['Adventure', 'Art', 'Beach', 'City', 'Culture', 'Entertainment', 'Event', 'Festival', 'Heritage', 'Museum', 'Nature', 'Shopping', 'Spiritual', 'Wildlife'];
 
-  const regions = ['North', 'South', 'East', 'West', 'Central', 'UT'];
+  const mobileRegions = [
+    { name: 'North', slug: 'north-india' },
+    { name: 'South', slug: 'south-india' },
+    { name: 'East', slug: 'east-india' },
+    { name: 'West', slug: 'west-india' },
+    { name: 'North East', slug: 'north-east-india' },
+    { name: 'Central', slug: 'central-india' },
+    { name: 'UT', slug: 'union-territories' }
+  ];
 
   // Close mobile menu when clicking outside or on a link
   useEffect(() => {
@@ -125,13 +133,13 @@ const Navbar = () => {
               </div>
               {mobileDestinationsOpen && (
                 <div className="mobile-dropdown-content">
-                  {regions.map((region) => (
+                  {mobileRegions.map((region) => (
                     <div
-                      key={region}
+                      key={region.slug}
                       className="mobile-menu-item mobile-submenu-item"
-                      onClick={() => handleMobileLinkClick(`/region/${region.toLowerCase()}`)}
+                      onClick={() => handleMobileLinkClick(`/region/${region.slug}`)}
                     >
-                      {region}
+                      {region.name}
                     </div>
                   ))}
                 </div>

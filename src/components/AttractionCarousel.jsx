@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import '../styles/attractionCarousel.css';
 
@@ -16,6 +16,19 @@ const AttractionCarousel = ({ attractions }) => {
       prevIndex === attractions.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+  // Auto-slide every 3 seconds
+  useEffect(() => {
+    if (!attractions || attractions.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === attractions.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // Change card every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [attractions]);
 
   if (!attractions || attractions.length === 0) {
     return null;

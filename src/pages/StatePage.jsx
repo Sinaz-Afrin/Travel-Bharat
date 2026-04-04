@@ -144,6 +144,18 @@ const StatePage = () => {
               </div>
             )}
           </div>
+          
+          {/* View All Places Button */}
+          {places.length > 0 && (
+            <div className="state-view-all-btn-wrapper">
+              <button 
+                onClick={() => navigate(`/place/state/${slug}`)}
+                className="state-view-all-btn"
+              >
+                View All Places in {state.state}
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
