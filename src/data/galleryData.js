@@ -10,7 +10,7 @@ export const galleryData = [
     name: "Taj Mahal",
     state: "Uttar Pradesh",
     category: "Heritage",
-    image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&h=400&fit=crop",
+    image: "https://cdn.pixabay.com/photo/2019/03/12/20/19/india-4051753_1280.jpg",
     description: "Symbol of love and one of the Seven Wonders of the World",
     region: "North India"
   },
@@ -19,7 +19,7 @@ export const galleryData = [
     name: "Hawa Mahal",
     state: "Rajasthan",
     category: "Heritage",
-    image: "https://images.unsplash.com/photo-1570945387529-9d9456d210e5?w=600&h=400&fit=crop",
+    image: "https://cdn.pixabay.com/photo/2021/04/06/11/22/hawa-mahal-6156123_1280.jpg",
     description: "The iconic Pink City's most recognizable structure",
     region: "North India"
   },
@@ -28,7 +28,7 @@ export const galleryData = [
     name: "Qutub Minar",
     state: "Delhi",
     category: "Heritage",
-    image: "https://images.unsplash.com/photo-1607886557224-55ac6e1d83ab?w=600&h=400&fit=crop",
+    image: "https://cdn.pixabay.com/photo/2017/03/19/08/01/qutub-minar-2155776_1280.jpg",
     description: "Ancient minaret standing tall in New Delhi",
     region: "North India"
   },
