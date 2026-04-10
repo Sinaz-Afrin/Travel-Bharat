@@ -37,7 +37,7 @@ export const galleryData = [
     name: "Meenakshi Temple",
     state: "Tamil Nadu",
     category: "Heritage",
-    image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600&h=400&fit=crop",
+    image: "https://wallpapercave.com/wp/wp6874238.jpg",
     description: "Magnificent ancient temple with intricate architecture",
     region: "South India"
   },
@@ -46,7 +46,7 @@ export const galleryData = [
     name: "Lepakshi Temple",
     state: "Andhra Pradesh",
     category: "Heritage",
-    image: "https://images.unsplash.com/photo-1627033021637-6a71c89eacdd?w=600&h=400&fit=crop",
+    image: "https://cdn.pixabay.com/photo/2015/05/20/07/57/lepakshi-774935_1280.jpg",
     description: "Historic temple famous for hanging pillar architecture",
     region: "South India"
   },
@@ -55,7 +55,7 @@ export const galleryData = [
     name: "Khajuraho Temples",
     state: "Madhya Pradesh",
     category: "Heritage",
-    image: "https://images.unsplash.com/photo-1605662267088-feba7c748f65?w=600&h=400&fit=crop",
+    image: "https://cdn.pixabay.com/photo/2018/12/17/14/57/mahadev-3880539_1280.jpg",
     description: "UNESCO World Heritage site with medieval architecture",
     region: "Central India"
   },
@@ -66,7 +66,7 @@ export const galleryData = [
     name: "Goa Beaches",
     state: "Goa",
     category: "Beach",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop",
+    image: "https://cdn.pixabay.com/photo/2020/04/13/08/32/zzz-5037255_1280.jpg",
     description: "Golden sands and azure waters of Western coast",
     region: "West India"
   },
@@ -75,7 +75,7 @@ export const galleryData = [
     name: "Kerala Backwaters",
     state: "Kerala",
     category: "Beach",
-    image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop",
+    image: "https://cdn.pixabay.com/photo/2017/10/04/17/51/alleppey-2817032_1280.jpg",
     description: "Serene backwaters with lush greenery",
     region: "South India"
   },
@@ -84,7 +84,7 @@ export const galleryData = [
     name: "Visakhapatnam Beach",
     state: "Andhra Pradesh",
     category: "Beach",
-    image: "https://images.unsplash.com/photo-1587614382346-acf1c2c7f27d?w=600&h=400&fit=crop",
+    image: "https://wallpaperaccess.com/full/9095531.jpg",
     description: "Beautiful coastal city with scenic views",
     region: "South India"
   },
