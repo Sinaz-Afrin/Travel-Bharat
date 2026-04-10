@@ -1,4 +1,4 @@
-const places = [
+export const places = [
   {
     name: "Tirupati Balaji Temple",
     state: "Andhra Pradesh",
@@ -1846,11 +1846,11 @@ const places = [
     locationLink: "https://www.google.com/maps/place/Lucknow"
   },
   {
-    name: "Allahabad (Prayagraj)",
+    name: "Allahabad",
     state: "Uttar Pradesh",
     region: "North India",
     category: "Spiritual",
-    description: "Triveni Sangam",
+    description: "Located at Triveni Sangam with spiritual and historical importance. The city represents important pilgrimage destination. The city maintains spiritual authenticity and pilgrimage significance. The city represents important religious center. The city combines natural features with spiritual practices. The combination of spiritual importance, historical heritage, and cultural significance make city important.",
     images: [
       "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=400&h=300&fit=crop"
     ],
@@ -2510,7 +2510,7 @@ const places = [
     stateSlug: "jammu-and-kashmir",
     region: "North India",
     category: "Nature",
-    description: "Dal Lake and houseboats",
+    description: "The summer capital of Jammu and Kashmir, Srinagar is renowned for its picturesque landscapes, serene lakes, and Mughal gardens. Located on the banks of the Jhelum River, the city is famous for Dal Lake and Nigeen Lake, where traditional houseboats and shikara rides offer a unique cultural experience. The Mughal gardens such as Shalimar Bagh, Nishat Bagh, and Chashme Shahi reflect Persian-style landscaping with terraced lawns and fountains. Srinagar is also known for its handicrafts including Kashmiri carpets, shawls, and papier-mâché products. The city experiences all four seasons, with blooming tulips in spring and snowfall in winter adding to its charm.",
     images: [
       "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=400&h=300&fit=crop"
     ],
@@ -2525,7 +2525,7 @@ const places = [
     stateSlug: "jammu-and-kashmir",
     region: "North India",
     category: "Adventure",
-    description: "Ski resort",
+    description: "A popular hill station and skiing destination in Jammu and Kashmir, Gulmarg is located at an altitude of 2,650 meters in the Pir Panjal range. Known for its lush green meadows covered with wildflowers in summer and thick snow in winter, it transforms into one of Asia’s top skiing resorts. The Gulmarg Gondola, one of the highest cable cars in the world, takes visitors to Apharwat Peak offering breathtaking views of snow-capped mountains. The region also features the highest golf course in the world and is surrounded by dense forests of pine and fir.",
     images: [
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop"
     ],
@@ -2540,7 +2540,7 @@ const places = [
     stateSlug: "jammu-and-kashmir",
     region: "North India",
     category: "Nature",
-    description: "Valley town",
+    description: "Situated in the Anantnag district of Jammu and Kashmir, Pahalgam is a scenic valley located at the confluence of the Lidder River and Sheshnag Lake streams. Known for its lush greenery, pine forests, and snow-capped mountains, it serves as a base camp for the Amarnath Yatra pilgrimage. Popular attractions include Betaab Valley, Aru Valley, and Baisaran meadow, often referred to as ‘Mini Switzerland’. The region offers activities such as trekking, fishing, and horse riding, making it a favorite for nature lovers and adventure seekers.",
     images: [
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop"
     ],
@@ -2555,7 +2555,7 @@ const places = [
     stateSlug: "jammu-and-kashmir",
     region: "North India",
     category: "Spiritual",
-    description: "Pilgrimage site",
+    description: "One of the most revered Hindu pilgrimage sites in India, Vaishno Devi Temple is located in the Trikuta Mountains near Katra in Jammu and Kashmir. Dedicated to Goddess Vaishno Devi, the temple is situated at an altitude of 1,585 meters and requires a trek of about 12 kilometers from the base camp. Millions of devotees visit the shrine annually, making it one of the busiest pilgrimage destinations in the country. The journey is marked by chants, scenic views, and spiritual devotion, with facilities like ponies, palanquins, and helicopter services available.",
     images: [
       "https://images.unsplash.com/photo-1583416750470-965b2707b355?w=400&h=300&fit=crop"
     ],
@@ -2570,7 +2570,7 @@ const places = [
     stateSlug: "jammu-and-kashmir",
     region: "North India",
     category: "Nature",
-    description: "Meadow of gold",
+    description: "Known as the ‘Meadow of Gold’, Sonmarg is a stunning hill station in Jammu and Kashmir located at an altitude of around 2,800 meters. It serves as a gateway to Ladakh and is surrounded by glaciers, alpine meadows, and snow-covered peaks. The Sindh River flows through the valley, offering opportunities for trout fishing and river rafting. Popular attractions include Thajiwas Glacier and Zoji La Pass. Sonmarg is especially known for its breathtaking landscapes and is a base for trekking routes into the Himalayas.",
     images: [
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop"
     ],
@@ -2585,7 +2585,7 @@ const places = [
     stateSlug: "jammu-and-kashmir",
     region: "North India",
     category: "Nature",
-    description: "Hill station",
+    description: "A serene hill station in Jammu and Kashmir, Patnitop is located on a plateau in the Shivalik range at an altitude of around 2,024 meters. Surrounded by dense cedar forests, it offers panoramic views of the Chenab River valley. The destination is popular for activities like trekking, paragliding, and skiing during winter. Nearby attractions include Nathatop and Sanasar, known for scenic beauty and adventure sports. The cool climate and peaceful environment make it a perfect getaway from city life.",
     images: [
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop"
     ],
@@ -2601,7 +2601,7 @@ const places = [
     stateSlug: "ladakh",
     region: "North India",
     category: "Nature",
-    description: "Famous blue lake",
+    description: "A high-altitude endorheic lake situated at about 4,350 meters in the Himalayas, Pangong Lake stretches across India and China. Known for its ever-changing shades of blue, the lake is surrounded by barren mountains and offers surreal landscapes. It gained popularity after featuring in several films and is a major attraction in Ladakh. The lake freezes completely during winter and is home to migratory birds like Brahmini ducks and seagulls. Due to its proximity to the border, special permits are required to visit.",
     images: [
       "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=300&fit=crop"
     ],
@@ -2616,7 +2616,7 @@ const places = [
     stateSlug: "ladakh",
     region: "North India",
     category: "City",
-    description: "Capital town",
+    description: "The largest town in Ladakh, Leh serves as the administrative and cultural hub of the region. Situated at an altitude of around 3,500 meters, it is known for its Buddhist monasteries, high mountain passes, and unique Tibetan-influenced culture. Key attractions include Leh Palace, Shanti Stupa, and nearby monasteries like Thiksey and Hemis. The town is also a starting point for exploring Nubra Valley and Pangong Lake. Leh’s rugged terrain and clear skies make it ideal for adventure activities and stargazing.",
     images: [
       "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=400&h=300&fit=crop"
     ],
@@ -2631,7 +2631,7 @@ const places = [
     stateSlug: "ladakh",
     region: "North India",
     category: "Nature",
-    description: "Desert in mountains",
+    description: "Located in the union territory of Ladakh, Nubra Valley is a cold desert known for its sand dunes, double-humped Bactrian camels, and scenic landscapes. It lies north of Leh and is accessible via Khardung La Pass. The valley is formed by the confluence of the Shyok and Nubra rivers and is dotted with monasteries such as Diskit Monastery. The region offers a unique contrast of desert terrain with snow-capped mountains and lush green villages.",
     images: [
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop"
     ],
@@ -2646,7 +2646,7 @@ const places = [
     stateSlug: "ladakh",
     region: "North India",
     category: "Adventure",
-    description: "High mountain pass",
+    description: "One of the highest motorable mountain passes in the world, Khardung La is situated at an altitude of around 5,359 meters in Ladakh. It serves as the gateway to Nubra Valley and plays a strategic role for the Indian Army. The pass offers breathtaking panoramic views of the surrounding mountains and valleys. Due to extreme weather conditions, the pass is open only during certain months, and travelers require permits to visit.",
     images: [
       "https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?w=400&h=300&fit=crop"
     ],
@@ -2661,7 +2661,7 @@ const places = [
     stateSlug: "ladakh",
     region: "North India",
     category: "Adventure",
-    description: "Gravity-defying hill",
+    description: "A popular tourist attraction near Leh, Magnetic Hill is known for its gravity-defying optical illusion where vehicles appear to move uphill against gravity. Located on the Leh-Kargil highway, the phenomenon is believed to be due to the layout of the surrounding hills. It has become a curiosity spot for tourists and offers scenic views of the barren Himalayan landscape.",
     images: [
       "https://images.unsplash.com/photo-1597764699510-3a7d2c3f64d6?w=400&h=300&fit=crop"
     ],
@@ -2676,7 +2676,7 @@ const places = [
     stateSlug: "ladakh",
     region: "North India",
     category: "Spiritual",
-    description: "Famous monastery",
+    description: "The largest and wealthiest monastery in Ladakh, Hemis Monastery belongs to the Drukpa lineage of Tibetan Buddhism. Located about 45 km from Leh, it is famous for the annual Hemis Festival celebrating the birth of Guru Padmasambhava. The monastery houses ancient relics, thangkas (religious paintings), and a large statue of Guru Rinpoche. It is set amidst scenic hills and is an important spiritual center in the region.",
     images: [
       "https://images.unsplash.com/photo-1582550945154-66ea8fff25e1?w=400&h=300&fit=crop"
     ],
@@ -2691,7 +2691,7 @@ const places = [
     stateSlug: "lakshadweep",
     region: "South India",
     category: "Beach",
-    description: "Gateway island",
+    description: "A small coral island in Lakshadweep, Agatti Island is known for its crystal-clear turquoise waters, white sandy beaches, and vibrant coral reefs. It is one of the few islands in Lakshadweep with an airport, making it accessible to tourists. The island is ideal for water sports such as snorkeling, scuba diving, and kayaking, offering a glimpse of rich marine biodiversity.",
     images: [
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop"
     ],
@@ -2706,7 +2706,7 @@ const places = [
     stateSlug: "lakshadweep",
     region: "South India",
     category: "Beach",
-    description: "Luxury island stay",
+    description: "An uninhabited island in Lakshadweep, Bangaram Island is famous for its pristine beaches, coral reefs, and tranquil environment. Surrounded by a lagoon, it is a perfect destination for snorkeling and scuba diving. The island offers a secluded tropical getaway with minimal commercial development, making it ideal for eco-tourism and relaxation.",
     images: [
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop"
     ],
@@ -2721,7 +2721,7 @@ const places = [
     stateSlug: "lakshadweep",
     region: "South India",
     category: "City",
-    description: "Capital island",
+    description: "The capital of Lakshadweep, Kavaratti is known for its lagoons, coral reefs, and marine life. The island features beautiful mosques, including the Ujra Mosque, and offers water activities like kayaking and glass-bottom boat rides. It is also home to a marine aquarium showcasing diverse aquatic species. The calm environment and scenic beauty make it a key tourist hub in Lakshadweep.",
     images: [
       "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=400&h=300&fit=crop"
     ],
@@ -2736,7 +2736,7 @@ const places = [
     stateSlug: "lakshadweep",
     region: "South India",
     category: "Nature",
-    description: "Cultural island",
+    description: "Located at the southernmost part of Lakshadweep, Minicoy Island is known for its distinct culture, influenced by the Maldives. It features a historic lighthouse built during the British era and a large lagoon ideal for water sports. The island is famous for its tuna fishing industry and traditional dance forms like Lava dance.",
     images: [
       "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=300&fit=crop"
     ],
@@ -2751,7 +2751,7 @@ const places = [
     stateSlug: "lakshadweep",
     region: "South India",
     category: "Nature",
-    description: "Lagoon and coral reefs",
+    description: "A group of islands in Lakshadweep, Kalpeni is known for its lagoons, coral debris, and scenic beauty. The island offers activities like snorkeling, kayaking, and reef walking. It was formed by coral deposits after a storm and provides stunning views of shallow lagoons and marine life.",
     images: [
       "https://images.unsplash.com/photo-1597764699510-3a7d2c3f64d6?w=400&h=300&fit=crop"
     ],
@@ -2766,7 +2766,7 @@ const places = [
     stateSlug: "lakshadweep",
     region: "South India",
     category: "Museum",
-    description: "Marine biodiversity",
+    description: "Located in Lakshadweep, the Marine Museum showcases the rich marine biodiversity of the region. It displays a variety of corals, shells, fish species, and marine artifacts, providing insights into the ecosystem of the Arabian Sea. The museum serves as an educational center for tourists and researchers.",
     images: [
       "https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?w=400&h=300&fit=crop"
     ],
@@ -2782,7 +2782,7 @@ const places = [
     stateSlug: "puducherry",
     region: "South India",
     category: "Beach",
-    description: "Seaside walkway",
+    description: "A popular beachfront in Puducherry, Promenade Beach stretches along the Bay of Bengal and is known for its scenic views and colonial charm. The beach is lined with landmarks such as the Gandhi statue, War Memorial, and French War Memorial. It is a pedestrian-only zone during certain hours, making it ideal for evening walks and relaxation.",
     images: [
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop"
     ],
@@ -2797,7 +2797,7 @@ const places = [
     stateSlug: "puducherry",
     region: "South India",
     category: "Spiritual",
-    description: "Spiritual township",
+    description: "An experimental township near Puducherry founded in 1968 by Mirra Alfassa (The Mother), Auroville aims to promote human unity beyond religion and nationality. The township is centered around the Matrimandir, a golden spherical structure used for meditation. Auroville emphasizes sustainable living, eco-friendly practices, and community-based development.",
     images: [
       "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=400&h=300&fit=crop"
     ],
@@ -2812,7 +2812,7 @@ const places = [
     stateSlug: "puducherry",
     region: "South India",
     category: "Beach",
-    description: "Clean sandy beach",
+    description: "Also known as Plage Paradiso, this secluded beach in Puducherry is accessible only by boat from Chunnambar Boat House. It is known for its golden sands, clear waters, and peaceful environment. The beach offers basic facilities and is ideal for relaxation away from city crowds.",
     images: [
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop"
     ],
@@ -2827,7 +2827,7 @@ const places = [
     stateSlug: "puducherry",
     region: "South India",
     category: "Heritage",
-    description: "Colonial architecture",
+    description: "Also called White Town, the French Quarter in Puducherry reflects the city’s colonial past with its European-style architecture, colorful buildings, and tree-lined streets. It features heritage structures, boutique cafes, art galleries, and churches, creating a unique blend of Indian and French cultures.",
     images: [
       "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400&h=300&fit=crop"
     ],
@@ -2842,7 +2842,7 @@ const places = [
     stateSlug: "puducherry",
     region: "South India",
     category: "Spiritual",
-    description: "Spiritual center",
+    description: "A spiritual community in Puducherry founded by Sri Aurobindo and The Mother, the ashram is a center for yoga, meditation, and philosophical study. It attracts visitors from around the world seeking peace and spiritual growth. The ashram maintains a disciplined environment with emphasis on inner development.",
     images: [
       "https://images.unsplash.com/photo-1583416750470-965b2707b355?w=400&h=300&fit=crop"
     ],
@@ -2857,7 +2857,7 @@ const places = [
     stateSlug: "puducherry",
     region: "South India",
     category: "Adventure",
-    description: "Boating experience",
+    description: "Located near Puducherry, Chunnambar Boat House is a popular tourist spot offering boat rides through the backwaters to Paradise Beach. Managed by the tourism department, it provides facilities for picnics, water sports, and recreational activities amidst lush greenery and calm waters.",
     images: [
       "https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?w=400&h=300&fit=crop"
     ],
@@ -2867,5 +2867,3 @@ const places = [
     locationLink: "https://www.google.com/maps/place/Chunnambar+Boat+House"
   }
 ]
-
-export default places;

@@ -47,7 +47,8 @@ function extractPlacesData() {
 // Migration function
 async function updateDescriptions() {
   try {
-    const mongoUri = process.env.MONGO_URI || 'mongodb+srv://travelBharatAdmin:TravelBharat%402026@travel-bharat.empw0ob.mongodb.net/?appName=Travel-Bharat';
+    const mongoUri = process.env.MONGO_URI;
+    
     
     await mongoose.connect(mongoUri);
     console.log('✅ Connected to MongoDB');
@@ -57,18 +58,21 @@ async function updateDescriptions() {
 
     let updatedCount = 0;
     let errorCount = 0;
-    
+    const notFoundPlaces = [];
+  
     for (const place of placesData) {
       try {
         const result = await Place.findOneAndUpdate(
-          { name: place.name },
+          { name: { $regex: `^${place.name}$`, $options: "i" } },
           { 
             description: place.description,
             updatedAt: new Date()
           },
           { new: true }
         );
-        
+        if (!result) {
+          notFoundPlaces.push(place.name);
+        }
         if (result) {
           updatedCount++;
           console.log(`✅ Updated: ${place.name}`);
@@ -85,7 +89,8 @@ async function updateDescriptions() {
     console.log(`   Updated: ${updatedCount} places`);
     console.log(`   Errors: ${errorCount}`);
     console.log(`   Total: ${placesData.length} places`);
-    
+    console.log("❌ Missing places:", notFoundPlaces);
+
     await mongoose.disconnect();
     process.exit(0);
   } catch (error) {

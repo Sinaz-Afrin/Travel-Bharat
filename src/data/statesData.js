@@ -909,7 +909,7 @@ export const statesData = [
     { id: 2, name: "Varanasi", image: "https://images.unsplash.com/photo-1583416750470-965b2707b355?w=400&h=300&fit=crop", description: "Spiritual city", category: "Spiritual" },
     { id: 3, name: "Ayodhya", image: "https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?w=400&h=300&fit=crop", description: "Birthplace of Lord Rama", category: "Spiritual" },
     { id: 4, name: "Lucknow", image: "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=400&h=300&fit=crop", description: "City of Nawabs", category: "City" },
-    { id: 5, name: "Allahabad (Prayagraj)", image: "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=400&h=300&fit=crop", description: "Triveni Sangam", category: "Spiritual" },
+    { id: 5, name: "Allahabad", image: "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=400&h=300&fit=crop", description: "Triveni Sangam", category: "Spiritual" },
     { id: 6, name: "Mathura", image: "https://images.unsplash.com/photo-1583416750470-965b2707b355?w=400&h=300&fit=crop", description: "Birthplace of Krishna", category: "Spiritual" }
   ],
   bestTime: [
