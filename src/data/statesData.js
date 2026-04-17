@@ -60,7 +60,7 @@ export const statesData = [
   slug: "arunachal-pradesh",
   description: "The Land of Rising Sun - A pristine paradise of mountains, monasteries, and tribal culture.",
   fullDescription: "Arunachal Pradesh is India's northeastern gem, known for its untouched natural beauty, snow-capped mountains, and Buddhist monasteries. It offers adventure, spirituality, and cultural richness.",
-  heroImage: "https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=1200&h=600&fit=crop",
+  heroImage: "https://api.breakbag.com/storage/images/adobestock_443470910-sh4vtchjasv839fa-1720753650314.jpg",
   attractions: [
     {
       id: 1,
@@ -114,7 +114,7 @@ export const statesData = [
   slug: "assam",
   description: "Gateway to Northeast India - Famous for tea gardens, wildlife, and the mighty Brahmaputra river.",
   fullDescription: "Assam is known for its lush tea plantations, rich biodiversity, and vibrant culture. It is home to Kaziranga National Park and unique festivals like Bihu.",
-  heroImage: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&h=600&fit=crop",
+  heroImage: "https://wallpapercave.com/wp/wp3784612.jpg",
   attractions: [
     {
       id: 1,
@@ -158,7 +158,7 @@ export const statesData = [
   slug: "bihar",
   description: "Land of Ancient Empires - A historic region rich in culture, religion, and education.",
   fullDescription: "Bihar is one of the oldest inhabited regions in the world, known for its role in Buddhism and ancient Indian empires. It houses Nalanda University ruins and Bodh Gaya.",
-  heroImage: "https://images.unsplash.com/photo-1583416750470-965b2707b355?w=1200&h=600&fit=crop",
+  heroImage: "https://wallpaperaccess.com/full/9400920.jpg",
   attractions: [
     {
       id: 1,
