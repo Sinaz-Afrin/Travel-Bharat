@@ -193,7 +193,7 @@ export const statesData = [
   slug: "chhattisgarh",
   description: "The Rice Bowl of India - Known for waterfalls, forests, and tribal culture.",
   fullDescription: "Chhattisgarh is rich in natural beauty and tribal heritage. The state is famous for its waterfalls, caves, and dense forests.",
-  heroImage: "https://images.unsplash.com/photo-1627894483216-2138af692e32?w=1200&h=600&fit=crop",
+  heroImage: "https://mediaim.expedia.com/destination/1/94b5d0a96720188ea177d717e6a60e45.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh",
   attractions: [
     {
       id: 1,
@@ -228,7 +228,7 @@ export const statesData = [
   slug: "goa",
   description: "India’s Beach Paradise - Goa is famous for its golden beaches, vibrant nightlife, and Portuguese heritage.",
   fullDescription: "Goa is one of India’s top tourist destinations, offering a mix of scenic beaches, water sports, colonial architecture, and lively culture. From peaceful south Goa to party-filled north Goa, it caters to every type of traveler.",
-  heroImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&h=600&fit=crop",
+  heroImage: "https://wallpapers.com/images/hd/goa-beach-pictures-bhq7l82yir5f5mvt.jpg",
   attractions: [
     {
       id: 1,
@@ -283,7 +283,7 @@ export const statesData = [
   slug: "gujarat",
   description: "The Land of Legends - Gujarat is known for its rich heritage, wildlife, and vibrant festivals.",
   fullDescription: "Gujarat offers a unique mix of history, culture, and natural wonders. From the Rann of Kutch to Gir National Park, it is a diverse and colorful state.",
-  heroImage: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&h=600&fit=crop",
+  heroImage: "https://www.tripsavvy.com/thmb/FyAG1XmsDpY4XUU80y2VZVvYT3s=/4007x2654/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-168637506-547069694b6c413ca41cc63e24a1ec29.jpg",
   attractions: [
     {
       id: 1,
@@ -327,7 +327,7 @@ export const statesData = [
   slug: "haryana",
   description: "The Green Land of India - Known for agriculture, heritage sites, and proximity to Delhi.",
   fullDescription: "Haryana blends modern infrastructure with historical significance. It offers cultural experiences, pilgrimage sites, and urban attractions near the capital region.",
-  heroImage: "https://images.unsplash.com/photo-1583416750470-965b2707b355?w=1200&h=600&fit=crop",
+  heroImage: "https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/kurukshetra-haryana.jpg",
   attractions: [
     {
       id: 1,
@@ -362,7 +362,7 @@ export const statesData = [
   slug: "himachal-pradesh",
   description: "The Land of Snow - A paradise of mountains, valleys, and adventure.",
   fullDescription: "Himachal Pradesh is a dream destination for nature lovers and adventure seekers. With snow-capped mountains, hill stations, and trekking routes, it offers breathtaking experiences.",
-  heroImage: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=600&fit=crop",
+  heroImage: "https://wallpaperaccess.com/full/2185184.jpg",
   attractions: [
     {
       id: 1,
@@ -407,7 +407,7 @@ export const statesData = [
   slug: "jharkhand",
   description: "The Land of Forests - Known for waterfalls, wildlife, and tribal culture.",
   fullDescription: "Jharkhand is rich in minerals, forests, and scenic beauty. The state is home to numerous waterfalls, hills, and tribal communities.",
-  heroImage: "https://images.unsplash.com/photo-1627894483216-2138af692e32?w=1200&h=600&fit=crop",
+  heroImage: "https://travel12go.in/wp-content/uploads/2021/08/best-time-to-visit-Jharkhand-01.webp",
   attractions: [
     {
       id: 1,
@@ -442,7 +442,7 @@ export const statesData = [
   slug: "karnataka",
   description: "The Land of Heritage and Innovation - A mix of ancient ruins, lush forests, and modern cities.",
   fullDescription: "Karnataka offers a diverse travel experience with UNESCO heritage sites, hill stations, wildlife, and vibrant cities like Bengaluru. It blends tradition with modernity beautifully.",
-  heroImage: "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=1200&h=600&fit=crop",
+  heroImage: "https://images8.alphacoders.com/540/540007.jpg",
   attractions: [
     { id: 1, name: "Hampi", image: "https://karnatakatourism.org/wp-content/uploads/2020/05/P9-Gallery.jpg", description: "Ancient ruins of Vijayanagara Empire", category: "Heritage" },
     { id: 2, name: "Mysore Palace", image: "https://cdn.britannica.com/27/242227-050-48358A10/Mysore-Palace-Mysuru-Karnataka-India.jpg", description: "Royal palace with stunning architecture", category: "Heritage" },
@@ -475,7 +475,7 @@ export const statesData = [
   slug: "kerala",
   description: "God's Own Country - A paradise of backwaters, greenery, and beaches.",
   fullDescription: "Kerala is famous for its serene backwaters, hill stations, wildlife, and ayurvedic wellness. It offers one of the most relaxing travel experiences in India.",
-  heroImage: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&h=600&fit=crop",
+  heroImage: "https://media.istockphoto.com/id/1445646944/photo/travel-tourism-kerala-background-houseboat-on-kerala-backwaters-kerala-india.jpg?s=612x612&w=0&k=20&c=QxSWjSQi7OwMXVLLUN_aRy--r2XPtZ1L3X1ZdIdWutE=",
   attractions: [
     { id: 1, name: "Alleppey Backwaters", image: "https://cdn.pixabay.com/photo/2017/10/04/17/51/alleppey-2817032_1280.jpg", description: "Houseboat cruises through scenic canals", category: "Nature" },
     { id: 2, name: "Munnar", image: "https://cdn.pixabay.com/photo/2020/01/16/04/52/munnar-4769654_1280.jpg", description: "Tea plantations and hills", category: "Nature" },
@@ -508,7 +508,7 @@ export const statesData = [
   slug: "madhya-pradesh",
   description: "The Heart of India - Known for wildlife, temples, and heritage.",
   fullDescription: "Madhya Pradesh offers a blend of ancient temples, UNESCO sites, and dense forests. It is famous for tiger reserves and historical monuments.",
-  heroImage: "https://images.unsplash.com/photo-1582550945154-66ea8fff25e1?w=1200&h=600&fit=crop",
+  heroImage: "https://www.fabhotels.com/blog/wp-content/uploads/2019/03/Gwalior-Fort.jpg",
   attractions: [
     { id: 1, name: "Khajuraho Temples", image: "https://www.clubmahindra.com/blog/media/section_images/desktop23-f54e6ac343dbfab.jpg", description: "Famous for intricate carvings", category: "Heritage" },
     { id: 2, name: "Bandhavgarh National Park", image: "https://www.bandhavgarh-national-park.com/images/safaribanner.jpg", description: "Tiger reserve", category: "Wildlife" },
@@ -539,7 +539,7 @@ export const statesData = [
   slug: "maharashtra",
   description: "The Gateway of India - A blend of modern cities, forts, and beaches.",
   fullDescription: "Maharashtra is home to bustling Mumbai, hill stations, forts, caves, and beaches. It offers both urban excitement and natural beauty.",
-  heroImage: "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=1200&h=600&fit=crop",
+  heroImage: "https://media.istockphoto.com/id/1307189136/photo/gateway-of-india-mumbai-maharashtra-monument-landmark-famous-place-magnificent-view-without.jpg?b=1&s=170667a&w=0&k=20&c=BLP7ZQkbok5etYvEF3obeqaG-5Sv06_kaqPfS8z9CS4=",
   attractions: [
     { id: 1, name: "Mumbai", image: "https://th.bing.com/th/id/R.704f8db70eaf3a8cf76cf636f293ed7f?rik=HmSif9hKb5i9kA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f1%2f14%2fMumbai_Skyline_at_Night.jpg&ehk=YrQ3t9VgPp9gZLKBWIjg%2fMxu4E3yihhKozIFjP8PTOI%3d&risl=&pid=ImgRaw&r=0", description: "Financial capital of India", category: "City" },
     { id: 2, name: "Ajanta Caves", image: "https://img.peapix.com/a993e1ccd8774b7f96c94214adc28312_768.jpg", description: "Ancient Buddhist caves", category: "Heritage" },
@@ -570,7 +570,7 @@ export const statesData = [
   slug: "manipur",
   description: "The Jewel of India - Known for its natural beauty and culture.",
   fullDescription: "Manipur is a hidden gem in Northeast India with lakes, hills, and rich traditions. It is famous for Loktak Lake and classical dance forms.",
-  heroImage: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&h=600&fit=crop",
+  heroImage: "https://www.tourmyindia.com/blog/wp-content/uploads/2017/07/Imphal.jpg",
   attractions: [
     { id: 1, name: "Loktak Lake", image: "https://kasifiz.com/english/wp-content/uploads/2025/01/loktak-golu-1024x683-1020x600.jpg", description: "Floating lake with phumdis", category: "Nature" },
     { id: 2, name: "Keibul Lamjao National Park", image: "https://static2.tripoto.com/media/filter/nl/img/320912/TripDocument/1504965966_keibul_lamjao.jpg", description: "Floating national park", category: "Wildlife" },
@@ -601,7 +601,7 @@ export const statesData = [
   slug: "meghalaya",
   description: "The Abode of Clouds - Famous for waterfalls, caves, and living root bridges.",
   fullDescription: "Meghalaya is one of India’s most scenic states, known for its lush greenery, heavy rainfall, and unique natural wonders like living root bridges and caves.",
-  heroImage: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&h=600&fit=crop",
+  heroImage: "https://wallpaperaccess.com/full/6170728.jpg",
   attractions: [
     { id: 1, name: "Cherrapunji", image: "https://i.ytimg.com/vi/QT2igFrGQBI/maxresdefault.jpg", description: "One of the wettest places on Earth", category: "Nature" },
     { id: 2, name: "Shillong", image: "https://travenjo.com/wp-content/uploads/2022/01/upo-lf-Shnongpdeng-Bridge-1.jpg", description: "Scenic hill station and capital", category: "City" },
@@ -634,7 +634,7 @@ export const statesData = [
   slug: "mizoram",
   description: "The Land of Blue Mountains - A peaceful state with rolling hills and vibrant culture.",
   fullDescription: "Mizoram is known for its scenic hills, bamboo forests, and rich tribal traditions. It offers a calm and offbeat travel experience.",
-  heroImage: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=600&fit=crop",
+  heroImage: "https://images.herzindagi.info/image/2023/Apr/offbeat-places-in-mizoram.jpg",
   attractions: [
     { id: 1, name: "Aizawl", image: "https://images.unsplash.com/photo-1744262254593-989e765a8fcb", description: "Capital city with scenic views", category: "City" },
     { id: 2, name: "Reiek Hills", image: "https://mizoramtourism.com/post_images/62b863291e665_Reiek%20Hills.jpg", description: "Panoramic hilltop views", category: "Nature" },
@@ -666,7 +666,7 @@ export const statesData = [
   slug: "nagaland",
   description: "The Land of Festivals - Rich in tribal culture and traditions.",
   fullDescription: "Nagaland is known for its colorful festivals, especially Hornbill Festival, and its diverse tribal heritage.",
-  heroImage: "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=1200&h=600&fit=crop",
+  heroImage: "https://s7ap1.scene7.com/is/image/incredibleindia/naga-heritage-village-kohima-nagaland-1-attr-hero?qlt=82&ts=1727012342520",
   attractions: [
     { id: 1, name: "Kohima", image: "https://ik.imagekit.io/shortpedia/Voices/wp-content/uploads/2021/09/mokochung@tripoto.jpg", description: "Capital city with history", category: "City" },
     { id: 2, name: "Dzukou Valley", image: "https://www.lostwithpurpose.com/wp-content/uploads/2017/06/DSC07063.jpg", description: "Valley of flowers", category: "Nature" },
@@ -697,7 +697,7 @@ export const statesData = [
   slug: "odisha",
   description: "The Soul of India - Known for temples, beaches, and tribal culture.",
   fullDescription: "Odisha is famous for its ancient temples like Konark Sun Temple, beautiful beaches, and classical dance forms like Odissi.",
-  heroImage: "https://images.unsplash.com/photo-1582550945154-66ea8fff25e1?w=1200&h=600&fit=crop",
+  heroImage: "https://wallpaperaccess.com/full/9403383.png",
   attractions: [
     { id: 1, name: "Konark Sun Temple", image: "https://www.tripvaani.com/wp-content/uploads/2020/05/Konark-Sun-Temple-or-Black-Pagoda-The-Chariot-of-Sun.jpg", description: "UNESCO heritage temple", category: "Heritage" },
     { id: 2, name: "Puri Beach", image: "https://www.swarnabdutta.com/wp-content/uploads/2023/12/Puri-Beach-1536x864.jpeg", description: "Popular beach destination", category: "Beach" },
@@ -728,7 +728,7 @@ export const statesData = [
   slug: "punjab",
   description: "The Land of Five Rivers - Known for culture, food, and spirituality.",
   fullDescription: "Punjab is famous for its vibrant culture, delicious food, and spiritual sites like the Golden Temple.",
-  heroImage: "https://images.unsplash.com/photo-1583416750470-965b2707b355?w=1200&h=600&fit=crop",
+  heroImage: "https://plus.unsplash.com/premium_photo-1697730324062-c012bc98eb13?fm=jpg&q=60&w=3000",
   attractions: [
     { id: 1, name: "Golden Temple", image: "https://th.bing.com/th/id/R.21ca93b01294d5253a731d3807ac34eb?rik=oLECZ8cOwYn%2fBQ&riu=http%3a%2f%2fpushpendragautam.in%2fImages+for+Posts%2f2016%2fOct%2famritsar%2fAmritsar-golden-temple-pics-punjab-pics-best-travel-photographer-best-travel-blogger-india-3.jpg&ehk=0mdYvGcFCQYVSb8I93Bd5eITT8aTZ9OjJo%2f9QFJkOVk%3d&risl=&pid=ImgRaw&r=0", description: "Holiest Sikh shrine", category: "Spiritual" },
     { id: 2, name: "Jallianwala Bagh", image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/9b/b2.jpg", description: "Historic memorial", category: "Heritage" },
@@ -759,7 +759,7 @@ export const statesData = [
   slug: "rajasthan",
   description: "The Land of Kings - Famous for palaces, forts, and desert landscapes.",
   fullDescription: "Rajasthan showcases royal heritage with grand forts, palaces, and vibrant culture. It is one of India's most popular tourist destinations.",
-  heroImage: "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=1200&h=600&fit=crop",
+  heroImage: "https://media.istockphoto.com/id/1135820309/photo/amber-fort-and-maota-lake-jaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=raUKDB1Mris9Z7SjvuuTieZRzF2-CaKukGvTC8t1kuo=",
   attractions: [
     { id: 1, name: "Jaipur", image: "https://2.bp.blogspot.com/-Qgt_dCxqnAI/UV6_fsm0F9I/AAAAAAAAClo/IhFsOfTf1KU/s1600/city-palace-jaipur.jpg", description: "Pink City", category: "City" },
     { id: 2, name: "Udaipur", image: "https://thumbs.dreamstime.com/b/facade-udaipur-city-palace-located-rajasthan-india-336025652.jpg", description: "City of Lakes", category: "City" },
@@ -790,7 +790,7 @@ export const statesData = [
   slug: "sikkim",
   description: "The Land of Mystical Beauty - Known for mountains, monasteries, and lakes.",
   fullDescription: "Sikkim is a peaceful Himalayan state offering breathtaking landscapes, Buddhist monasteries, and adventure activities.",
-  heroImage: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=600&fit=crop",
+  heroImage: "https://www.wtravelmagazine.com/wp-content/uploads/2020/09/30.113.5-Beautiful-statue-of-Lord-Buddha-at-Ravangla-Sikkim-image-by-Rudra-Narayan-Mitra.jpg",
   attractions: [
     { id: 1, name: "Gangtok", image: "https://i.pinimg.com/originals/fe/f6/0b/fef60b797a79efd36a9b860b25e6f65e.jpg", description: "Capital city", category: "City" },
     { id: 2, name: "Tsomgo Lake", image: "https://sikkimtourism.org/wp-content/uploads/2022/07/Tsomgo-Lake.jpg", description: "Glacial lake", category: "Nature" },
@@ -822,7 +822,7 @@ export const statesData = [
   slug: "tamil-nadu",
   description: "The Land of Temples - A rich blend of culture, heritage, and scenic beauty.",
   fullDescription: "Tamil Nadu is famous for its grand temples, classical arts, hill stations, and coastal beauty. It is a cultural powerhouse with deep-rooted traditions and history.",
-  heroImage: "https://images.unsplash.com/photo-1590080876-01ade6e7c869?w=1200&h=600&fit=crop",
+  heroImage: "https://deih43ym53wif.cloudfront.net/meenakshi-temple-madurai-tamil-nadu-india-shutterstock_190831037_3e7b04fcc5.jpeg",
   attractions: [
     { id: 1, name: "Meenakshi Temple", image: "https://i.pinimg.com/originals/7d/e5/a5/7de5a5a7f496eb7ce1d366389c1d2fa7.jpg", description: "Iconic temple in Madurai", category: "Spiritual" },
     { id: 2, name: "Ooty", image: "https://images.hindustantimes.com/img/2023/01/11/1600x900/mugi-jo-6qUltw7SjzM-unsplash_1669276738103_1673425680248_1673425680248.jpg", description: "Queen of Hill Stations", category: "Nature" },
@@ -854,7 +854,7 @@ export const statesData = [
   slug: "telangana",
   description: "The Land of Nizams - Known for heritage, culture, and modern growth.",
   fullDescription: "Telangana offers a mix of historical monuments, forts, and modern urban life centered around Hyderabad.",
-  heroImage: "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1200&h=600&fit=crop",
+  heroImage: "https://www.bontravelindia.com/wp-content/uploads/2023/04/Best-Temples-to-Visit-in-Telangana.jpg",
   attractions: [
     { id: 1, name: "Charminar", image: "https://image3.mouthshut.com/images/Restaurant/Photo/-21944_7079.jpg", description: "Iconic monument", category: "Heritage" },
     { id: 2, name: "Golconda Fort", image: "https://s7ap1.scene7.com/is/image/incredibleindia/golconda-fort-hyderabad-secunderabad-telangana-3-musthead-hero?qlt=82&ts=1726652909392", description: "Historic fort", category: "Heritage" },
@@ -885,7 +885,7 @@ export const statesData = [
   slug: "tripura",
   description: "A Hidden Gem of Northeast - Known for palaces and natural beauty.",
   fullDescription: "Tripura offers a mix of royal heritage, temples, and lush greenery. It is an underrated destination with peaceful surroundings.",
-  heroImage: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&h=600&fit=crop",
+  heroImage: "https://wallpaperaccess.com/full/12477585.jpg",
   attractions: [
     { id: 1, name: "Ujjayanta Palace", image: "https://thetravelshots.com/wp-content/uploads/2023/07/Ujjayanta-Palace-800x450.jpeg", description: "Royal palace museum", category: "Heritage" },
     { id: 2, name: "Neermahal", image: "https://img-cdn.publive.online/fit-in/1280x960/filters:format(webp)/30-stades/media/media_files/nE7cXHzVi1pInLvfqElG.jpg", description: "Water palace", category: "Heritage" },
@@ -916,7 +916,7 @@ export const statesData = [
   slug: "uttar-pradesh",
   description: "The Heartland of India - Rich in history, culture, and spirituality.",
   fullDescription: "Uttar Pradesh is home to iconic landmarks like the Taj Mahal and spiritual cities like Varanasi and Ayodhya.",
-  heroImage: "https://images.unsplash.com/photo-1582550945154-66ea8fff25e1?w=1200&h=600&fit=crop",
+  heroImage: "https://www.travelholicq.com/wp-content/uploads/2019/10/5ea997b76f15c4ddab81ff909c3d1a56-5.jpg",
   attractions: [
     { id: 1, name: "Taj Mahal", image: "https://images.pexels.com/photos/28762052/pexels-photo-28762052/free-photo-of-taj-mahal-with-tourists-and-clear-sky.jpeg?auto=compress&cs=tinysrgb&w=1600", description: "Symbol of love", category: "Heritage" },
     { id: 2, name: "Varanasi", image: "https://www.andbeyond.com/wp-content/uploads/sites/5/iStock_000058485880_XXXLarge.jpg", description: "Spiritual city", category: "Spiritual" },
@@ -947,7 +947,7 @@ export const statesData = [
   slug: "uttarakhand",
   description: "The Land of Gods - Famous for temples, mountains, and adventure.",
   fullDescription: "Uttarakhand offers a mix of spirituality and adventure with destinations like Rishikesh, Kedarnath, and Nainital.",
-  heroImage: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=600&fit=crop",
+  heroImage: "https://wallpapercave.com/wp/wp12200959.jpg",
   attractions: [
     { id: 1, name: "Rishikesh", image: "https://th.bing.com/th/id/R.f2257da2442701aba39349eb1128cc2a?rik=H%2fq3tvjE5DCHDA&riu=http%3a%2f%2frishikesh.net%2fwp-content%2fuploads%2f2019%2f11%2fbigstock-Rishikesh-India-Circa-April-329638714.jpg&ehk=Uptj5ZNmgYbgnXdTnXB21UeyOAYxRd7N2uJYsT4MWHM%3d&risl=1&pid=ImgRaw&r=0", description: "Yoga capital", category: "Spiritual" },
     { id: 2, name: "Haridwar", image: "https://www.tripsavvy.com/thmb/l_8mGpbABJtXL6F7q6Q2vTn2TXs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-450780637_Darkroom-1aa87b7388274f03a8bc49e7b2148f3a.jpg", description: "Holy city", category: "Spiritual" },
@@ -979,7 +979,7 @@ export const statesData = [
   slug: "west-bengal",
   description: "The Land of Culture - Known for heritage, literature, and natural beauty.",
   fullDescription: "West Bengal offers diverse experiences from the Himalayas in Darjeeling to the Sundarbans mangroves and vibrant Kolkata city life.",
-  heroImage: "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=1200&h=600&fit=crop",
+  heroImage: "https://getmyghar.com/wp-content/uploads/2025/07/Feature-Image-3.png",
   attractions: [
     { id: 1, name: "Kolkata", image: "https://cdn.britannica.com/74/127174-050-4E634E93/Victoria-Memorial-Hall-Kolkata-India-West-Bengal.jpg", description: "Cultural capital", category: "City" },
     { id: 2, name: "Darjeeling", image: "https://siliguritourism.com/wp-content/uploads/2024/01/Darjeeling-West-Bengal.jpg", description: "Tea gardens and hills", category: "Nature" },
@@ -1010,7 +1010,7 @@ export const statesData = [
   slug: "andaman-and-nicobar-islands",
   description: "Tropical Paradise - Crystal clear waters, coral reefs, and pristine beaches.",
   fullDescription: "Andaman and Nicobar Islands are known for their turquoise waters, white sandy beaches, and rich marine biodiversity. It is a perfect destination for relaxation, water sports, and nature exploration.",
-  heroImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&h=600&fit=crop",
+  heroImage: "https://wallpapercave.com/wp/wp7333491.jpg",
   attractions: [
     { id: 1, name: "Radhanagar Beach", image: "https://i.pinimg.com/originals/64/8e/b0/648eb0478bb0b4226e6bff4131fc1869.jpg", description: "One of Asia’s best beaches", category: "Beach" },
     { id: 2, name: "Cellular Jail", image: "https://andamantourism.org.in/images/places-to-visit/header/cellular-jail-andaman-tourism-entry-fee-timings-holidays-reviews-header.jpg", description: "Historic colonial prison", category: "Heritage" },
@@ -1041,7 +1041,7 @@ export const statesData = [
   slug: "chandigarh",
   description: "The City Beautiful - A well-planned modern city with gardens and architecture.",
   fullDescription: "Chandigarh is India’s first planned city designed by Le Corbusier. Known for its greenery, lakes, and urban planning.",
-  heroImage: "https://images.unsplash.com/photo-1593691509543-c55fb32c7f49?w=1200&h=600&fit=crop",
+  heroImage: "https://1.bp.blogspot.com/-tDom5wnnmbY/W8bLJWtZ7KI/AAAAAAAAAC8/OfvnXz9Lgq8LaMt7aXhNY0Gs5-1qE1QtACLcBGAs/s1600/cdghawk.jpg",
   attractions: [
     { id: 1, name: "Rock Garden", image: "https://speakingaloud.in/wp-content/uploads/2017/12/Chandigarh-Rock-Garden-Sculptures.jpg", description: "Unique sculptures made from waste", category: "Art" },
     { id: 2, name: "Sukhna Lake", image: "https://media.istockphoto.com/id/1459023308/photo/sunset-at-sukhna-lake-chandigarh.jpg?s=612x612&w=0&k=20&c=uFK1dZDYCcRrBIEM_5RsRmo8fvr2zjkEGgDIOZKiIbE=", description: "Popular leisure spot", category: "Nature" },
@@ -1072,7 +1072,7 @@ export const statesData = [
   slug: "dadra-and-nagar-haveli",
   description: "Nature Retreat - Lush greenery, tribal culture, and serene landscapes.",
   fullDescription: "Dadra and Nagar Haveli is known for its natural beauty, tribal heritage, and peaceful environment, making it a great escape from city life.",
-  heroImage: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=600&fit=crop",
+  heroImage: "https://365atlantatraveler.com/wp-content/uploads/2015/03/2015-01-06-12.54.21.jpg",
   attractions: [
     { id: 1, name: "Silvassa", image: "https://s7ap1.scene7.com/is/image/incredibleindia/1-baps-swaminarayan-temple-silvassa-dadra-and-nagar-haveli-2-city-hero?qlt=82&ts=1726737660598", description: "Capital town", category: "City" },
     { id: 2, name: "Vanganga Lake Garden", image: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2020/10/2020100335-1.jpg", description: "Scenic garden and lake", category: "Nature" },
@@ -1103,7 +1103,7 @@ export const statesData = [
   slug: "daman-and-diu",
   description: "Coastal Escape - Beaches, forts, and Portuguese heritage.",
   fullDescription: "Daman and Diu offer a mix of scenic beaches, colonial architecture, and peaceful coastal vibes, ideal for a relaxed vacation.",
-  heroImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&h=600&fit=crop",
+  heroImage: "https://1.bp.blogspot.com/-mRWxNhLdJaE/XbwSbW8UvKI/AAAAAAAADTc/9ZpjUrsLoP8JnCHOhnXtmKZJkmJs8gVfwCLcBGAsYHQ/s1600/daman-and-diu.jpg",
   attractions: [
     { id: 1, name: "Diu Fort", image: "https://indiano.travel/wp-content/uploads/2022/09/Diu-Fort-photo.jpg", description: "Historic Portuguese fort", category: "Heritage" },
     { id: 2, name: "Nagoa Beach", image: "https://tse1.mm.bing.net/th/id/OIP.ruim_QzmUPi1HxwcFdiOAAHaFF?pid=ImgDet&w=474&h=325&rs=1&o=7&rm=3", description: "Popular beach", category: "Beach" },
@@ -1134,7 +1134,7 @@ export const statesData = [
   slug: "delhi",
   description: "The Capital of India - A blend of history, culture, and modern life.",
   fullDescription: "Delhi is a vibrant city with historical monuments, markets, and modern attractions. It reflects India's past and present.",
-  heroImage: "https://images.unsplash.com/photo-1582550945154-66ea8fff25e1?w=1200&h=600&fit=crop",
+  heroImage: "https://lonetravellers.com/wp-content/uploads/2025/02/new-delhi.main_-1024x683.jpg",
   attractions: [
     { id: 1, name: "Red Fort", image: "https://imgcld.yatra.com/ytimages/image/upload/v1461929855/Delhi-Red_Fort.jpg", description: "Historic Mughal fort", category: "Heritage" },
     { id: 2, name: "India Gate", image: "https://cdn.britannica.com/37/189837-050-F0AF383E/New-Delhi-India-War-Memorial-arch-Sir.jpg", description: "War memorial", category: "Heritage" },
@@ -1166,7 +1166,7 @@ export const statesData = [
   slug: "jammu-and-kashmir",
   description: "Paradise on Earth - Snow-capped mountains, lakes, and valleys.",
   fullDescription: "Jammu & Kashmir is known for its breathtaking landscapes, gardens, and spiritual destinations.",
-  heroImage: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=600&fit=crop",
+  heroImage: "https://peakvisor.com/img/news/Jammu-and-Kashmir-Srinagar.jpg",
   attractions: [
     { id: 1, name: "Srinagar", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/48/1c/4c/getlstd-property-photo.jpg?w=1200&h=1200&s=1", description: "Dal Lake and houseboats", category: "Nature" },
     { id: 2, name: "Gulmarg", image: "https://www.tourmyindia.com/states/jammu-kashmir/image/gulmarg-gondola-jamm-kashmir1.jpg", description: "Ski resort", category: "Adventure" },
@@ -1198,7 +1198,7 @@ export const statesData = [
   slug: "ladakh",
   description: "The Land of High Passes - Rugged mountains and monasteries.",
   fullDescription: "Ladakh is known for its dramatic landscapes, high-altitude lakes, and Buddhist monasteries.",
-  heroImage: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=600&fit=crop",
+  heroImage: "https://cdn.pixabay.com/photo/2022/10/25/13/41/ladakh-7545887_1280.jpg",
   attractions: [
     { id: 1, name: "Pangong Lake", image: "https://www.clubmahindra.com/blog/images/Pangong-Lake-Ladakh-resized.jpg", description: "Famous blue lake", category: "Nature" },
     { id: 2, name: "Leh", image: "https://wallpapercave.com/wp/wp7029248.jpg", description: "Capital town", category: "City" },
@@ -1229,7 +1229,7 @@ export const statesData = [
   slug: "lakshadweep",
   description: "Coral Paradise - Pristine islands with clear lagoons.",
   fullDescription: "Lakshadweep is known for its untouched beaches, coral reefs, and peaceful environment.",
-  heroImage: "https://www.teahub.io/photos/full/313-3135502_famous-beach-in-lakshadweep.jpg",
+  heroImage: "https://www.holidify.com/images/compressed/dest_wiki_7722.jpg",
   attractions: [
     { id: 1, name: "Agatti Island", image: "https://manafaru.resortmaldives.net/storage/media/3605/conversions/10.JA-Manafaru-Hero-large.jpg", description: "Gateway island", category: "Beach" },
     { id: 2, name: "Bangaram Island", image: "https://notednames.com/ImgPlacesBig/PBigimg_hpl.jpg", description: "Luxury island stay", category: "Beach" },
@@ -1260,7 +1260,7 @@ export const statesData = [
   slug: "puducherry",
   description: "The French Riviera of the East - Beaches, culture, and colonial charm.",
   fullDescription: "Puducherry blends French colonial architecture with Indian culture, offering peaceful beaches and spiritual retreats.",
-  heroImage: "https://wallpaperbat.com/img/8636128-puducherry-vogue-india.jpg",
+  heroImage: "https://travelgallivant.com/wp-content/uploads/2020/10/puducherry-sea-min.jpg",
   attractions: [
     { id: 1, name: "Promenade Beach", image: "https://www.trawell.in/admin/images/upload/09285665Pondicherry_Promenade_Beach_Main.jpg", description: "Seaside walkway", category: "Beach" },
     { id: 2, name: "Auroville", image: "https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2024/12/20131127/the_drone_view_of_auroville.jpeg", description: "Spiritual township", category: "Spiritual" },
