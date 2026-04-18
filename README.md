@@ -31,19 +31,18 @@ Add screenshots here:
 
 
 **/preview/state-page.png**
+<img width="590" height="817" alt="Screenshot 2026-04-18 134939" src="https://github.com/user-attachments/assets/3c168c3b-75c4-48c5-a0c4-c6ce427cf26d" />
 
 <img width="609" height="810" alt="Screenshot 2026-04-18 135022" src="https://github.com/user-attachments/assets/dba9e5ca-186a-438f-b833-68ded20b53cd" />
 
-<img width="590" height="817" alt="Screenshot 2026-04-18 134939" src="https://github.com/user-attachments/assets/3c168c3b-75c4-48c5-a0c4-c6ce427cf26d" />
 
 
 **/preview/place-details.png**
+<img width="888" height="736" alt="Screenshot 2026-04-18 181925" src="https://github.com/user-attachments/assets/6fbe5fce-c323-491c-b863-bec6c90a3deb" />
 
 <img width="788" height="805" alt="Screenshot 2026-04-18 181940" src="https://github.com/user-attachments/assets/a91f8c7c-49d0-41e9-bf9b-8aaa59cd8429" />
 
 <img width="772" height="607" alt="Screenshot 2026-04-18 181957" src="https://github.com/user-attachments/assets/86893524-aa9d-4ce5-a0b2-8f668c7d2852" />
-
-<img width="888" height="736" alt="Screenshot 2026-04-18 181925" src="https://github.com/user-attachments/assets/6fbe5fce-c323-491c-b863-bec6c90a3deb" />
 
 
 **/preview/categories-page.png**
