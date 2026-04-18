@@ -283,7 +283,7 @@ export const statesData = [
   slug: "gujarat",
   description: "The Land of Legends - Gujarat is known for its rich heritage, wildlife, and vibrant festivals.",
   fullDescription: "Gujarat, located on India’s western coast, is a land of vibrant culture, ancient heritage, and stunning landscapes. Famous for the Gir National Park, home to the Asiatic lion, and the white salt desert of the Rann of Kutch, it offers unique natural wonders. The state boasts architectural marvels like the Sun Temple at Modhera, Somnath Temple, and the UNESCO‑listed Champaner‑Pavagadh site. Its rich traditions are celebrated through colorful festivals such as Navratri, showcasing dance, music, and local crafts. Bustling cities like Ahmedabad blend modern industry with historic charm, including the Sabarmati Ashram of Mahatma Gandhi. A destination of wildlife, spirituality, and culture, Gujarat invites travelers to experience India’s timeless diversity.",
-  heroImage: "https://www.tripsavvy.com/thmb/FyAG1XmsDpY4XUU80y2VZVvYT3s=/4007x2654/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-168637506-547069694b6c413ca41cc63e24a1ec29.jpg",
+  heroImage: "https://deih43ym53wif.cloudfront.net/jain-temples-on-top-shatrunjaya-hill-gujarat-india-shutterstock_407717476.jpg_dcb0b5f7e6.jpg",
   attractions: [
     {
       id: 1,
