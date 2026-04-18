@@ -182,7 +182,7 @@ const AboutPage = () => {
         <div className="cta-content">
           <h2>Ready to Explore India?</h2>
           <p>Start your journey with Travel Bharat today and discover the magic of India</p>
-          <button className="cta-button">Begin Your Adventure</button>
+          <button className="cta-button" onClick={'/categories'}>Begin Your Adventure</button>
         </div>
       </section>
 
