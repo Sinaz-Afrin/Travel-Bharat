@@ -14,12 +14,13 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
 // CORS configuration
 app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://travelbharath.netlify.app"
+      "https://thetravelbharat.netlify.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
