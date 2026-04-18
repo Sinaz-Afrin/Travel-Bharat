@@ -46,24 +46,24 @@ const AboutPage = () => {
   const guides = [
     {
       id: 1,
-      name: 'Rajesh Kumar',
-      role: 'Cultural Specialist',
-      description: 'Expert in Indian heritage with 10+ years of experience exploring temples, forts, and historical sites.',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop'
+      name: 'Ramesh S',
+      role: 'Lead Explorer',
+      description: "With a deep love for India's hidden gems and a commitment to responsible tourism, Ramesh guides our guests through incredible journeys, ensuring every tour reflects our dedication to quality and safety.",
+      image: '#'
     },
     {
       id: 2,
-      name: 'Priya Sharma',
-      role: 'Adventure Coordinator',
-      description: 'Passionate about trekking and outdoor activities across the Himalayas and Western Ghats.',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop'
+      name: 'Rajeshwar T',
+      role: 'Cultural Specialist',
+      description: "Ram shares the magic of this incredible country with the world. His storytelling brings to life the history and culture, creating journeys that resonate with the soul.",
+      image: '#'
     },
     {
       id: 3,
-      name: 'Arun Patel',
-      role: 'Wildlife Enthusiast',
-      description: 'Specializes in wildlife photography and nature tours across India\'s national parks.',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop'
+      name: 'Priyanka P',
+      role: 'Adventure Coordinator',
+      description: 'Priya ensures every adventure is seamless and exciting. From trekking routes to local experiences, she curates trips that are both thrilling and safe for everyone.',
+      image: '#'
     }
   ];
 
