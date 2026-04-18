@@ -21,7 +21,6 @@ https://travelbharath.netlify.app/
 
 Add screenshots here:
 
-```bash
 /preview/homepage.png
 <img width="1572" height="848" alt="Screenshot 2026-04-18 134330" src="https://github.com/user-attachments/assets/214c5837-a50e-43b3-bd06-c31557fe4e6a" />
 <img width="1555" height="850" alt="Screenshot 2026-04-18 134412" src="https://github.com/user-attachments/assets/2e66e1b9-e3d5-440d-8998-0b2f567939df" />
@@ -43,8 +42,6 @@ Add screenshots here:
 
 /preview/gallery page.png
 <img width="619" height="798" alt="Gallery page png" src="https://github.com/user-attachments/assets/ee9171a6-21b1-4a72-9af3-f9e5bbd7e143" />
-
-```
 
 ---
 
