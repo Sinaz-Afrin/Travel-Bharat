@@ -17,6 +17,7 @@
   border-radius: 0.75rem;
   padding: 0.5rem 1rem;
   transition: all 0.3s ease;
+  width: 20vw;
 }
 
 .search-bar-container:focus-within {

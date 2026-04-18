@@ -59,7 +59,7 @@ export const statesData = [
   state: "Arunachal Pradesh",
   slug: "arunachal-pradesh",
   description: "The Land of Rising Sun - A pristine paradise of mountains, monasteries, and tribal culture.",
-  fullDescription: "Arunachal Pradesh is India's northeastern gem, known for its untouched natural beauty, snow-capped mountains, and Buddhist monasteries. It offers adventure, spirituality, and cultural richness.",
+  fullDescription: "The Land of Rising Sun - A pristine paradise of mountains, monasteries, and tribal culture. Arunachal Pradesh, known as the “Land of Dawn-Lit Mountains,” is a breathtaking state in India’s northeast, celebrated for its snow-clad Himalayan peaks, lush valleys, and pristine rivers. Rich in cultural diversity, it is home to numerous tribes with vibrant traditions, colorful festivals, and exquisite handicrafts. The region offers thrilling adventures like trekking, rafting, and wildlife exploration, while iconic attractions such as Tawang Monastery, Namdapha National Park, and Ziro Valley draw travelers from around the world. A perfect blend of natural beauty and cultural heritage, Arunachal Pradesh promises serenity, discovery, and unforgettable experiences for every visitor.",
   heroImage: "https://api.breakbag.com/storage/images/adobestock_443470910-sh4vtchjasv839fa-1720753650314.jpg",
   attractions: [
     {
@@ -113,7 +113,7 @@ export const statesData = [
   state: "Assam",
   slug: "assam",
   description: "Gateway to Northeast India - Famous for tea gardens, wildlife, and the mighty Brahmaputra river.",
-  fullDescription: "Assam is known for its lush tea plantations, rich biodiversity, and vibrant culture. It is home to Kaziranga National Park and unique festivals like Bihu.",
+  fullDescription: "Assam, Gateway to Northeast India - Famous for tea gardens, wildlife, and the mighty Brahmaputra river. The “Land of Red River and Blue Hills,” is a vibrant state in India’s northeast, nestled along the Brahmaputra and Barak valleys. Known worldwide for its Assam tea and silk, the region also boasts rich biodiversity with Kaziranga and Manas National Parks, home to the famed one‑horned rhinoceros. Its cultural heritage shines through ancient temples like Kamakhya, historic monuments such as Rang Ghar, and colorful festivals including Bihu. Guwahati, the bustling gateway city, connects travelers to serene river islands like Majuli and lush tea gardens. Assam’s history spans dynasties from Kamarupa to the Ahom kingdom, leaving behind architectural marvels and traditions. A land of natural beauty, wildlife, and living culture, Assam offers visitors an unforgettable blend of heritage and adventure.",
   heroImage: "https://wallpapercave.com/wp/wp3784612.jpg",
   attractions: [
     {
@@ -157,7 +157,7 @@ export const statesData = [
   state: "Bihar",
   slug: "bihar",
   description: "Land of Ancient Empires - A historic region rich in culture, religion, and education.",
-  fullDescription: "Bihar is one of the oldest inhabited regions in the world, known for its role in Buddhism and ancient Indian empires. It houses Nalanda University ruins and Bodh Gaya.",
+  fullDescription: "Bihar, often called the “Cradle of Indian Civilization,” is a land steeped in history and culture, located in eastern India along the fertile plains of the Ganges. It is home to ancient sites like Nalanda and Vikramshila universities, and Bodh Gaya, where the Buddha attained enlightenment. The state boasts rich heritage through monuments such as Mahabodhi Temple, Rajgir, and the ruins of Pataliputra. Bihar’s vibrant festivals, folk traditions, and Madhubani paintings showcase its living culture. Wildlife sanctuaries and natural attractions like Valmiki Tiger Reserve add to its charm. A blend of spirituality, history, and nature, Bihar offers travelers a journey through India’s timeless legacy.",
   heroImage: "https://wallpaperaccess.com/full/9400920.jpg",
   attractions: [
     {
@@ -192,7 +192,7 @@ export const statesData = [
   state: "Chhattisgarh",
   slug: "chhattisgarh",
   description: "The Rice Bowl of India - Known for waterfalls, forests, and tribal culture.",
-  fullDescription: "Chhattisgarh is rich in natural beauty and tribal heritage. The state is famous for its waterfalls, caves, and dense forests.",
+  fullDescription: "Chhattisgarh, known as the “Rice Bowl of India,” is a central Indian state rich in natural beauty and tribal heritage. Its lush forests, waterfalls, and wildlife sanctuaries like Barnawapara and Udanti‑Sitanadi make it a haven for nature lovers. The state is dotted with ancient temples such as Bhoramdeo and Rajim, alongside historic sites like Sirpur that reflect its cultural depth. Tribal traditions, vibrant festivals, and handicrafts showcase its living heritage. Bustling cities like Raipur blend modern growth with cultural charm, while serene destinations like Chitrakote Falls offer breathtaking escapes. A land of history, culture, and natural wonders, Chhattisgarh invites travelers to discover India’s hidden heart.",
   heroImage: "https://mediaim.expedia.com/destination/1/94b5d0a96720188ea177d717e6a60e45.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh",
   attractions: [
     {
@@ -227,7 +227,7 @@ export const statesData = [
   state: "Goa",
   slug: "goa",
   description: "India’s Beach Paradise - Goa is famous for its golden beaches, vibrant nightlife, and Portuguese heritage.",
-  fullDescription: "Goa is one of India’s top tourist destinations, offering a mix of scenic beaches, water sports, colonial architecture, and lively culture. From peaceful south Goa to party-filled north Goa, it caters to every type of traveler.",
+  fullDescription: "Goa, fondly called the “Pearl of the Orient,” is India’s smallest state yet one of its most vibrant, nestled along the Arabian Sea with golden beaches and swaying palms. Its rich history reflects over 450 years of Portuguese rule, seen in grand churches, forts, and Indo‑Portuguese architecture. The state is famed for lively nightlife, colorful festivals like Carnival, and a unique blend of Eastern and Western cultures. Natural wonders such as Dudhsagar Falls, lush forests of the Western Ghats, and diverse wildlife sanctuaries add to its charm. Adventure seekers enjoy water sports at Baga and Calangute, while heritage lovers explore Old Goa’s UNESCO‑listed Basilica of Bom Jesus. A paradise of sun, sand, spirituality, and culture, Goa offers travelers an unforgettable coastal escape. ",
   heroImage: "https://wallpapers.com/images/hd/goa-beach-pictures-bhq7l82yir5f5mvt.jpg",
   attractions: [
     {
@@ -282,7 +282,7 @@ export const statesData = [
   state: "Gujarat",
   slug: "gujarat",
   description: "The Land of Legends - Gujarat is known for its rich heritage, wildlife, and vibrant festivals.",
-  fullDescription: "Gujarat offers a unique mix of history, culture, and natural wonders. From the Rann of Kutch to Gir National Park, it is a diverse and colorful state.",
+  fullDescription: "Gujarat, located on India’s western coast, is a land of vibrant culture, ancient heritage, and stunning landscapes. Famous for the Gir National Park, home to the Asiatic lion, and the white salt desert of the Rann of Kutch, it offers unique natural wonders. The state boasts architectural marvels like the Sun Temple at Modhera, Somnath Temple, and the UNESCO‑listed Champaner‑Pavagadh site. Its rich traditions are celebrated through colorful festivals such as Navratri, showcasing dance, music, and local crafts. Bustling cities like Ahmedabad blend modern industry with historic charm, including the Sabarmati Ashram of Mahatma Gandhi. A destination of wildlife, spirituality, and culture, Gujarat invites travelers to experience India’s timeless diversity.",
   heroImage: "https://www.tripsavvy.com/thmb/FyAG1XmsDpY4XUU80y2VZVvYT3s=/4007x2654/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-168637506-547069694b6c413ca41cc63e24a1ec29.jpg",
   attractions: [
     {
@@ -326,7 +326,7 @@ export const statesData = [
   state: "Haryana",
   slug: "haryana",
   description: "The Green Land of India - Known for agriculture, heritage sites, and proximity to Delhi.",
-  fullDescription: "Haryana blends modern infrastructure with historical significance. It offers cultural experiences, pilgrimage sites, and urban attractions near the capital region.",
+  fullDescription: "Haryana, located in northwestern India, is a dynamic state carved out of Punjab in 1966, known for its rich history and rapid development. The state capital is Chandigarh, while Gurgaon and Faridabad form part of the National Capital Region and serve as major industrial and technology hubs. Haryana’s landscape features fertile plains, ancient monuments, and vibrant cultural heritage. It is home to numerous villages, towns, and special economic zones that drive its strong economy. The state ranks high in human development and boasts one of India’s highest per‑capita incomes. A blend of tradition and modernity, Haryana offers travelers heritage sites, natural beauty, and a glimpse of India’s progress. ",
   heroImage: "https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/kurukshetra-haryana.jpg",
   attractions: [
     {
@@ -361,7 +361,7 @@ export const statesData = [
   state: "Himachal Pradesh",
   slug: "himachal-pradesh",
   description: "The Land of Snow - A paradise of mountains, valleys, and adventure.",
-  fullDescription: "Himachal Pradesh is a dream destination for nature lovers and adventure seekers. With snow-capped mountains, hill stations, and trekking routes, it offers breathtaking experiences.",
+  fullDescription: "Himachal Pradesh, nestled in the Western Himalayas, is famed as the “Land of Gods” for its countless temples and spiritual heritage. Its snow‑clad peaks, lush valleys, and perennial rivers create breathtaking landscapes ideal for nature lovers. Popular hill stations like Shimla, Manali, Dharamshala, and Dalhousie attract visitors year‑round with scenic beauty and adventure. The state offers thrilling activities such as trekking, skiing, rafting, and paragliding, with Bir Billing recognized globally for aero sports. Rich biodiversity flourishes in national parks like the UNESCO‑listed Great Himalayan National Park, home to rare species including the snow leopard. A blend of culture, festivals, handicrafts, and natural wonders, Himachal Pradesh promises travelers serenity, adventure, and unforgettable experiences.",
   heroImage: "https://wallpaperaccess.com/full/2185184.jpg",
   attractions: [
     {
@@ -406,7 +406,7 @@ export const statesData = [
   state: "Jharkhand",
   slug: "jharkhand",
   description: "The Land of Forests - Known for waterfalls, wildlife, and tribal culture.",
-  fullDescription: "Jharkhand is rich in minerals, forests, and scenic beauty. The state is home to numerous waterfalls, hills, and tribal communities.",
+  fullDescription: "Jharkhand, carved out of Bihar in 2000, is a vibrant eastern Indian state known for its rich tribal culture and natural beauty. Its landscape is adorned with dense forests, rolling hills, and waterfalls, making it a paradise for eco‑tourism. The state is home to wildlife sanctuaries and national parks like Betla, showcasing diverse flora and fauna. Historic sites such as the ancient temples of Deoghar and the rock paintings of Isko highlight its cultural heritage. Industrial cities like Ranchi, Jamshedpur, and Dhanbad reflect Jharkhand’s modern growth alongside tradition. A blend of spirituality, adventure, and scenic charm, Jharkhand offers travelers an authentic experience of India’s heartland.",
   heroImage: "https://travel12go.in/wp-content/uploads/2021/08/best-time-to-visit-Jharkhand-01.webp",
   attractions: [
     {
@@ -441,7 +441,7 @@ export const statesData = [
   state: "Karnataka",
   slug: "karnataka",
   description: "The Land of Heritage and Innovation - A mix of ancient ruins, lush forests, and modern cities.",
-  fullDescription: "Karnataka offers a diverse travel experience with UNESCO heritage sites, hill stations, wildlife, and vibrant cities like Bengaluru. It blends tradition with modernity beautifully.",
+  fullDescription: "Karnataka, located in southern India, is a diverse state known for its rich history, vibrant culture, and stunning landscapes. It is home to UNESCO World Heritage sites like Hampi and Pattadakal, showcasing the grandeur of ancient empires. Bustling Bengaluru, the capital, is India’s tech hub, while Mysuru enchants with its palaces and traditions. The Western Ghats offer lush forests, waterfalls, and wildlife sanctuaries, making it a paradise for nature lovers. Coastal Karnataka charms visitors with serene beaches and temples, while Coorg and Chikmagalur are famed for coffee plantations. A blend of heritage, spirituality, and modern dynamism, Karnataka promises travelers unforgettable experiences.",
   heroImage: "https://images8.alphacoders.com/540/540007.jpg",
   attractions: [
     { id: 1, name: "Hampi", image: "https://karnatakatourism.org/wp-content/uploads/2020/05/P9-Gallery.jpg", description: "Ancient ruins of Vijayanagara Empire", category: "Heritage" },
@@ -474,7 +474,7 @@ export const statesData = [
   state: "Kerala",
   slug: "kerala",
   description: "God's Own Country - A paradise of backwaters, greenery, and beaches.",
-  fullDescription: "Kerala is famous for its serene backwaters, hill stations, wildlife, and ayurvedic wellness. It offers one of the most relaxing travel experiences in India.",
+  fullDescription: "Kerala, often called “God’s Own Country,” is a lush paradise on India’s Malabar Coast, famed for its serene backwaters, palm‑lined beaches, and misty hill stations. The state is rich in cultural heritage, with classical dance forms like Kathakali and Mohiniyattam, and vibrant festivals such as Onam. Its wildlife sanctuaries and national parks, including Periyar and Wayanad, showcase diverse flora and fauna. Historic sites like Fort Kochi and Padmanabhaswamy Temple reflect Kerala’s layered past of trade and tradition. The spice gardens, tea plantations, and Ayurvedic wellness retreats add unique flavors to its tourism appeal. A harmonious blend of nature, culture, and tradition, Kerala offers travelers tranquility, adventure, and rejuvenation.",
   heroImage: "https://media.istockphoto.com/id/1445646944/photo/travel-tourism-kerala-background-houseboat-on-kerala-backwaters-kerala-india.jpg?s=612x612&w=0&k=20&c=QxSWjSQi7OwMXVLLUN_aRy--r2XPtZ1L3X1ZdIdWutE=",
   attractions: [
     { id: 1, name: "Alleppey Backwaters", image: "https://cdn.pixabay.com/photo/2017/10/04/17/51/alleppey-2817032_1280.jpg", description: "Houseboat cruises through scenic canals", category: "Nature" },
@@ -507,7 +507,7 @@ export const statesData = [
   state: "Madhya Pradesh",
   slug: "madhya-pradesh",
   description: "The Heart of India - Known for wildlife, temples, and heritage.",
-  fullDescription: "Madhya Pradesh offers a blend of ancient temples, UNESCO sites, and dense forests. It is famous for tiger reserves and historical monuments.",
+  fullDescription: "Madhya Pradesh, fondly called the “Heart of India,” is a central state renowned for its rich cultural heritage, natural beauty, and vibrant traditions. It is home to UNESCO World Heritage Sites like Khajuraho’s temples, the Buddhist monuments of Sanchi, and the prehistoric rock shelters of Bhimbetka. Wildlife enthusiasts flock to its famous tiger reserves such as Kanha, Bandhavgarh, and Pench, while the Narmada River and marble rocks of Bhedaghat offer breathtaking scenery. Historic forts like Gwalior and Mandu, along with sacred sites like Ujjain and Omkareshwar, highlight its spiritual and architectural grandeur. The state also celebrates music, dance, and colorful festivals, with Gwalior recognized globally as a “City of Music.” A perfect blend of history, spirituality, and adventure, Madhya Pradesh invites travelers to discover the soul of India. ",
   heroImage: "https://www.fabhotels.com/blog/wp-content/uploads/2019/03/Gwalior-Fort.jpg",
   attractions: [
     { id: 1, name: "Khajuraho Temples", image: "https://www.clubmahindra.com/blog/media/section_images/desktop23-f54e6ac343dbfab.jpg", description: "Famous for intricate carvings", category: "Heritage" },
@@ -538,7 +538,7 @@ export const statesData = [
   state: "Maharashtra",
   slug: "maharashtra",
   description: "The Gateway of India - A blend of modern cities, forts, and beaches.",
-  fullDescription: "Maharashtra is home to bustling Mumbai, hill stations, forts, caves, and beaches. It offers both urban excitement and natural beauty.",
+  fullDescription: "Maharashtra, India’s second‑most populous state, is a vibrant blend of history, culture, and modernity. Its capital Mumbai, the “City of Dreams,” is famed for Bollywood, bustling markets, and the iconic Gateway of India. The state is home to UNESCO World Heritage Sites like Ajanta and Ellora caves, showcasing ancient art and architecture. Scenic hill stations such as Mahabaleshwar and Lonavala, along with beaches like Alibaug, offer natural retreats. Pilgrimage centers including Shirdi and Pandharpur highlight its spiritual heritage, while Pune thrives as a cultural and educational hub. A land of forts, festivals, and diverse landscapes, Maharashtra promises travelers unforgettable experiences of India’s soul.",
   heroImage: "https://media.istockphoto.com/id/1307189136/photo/gateway-of-india-mumbai-maharashtra-monument-landmark-famous-place-magnificent-view-without.jpg?b=1&s=170667a&w=0&k=20&c=BLP7ZQkbok5etYvEF3obeqaG-5Sv06_kaqPfS8z9CS4=",
   attractions: [
     { id: 1, name: "Mumbai", image: "https://th.bing.com/th/id/R.704f8db70eaf3a8cf76cf636f293ed7f?rik=HmSif9hKb5i9kA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f1%2f14%2fMumbai_Skyline_at_Night.jpg&ehk=YrQ3t9VgPp9gZLKBWIjg%2fMxu4E3yihhKozIFjP8PTOI%3d&risl=&pid=ImgRaw&r=0", description: "Financial capital of India", category: "City" },
@@ -569,7 +569,7 @@ export const statesData = [
   state: "Manipur",
   slug: "manipur",
   description: "The Jewel of India - Known for its natural beauty and culture.",
-  fullDescription: "Manipur is a hidden gem in Northeast India with lakes, hills, and rich traditions. It is famous for Loktak Lake and classical dance forms.",
+  fullDescription: "Manipur, often called the “Jewel of India,” is a picturesque state in the northeast, blessed with rolling hills, lush valleys, and serene lakes. Its capital Imphal is known for historic sites like Kangla Fort and vibrant local markets. The state is rich in cultural heritage, with classical dance forms such as Manipuri Raas Leela and colorful festivals like Lai Haraoba. Loktak Lake, with its unique floating phumdis, and Keibul Lamjao National Park, home to the endangered Sangai deer, are major attractions. Adventure seekers enjoy trekking, hand‑gliding, and exploring pristine landscapes. A blend of natural beauty, tradition, and adventure, Manipur offers travelers an enchanting experience of India’s northeast.",
   heroImage: "https://www.tourmyindia.com/blog/wp-content/uploads/2017/07/Imphal.jpg",
   attractions: [
     { id: 1, name: "Loktak Lake", image: "https://kasifiz.com/english/wp-content/uploads/2025/01/loktak-golu-1024x683-1020x600.jpg", description: "Floating lake with phumdis", category: "Nature" },
@@ -600,7 +600,7 @@ export const statesData = [
   state: "Meghalaya",
   slug: "meghalaya",
   description: "The Abode of Clouds - Famous for waterfalls, caves, and living root bridges.",
-  fullDescription: "Meghalaya is one of India’s most scenic states, known for its lush greenery, heavy rainfall, and unique natural wonders like living root bridges and caves.",
+  fullDescription: "Meghalaya, meaning the “Abode of Clouds,” is a breathtaking state in northeast India, famed for its misty mountains, lush valleys, and record‑breaking rainfall. Its capital Shillong, often called the “Scotland of the East,” charms visitors with colonial heritage and vibrant culture. The state is home to natural wonders like Nohkalikai Falls, Umiam Lake, and the unique living root bridges near Cherrapunji. Rich biodiversity flourishes in Nokrek Biosphere Reserve and Balpakram National Park, making it a paradise for nature lovers. Tribal traditions of the Khasi, Garo, and Jaintia people add depth through colorful festivals, dances, and matrilineal customs. A blend of scenic beauty, adventure, and culture, Meghalaya offers travelers an enchanting gateway to India’s northeast.",
   heroImage: "https://wallpaperaccess.com/full/6170728.jpg",
   attractions: [
     { id: 1, name: "Cherrapunji", image: "https://i.ytimg.com/vi/QT2igFrGQBI/maxresdefault.jpg", description: "One of the wettest places on Earth", category: "Nature" },
@@ -633,7 +633,7 @@ export const statesData = [
   state: "Mizoram",
   slug: "mizoram",
   description: "The Land of Blue Mountains - A peaceful state with rolling hills and vibrant culture.",
-  fullDescription: "Mizoram is known for its scenic hills, bamboo forests, and rich tribal traditions. It offers a calm and offbeat travel experience.",
+  fullDescription: "Mizoram, the “Land of the Hill People,” is a picturesque state in northeast India, blessed with rolling hills, verdant forests, and serene lakes. Its capital Aizawl is a vibrant city that reflects the unique blend of tribal traditions and modern life. The state is renowned for its rich cultural heritage, colorful festivals, and warm hospitality of the Mizo people. Natural attractions like Tam Dil Lake, Phawngpui (Blue Mountain), and Vantawng Falls make it a paradise for nature lovers. Adventure seekers can enjoy trekking, wildlife exploration, and eco‑tourism across its pristine landscapes. A harmonious blend of culture, nature, and tranquility, Mizoram offers travelers an enchanting gateway to India’s northeast.",
   heroImage: "https://images.herzindagi.info/image/2023/Apr/offbeat-places-in-mizoram.jpg",
   attractions: [
     { id: 1, name: "Aizawl", image: "https://images.unsplash.com/photo-1744262254593-989e765a8fcb", description: "Capital city with scenic views", category: "City" },
@@ -665,7 +665,7 @@ export const statesData = [
   state: "Nagaland",
   slug: "nagaland",
   description: "The Land of Festivals - Rich in tribal culture and traditions.",
-  fullDescription: "Nagaland is known for its colorful festivals, especially Hornbill Festival, and its diverse tribal heritage.",
+  fullDescription: "Nagaland, nestled in India’s northeast, is a land of rolling hills, vibrant tribes, and rich cultural traditions. Its capital Kohima is known for the historic World War II cemetery and scenic landscapes. The state is home to 16 major tribes, each with unique customs, dances, and colorful festivals, with the Hornbill Festival being the most celebrated. Nature lovers can explore Dzukou Valley, Japfu Peak, and lush forests teeming with biodiversity. Handicrafts, folk music, and traditional cuisine reflect Nagaland’s living heritage. A blend of culture, history, and natural beauty, Nagaland offers travelers an enchanting gateway to India’s tribal heartland.",
   heroImage: "https://s7ap1.scene7.com/is/image/incredibleindia/naga-heritage-village-kohima-nagaland-1-attr-hero?qlt=82&ts=1727012342520",
   attractions: [
     { id: 1, name: "Kohima", image: "https://ik.imagekit.io/shortpedia/Voices/wp-content/uploads/2021/09/mokochung@tripoto.jpg", description: "Capital city with history", category: "City" },
@@ -696,7 +696,7 @@ export const statesData = [
   state: "Odisha",
   slug: "odisha",
   description: "The Soul of India - Known for temples, beaches, and tribal culture.",
-  fullDescription: "Odisha is famous for its ancient temples like Konark Sun Temple, beautiful beaches, and classical dance forms like Odissi.",
+  fullDescription: "Odisha, located on India’s eastern coast, is a land of ancient temples, vibrant culture, and scenic natural beauty. The state is famed for the UNESCO‑listed Sun Temple at Konark and the sacred Jagannath Temple in Puri, one of the Char Dham pilgrimage sites. Its coastline along the Bay of Bengal offers golden beaches, while Chilika Lake, Asia’s largest brackish water lagoon, is a paradise for bird lovers. Odisha’s tribal heritage, classical dance Odissi, and colorful festivals like Rath Yatra showcase its living traditions. Wildlife sanctuaries such as Simlipal and Bhitarkanika highlight its rich biodiversity. A blend of spirituality, culture, and nature, Odisha invites travelers to experience India’s timeless charm.",
   heroImage: "https://wallpaperaccess.com/full/9403383.png",
   attractions: [
     { id: 1, name: "Konark Sun Temple", image: "https://www.tripvaani.com/wp-content/uploads/2020/05/Konark-Sun-Temple-or-Black-Pagoda-The-Chariot-of-Sun.jpg", description: "UNESCO heritage temple", category: "Heritage" },
@@ -727,7 +727,7 @@ export const statesData = [
   state: "Punjab",
   slug: "punjab",
   description: "The Land of Five Rivers - Known for culture, food, and spirituality.",
-  fullDescription: "Punjab is famous for its vibrant culture, delicious food, and spiritual sites like the Golden Temple.",
+  fullDescription: "Punjab, the “Land of Five Rivers,” is a historic region straddling northwestern India and Pakistan, famed for its fertile plains and vibrant culture. It was the cradle of the ancient Indus Valley Civilization and later flourished under dynasties, empires, and the Sikh Confederacy. The state is home to iconic cities like Lahore and Amritsar, with landmarks such as the Golden Temple and Jallianwala Bagh. Agriculture remains central, earning Punjab the title of “Breadbasket of India and Pakistan.” Rich traditions of music, dance, and festivals like Baisakhi reflect its spirited heritage. A blend of spirituality, history, and natural abundance, Punjab offers travelers a vivid glimpse into South Asia’s timeless heart. ",
   heroImage: "https://plus.unsplash.com/premium_photo-1697730324062-c012bc98eb13?fm=jpg&q=60&w=3000",
   attractions: [
     { id: 1, name: "Golden Temple", image: "https://th.bing.com/th/id/R.21ca93b01294d5253a731d3807ac34eb?rik=oLECZ8cOwYn%2fBQ&riu=http%3a%2f%2fpushpendragautam.in%2fImages+for+Posts%2f2016%2fOct%2famritsar%2fAmritsar-golden-temple-pics-punjab-pics-best-travel-photographer-best-travel-blogger-india-3.jpg&ehk=0mdYvGcFCQYVSb8I93Bd5eITT8aTZ9OjJo%2f9QFJkOVk%3d&risl=&pid=ImgRaw&r=0", description: "Holiest Sikh shrine", category: "Spiritual" },
@@ -758,7 +758,7 @@ export const statesData = [
   state: "Rajasthan",
   slug: "rajasthan",
   description: "The Land of Kings - Famous for palaces, forts, and desert landscapes.",
-  fullDescription: "Rajasthan showcases royal heritage with grand forts, palaces, and vibrant culture. It is one of India's most popular tourist destinations.",
+  fullDescription: "Rajasthan, the “Land of Kings,” is India’s largest state, famed for its desert landscapes, majestic forts, and vibrant culture. The Thar Desert and Aravalli ranges create stunning scenery, while cities like Jaipur, Udaipur, Jodhpur, and Jaisalmer showcase royal heritage. Iconic landmarks include the Amber Fort, Mehrangarh Fort, and the shimmering Lake Palace. The state is renowned for colorful festivals, folk music, dance, and exquisite handicrafts. Wildlife sanctuaries such as Ranthambore and Keoladeo offer encounters with tigers and migratory birds. A blend of history, art, and adventure, Rajasthan promises travelers an unforgettable journey into India’s regal past.",
   heroImage: "https://media.istockphoto.com/id/1135820309/photo/amber-fort-and-maota-lake-jaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=raUKDB1Mris9Z7SjvuuTieZRzF2-CaKukGvTC8t1kuo=",
   attractions: [
     { id: 1, name: "Jaipur", image: "https://2.bp.blogspot.com/-Qgt_dCxqnAI/UV6_fsm0F9I/AAAAAAAAClo/IhFsOfTf1KU/s1600/city-palace-jaipur.jpg", description: "Pink City", category: "City" },
@@ -789,7 +789,7 @@ export const statesData = [
   state: "Sikkim",
   slug: "sikkim",
   description: "The Land of Mystical Beauty - Known for mountains, monasteries, and lakes.",
-  fullDescription: "Sikkim is a peaceful Himalayan state offering breathtaking landscapes, Buddhist monasteries, and adventure activities.",
+  fullDescription: "Sikkim, nestled in the Himalayas, is India’s smallest state yet one of its most enchanting, famed for breathtaking landscapes and vibrant culture. The majestic Kanchenjunga, the world’s third‑highest peak, towers over its valleys and forests. Visitors are drawn to serene monasteries like Rumtek and Pemayangtse, reflecting the state’s deep Buddhist heritage. Its alpine meadows, glacial lakes such as Tsomgo, and rich biodiversity make it a paradise for nature lovers. Colorful festivals, traditional handicrafts, and warm hospitality showcase Sikkim’s unique charm. A blend of spirituality, adventure, and natural beauty, Sikkim offers travelers an unforgettable Himalayan experience.",
   heroImage: "https://www.wtravelmagazine.com/wp-content/uploads/2020/09/30.113.5-Beautiful-statue-of-Lord-Buddha-at-Ravangla-Sikkim-image-by-Rudra-Narayan-Mitra.jpg",
   attractions: [
     { id: 1, name: "Gangtok", image: "https://i.pinimg.com/originals/fe/f6/0b/fef60b797a79efd36a9b860b25e6f65e.jpg", description: "Capital city", category: "City" },
@@ -821,7 +821,7 @@ export const statesData = [
   state: "Tamil Nadu",
   slug: "tamil-nadu",
   description: "The Land of Temples - A rich blend of culture, heritage, and scenic beauty.",
-  fullDescription: "Tamil Nadu is famous for its grand temples, classical arts, hill stations, and coastal beauty. It is a cultural powerhouse with deep-rooted traditions and history.",
+  fullDescription: "Tamil Nadu, the southernmost state of India, is celebrated as the “Land of Temples” with over 5,500 years of continuous cultural history. Its capital Chennai is a bustling metropolis, while heritage cities like Madurai, Thanjavur, and Kanchipuram showcase magnificent Dravidian architecture. The state is home to UNESCO World Heritage Sites such as the Brihadisvara Temple and the monuments of Mahabalipuram. Scenic landscapes range from the Nilgiri Hills and Western Ghats to serene beaches along its 1,076 km coastline. Rich traditions of Bharatanatyam dance, Carnatic music, and vibrant festivals like Pongal highlight its cultural vitality. A blend of spirituality, history, and natural beauty, Tamil Nadu offers travelers an unforgettable journey into South India. ",
   heroImage: "https://deih43ym53wif.cloudfront.net/meenakshi-temple-madurai-tamil-nadu-india-shutterstock_190831037_3e7b04fcc5.jpeg",
   attractions: [
     { id: 1, name: "Meenakshi Temple", image: "https://i.pinimg.com/originals/7d/e5/a5/7de5a5a7f496eb7ce1d366389c1d2fa7.jpg", description: "Iconic temple in Madurai", category: "Spiritual" },
@@ -853,7 +853,7 @@ export const statesData = [
   state: "Telangana",
   slug: "telangana",
   description: "The Land of Nizams - Known for heritage, culture, and modern growth.",
-  fullDescription: "Telangana offers a mix of historical monuments, forts, and modern urban life centered around Hyderabad.",
+  fullDescription: "Telangana, India’s youngest state formed in 2014, lies on the Deccan Plateau and is known for its rich history and vibrant culture. Its capital Hyderabad, famed as “Cyberabad,” blends centuries‑old heritage with modern IT hubs. Iconic landmarks like Charminar, Golconda Fort, and the UNESCO‑listed Ramappa Temple showcase its architectural grandeur. The state is dotted with scenic waterfalls, wildlife sanctuaries, and sacred groves, offering nature lovers abundant experiences. Festivals such as Bathukamma and Bonalu, along with Hyderabadi cuisine, highlight its unique traditions. A dynamic mix of heritage, spirituality, and modern progress, Telangana invites travelers to discover the soul of South India.",
   heroImage: "https://www.bontravelindia.com/wp-content/uploads/2023/04/Best-Temples-to-Visit-in-Telangana.jpg",
   attractions: [
     { id: 1, name: "Charminar", image: "https://image3.mouthshut.com/images/Restaurant/Photo/-21944_7079.jpg", description: "Iconic monument", category: "Heritage" },
@@ -884,7 +884,7 @@ export const statesData = [
   state: "Tripura",
   slug: "tripura",
   description: "A Hidden Gem of Northeast - Known for palaces and natural beauty.",
-  fullDescription: "Tripura offers a mix of royal heritage, temples, and lush greenery. It is an underrated destination with peaceful surroundings.",
+  fullDescription: "Tripura, a charming state in northeast India, is known for its lush green hills, ancient temples, and vibrant tribal culture. Its capital Agartala houses the magnificent Ujjayanta Palace and serves as a gateway to the state’s heritage. The famous Tripura Sundari Temple, one of the 51 Shakti Peethas, draws pilgrims from across the country. Natural attractions like Dumboor Lake, Sepahijala Wildlife Sanctuary, and Jampui Hills offer scenic beauty and adventure. The state’s diverse tribes celebrate colorful festivals, music, and dance, reflecting its rich traditions. A blend of spirituality, culture, and nature, Tripura offers travelers an enchanting experience of India’s northeast.",
   heroImage: "https://wallpaperaccess.com/full/12477585.jpg",
   attractions: [
     { id: 1, name: "Ujjayanta Palace", image: "https://thetravelshots.com/wp-content/uploads/2023/07/Ujjayanta-Palace-800x450.jpeg", description: "Royal palace museum", category: "Heritage" },
@@ -915,7 +915,7 @@ export const statesData = [
   state: "Uttar Pradesh",
   slug: "uttar-pradesh",
   description: "The Heartland of India - Rich in history, culture, and spirituality.",
-  fullDescription: "Uttar Pradesh is home to iconic landmarks like the Taj Mahal and spiritual cities like Varanasi and Ayodhya.",
+  fullDescription: "Uttar Pradesh, India’s most populous state, is a vibrant land of history, spirituality, and culture. It is home to three UNESCO World Heritage Sites—the Taj Mahal, Agra Fort, and Fatehpur Sikri—drawing millions of visitors each year. Sacred cities like Varanasi, Ayodhya, Mathura, and Prayagraj make it a spiritual heartland for Hindus, Buddhists, Jains, and Muslims alike. The state hosts grand festivals such as the Kumbh Mela, one of the largest gatherings of pilgrims in the world. Its diverse landscapes range from the fertile Gangetic plains to the Terai forests and wildlife sanctuaries like Dudhwa National Park. A blend of heritage, devotion, and natural beauty, Uttar Pradesh offers travelers an unforgettable journey into India’s timeless soul. ",
   heroImage: "https://www.travelholicq.com/wp-content/uploads/2019/10/5ea997b76f15c4ddab81ff909c3d1a56-5.jpg",
   attractions: [
     { id: 1, name: "Taj Mahal", image: "https://images.pexels.com/photos/28762052/pexels-photo-28762052/free-photo-of-taj-mahal-with-tourists-and-clear-sky.jpeg?auto=compress&cs=tinysrgb&w=1600", description: "Symbol of love", category: "Heritage" },
@@ -946,7 +946,7 @@ export const statesData = [
   state: "Uttarakhand",
   slug: "uttarakhand",
   description: "The Land of Gods - Famous for temples, mountains, and adventure.",
-  fullDescription: "Uttarakhand offers a mix of spirituality and adventure with destinations like Rishikesh, Kedarnath, and Nainital.",
+  fullDescription: "Uttarakhand, often called “Devbhumi” or the Land of the Gods, is a Himalayan state renowned for its spiritual heritage and natural beauty. Sacred sites like Haridwar, Rishikesh, Kedarnath, and Badrinath make it a major pilgrimage destination. The state is blessed with snow‑capped peaks, serene lakes, and lush valleys, offering breathtaking views and adventure opportunities. Wildlife sanctuaries and national parks such as Jim Corbett and Rajaji showcase rich biodiversity. Hill stations like Mussoorie and Nainital charm visitors with colonial heritage and scenic landscapes. A perfect blend of spirituality, culture, and nature, Uttarakhand invites travelers to experience peace and adventure in the Himalayas.",
   heroImage: "https://wallpapercave.com/wp/wp12200959.jpg",
   attractions: [
     { id: 1, name: "Rishikesh", image: "https://th.bing.com/th/id/R.f2257da2442701aba39349eb1128cc2a?rik=H%2fq3tvjE5DCHDA&riu=http%3a%2f%2frishikesh.net%2fwp-content%2fuploads%2f2019%2f11%2fbigstock-Rishikesh-India-Circa-April-329638714.jpg&ehk=Uptj5ZNmgYbgnXdTnXB21UeyOAYxRd7N2uJYsT4MWHM%3d&risl=1&pid=ImgRaw&r=0", description: "Yoga capital", category: "Spiritual" },
@@ -978,7 +978,7 @@ export const statesData = [
   state: "West Bengal",
   slug: "west-bengal",
   description: "The Land of Culture - Known for heritage, literature, and natural beauty.",
-  fullDescription: "West Bengal offers diverse experiences from the Himalayas in Darjeeling to the Sundarbans mangroves and vibrant Kolkata city life.",
+  fullDescription: "West Bengal, located in eastern India, is a land of diverse culture, history, and natural beauty. Its capital Kolkata, once the seat of British India, is famed for colonial architecture, vibrant arts, and literary heritage. The state is home to UNESCO sites like the Sundarbans mangrove forests, sheltering the majestic Royal Bengal Tiger. Darjeeling’s tea gardens and Himalayan views, along with hill stations like Kalimpong, attract nature lovers. Spiritual landmarks such as Dakshineswar Temple and Belur Math highlight Bengal’s deep religious traditions. A blend of heritage, festivals, and scenic landscapes, West Bengal offers travelers an unforgettable journey through India’s cultural heart.",
   heroImage: "https://getmyghar.com/wp-content/uploads/2025/07/Feature-Image-3.png",
   attractions: [
     { id: 1, name: "Kolkata", image: "https://cdn.britannica.com/74/127174-050-4E634E93/Victoria-Memorial-Hall-Kolkata-India-West-Bengal.jpg", description: "Cultural capital", category: "City" },
@@ -1009,7 +1009,7 @@ export const statesData = [
   state: "Andaman and Nicobar Islands",
   slug: "andaman-and-nicobar-islands",
   description: "Tropical Paradise - Crystal clear waters, coral reefs, and pristine beaches.",
-  fullDescription: "Andaman and Nicobar Islands are known for their turquoise waters, white sandy beaches, and rich marine biodiversity. It is a perfect destination for relaxation, water sports, and nature exploration.",
+  fullDescription: "The Andaman and Nicobar Islands, located in the Bay of Bengal, are a tropical paradise of pristine beaches, turquoise waters, and lush rainforests. Port Blair, the capital, is known for the historic Cellular Jail and serves as the gateway to the archipelago. Popular destinations like Havelock Island and Neil Island offer world‑class diving, snorkeling, and serene coastal escapes. The islands are home to unique indigenous tribes, adding cultural depth to their natural beauty. Rich biodiversity flourishes in marine reserves and national parks, making them a haven for eco‑tourism. A blend of history, adventure, and tranquility, the Andaman and Nicobar Islands promise travelers an unforgettable island experience.",
   heroImage: "https://wallpapercave.com/wp/wp7333491.jpg",
   attractions: [
     { id: 1, name: "Radhanagar Beach", image: "https://i.pinimg.com/originals/64/8e/b0/648eb0478bb0b4226e6bff4131fc1869.jpg", description: "One of Asia’s best beaches", category: "Beach" },
@@ -1040,7 +1040,7 @@ export const statesData = [
   state: "Chandigarh",
   slug: "chandigarh",
   description: "The City Beautiful - A well-planned modern city with gardens and architecture.",
-  fullDescription: "Chandigarh is India’s first planned city designed by Le Corbusier. Known for its greenery, lakes, and urban planning.",
+  fullDescription: "Chandigarh, fondly called the “City Beautiful,” is India’s first planned city, designed by the legendary architect Le Corbusier. Nestled at the foothills of the Shivalik range, it serves as the shared capital of Punjab and Haryana. The city is renowned for its modernist architecture, with the UNESCO‑listed Capitol Complex, Open Hand Monument, and striking government buildings. Nature lovers flock to Sukhna Lake, Zakir Hussain Rose Garden, and the famous Rock Garden created by Nek Chand. Chandigarh also boasts vibrant festivals, cultural centers, and a lively shopping hub at Sector 17. A harmonious blend of design, greenery, and culture, Chandigarh offers travelers a unique experience of modern India.",
   heroImage: "https://1.bp.blogspot.com/-tDom5wnnmbY/W8bLJWtZ7KI/AAAAAAAAAC8/OfvnXz9Lgq8LaMt7aXhNY0Gs5-1qE1QtACLcBGAs/s1600/cdghawk.jpg",
   attractions: [
     { id: 1, name: "Rock Garden", image: "https://speakingaloud.in/wp-content/uploads/2017/12/Chandigarh-Rock-Garden-Sculptures.jpg", description: "Unique sculptures made from waste", category: "Art" },
@@ -1071,7 +1071,7 @@ export const statesData = [
   state: "Dadra and Nagar Haveli",
   slug: "dadra-and-nagar-haveli",
   description: "Nature Retreat - Lush greenery, tribal culture, and serene landscapes.",
-  fullDescription: "Dadra and Nagar Haveli is known for its natural beauty, tribal heritage, and peaceful environment, making it a great escape from city life.",
+  fullDescription: "Dadra and Nagar Haveli, a union territory in western India, is a serene destination known for its lush greenery and tribal heritage. Its capital Silvassa charms visitors with Portuguese‑era architecture, vibrant markets, and cultural museums. The territory is dotted with scenic spots like Vanganga Lake Garden, Hirva Van Garden, and the tranquil Dudhani Lake. Rich tribal traditions are celebrated through colorful festivals, crafts, and dance forms that reflect its unique identity. Wildlife enthusiasts can explore the Satmaliya Deer Park and the Lion Safari at Vasona. A blend of nature, culture, and history, Dadra and Nagar Haveli offers travelers a peaceful retreat close to Mumbai and Gujarat.",
   heroImage: "https://365atlantatraveler.com/wp-content/uploads/2015/03/2015-01-06-12.54.21.jpg",
   attractions: [
     { id: 1, name: "Silvassa", image: "https://s7ap1.scene7.com/is/image/incredibleindia/1-baps-swaminarayan-temple-silvassa-dadra-and-nagar-haveli-2-city-hero?qlt=82&ts=1726737660598", description: "Capital town", category: "City" },
@@ -1102,7 +1102,7 @@ export const statesData = [
   state: "Daman and Diu",
   slug: "daman-and-diu",
   description: "Coastal Escape - Beaches, forts, and Portuguese heritage.",
-  fullDescription: "Daman and Diu offer a mix of scenic beaches, colonial architecture, and peaceful coastal vibes, ideal for a relaxed vacation.",
+  fullDescription: "Daman and Diu, a former union territory on India’s western coast, is renowned for its Portuguese heritage and scenic charm. Daman captivates visitors with colonial churches, forts, and serene beaches like Devka and Jampore. Diu, an island town, boasts the majestic Diu Fort, St. Paul’s Church, and tranquil Nagoa Beach. The region is dotted with palm‑fringed shores, vibrant markets, and cultural festivals that reflect its coastal traditions. Adventure seekers enjoy water sports, while history lovers explore centuries‑old architecture. A blend of sun, sand, and heritage, Daman and Diu offers travelers a peaceful seaside escape with a touch of history.",
   heroImage: "https://1.bp.blogspot.com/-mRWxNhLdJaE/XbwSbW8UvKI/AAAAAAAADTc/9ZpjUrsLoP8JnCHOhnXtmKZJkmJs8gVfwCLcBGAsYHQ/s1600/daman-and-diu.jpg",
   attractions: [
     { id: 1, name: "Diu Fort", image: "https://indiano.travel/wp-content/uploads/2022/09/Diu-Fort-photo.jpg", description: "Historic Portuguese fort", category: "Heritage" },
@@ -1133,7 +1133,7 @@ export const statesData = [
   state: "Delhi",
   slug: "delhi",
   description: "The Capital of India - A blend of history, culture, and modern life.",
-  fullDescription: "Delhi is a vibrant city with historical monuments, markets, and modern attractions. It reflects India's past and present.",
+  fullDescription: "Delhi, India’s vibrant capital territory, is a dynamic blend of history, culture, and modernity. The city boasts three UNESCO World Heritage Sites—Qutub Minar, Humayun’s Tomb, and the Red Fort—reflecting its rich Mughal and Sultanate past. Bustling markets like Chandni Chowk and Connaught Place showcase its lively spirit, while landmarks such as India Gate and Lotus Temple highlight its architectural diversity. Delhi is also a spiritual hub, home to Jama Masjid, Akshardham Temple, Gurudwara Bangla Sahib, and Raj Ghat. Its cuisine, from street food delights to Mughlai specialties, is world‑famous. A gateway to India’s soul, Delhi offers travelers an unforgettable journey through heritage, culture, and contemporary charm.",
   heroImage: "https://lonetravellers.com/wp-content/uploads/2025/02/new-delhi.main_-1024x683.jpg",
   attractions: [
     { id: 1, name: "Red Fort", image: "https://imgcld.yatra.com/ytimages/image/upload/v1461929855/Delhi-Red_Fort.jpg", description: "Historic Mughal fort", category: "Heritage" },
@@ -1165,7 +1165,7 @@ export const statesData = [
   state: "Jammu & Kashmir",
   slug: "jammu-and-kashmir",
   description: "Paradise on Earth - Snow-capped mountains, lakes, and valleys.",
-  fullDescription: "Jammu & Kashmir is known for its breathtaking landscapes, gardens, and spiritual destinations.",
+  fullDescription: "Jammu and Kashmir, India’s northernmost union territory, is famed for its breathtaking Himalayan landscapes and rich cultural heritage. The Kashmir Valley, with its snow‑capped peaks, Dal Lake houseboats, and lush gardens, is often called “Paradise on Earth.” Jammu is renowned for sacred sites like Vaishno Devi and Raghunath Temple, drawing millions of pilgrims each year. Adventure seekers flock to Gulmarg for skiing, trekking, and scenic meadows, while Pahalgam and Sonamarg offer serene escapes. The region’s vibrant handicrafts, saffron fields, and traditional cuisine reflect its unique identity. A blend of spirituality, nature, and adventure, Jammu and Kashmir promises travelers an unforgettable experience.",
   heroImage: "https://peakvisor.com/img/news/Jammu-and-Kashmir-Srinagar.jpg",
   attractions: [
     { id: 1, name: "Srinagar", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/48/1c/4c/getlstd-property-photo.jpg?w=1200&h=1200&s=1", description: "Dal Lake and houseboats", category: "Nature" },
@@ -1197,7 +1197,7 @@ export const statesData = [
   state: "Ladakh",
   slug: "ladakh",
   description: "The Land of High Passes - Rugged mountains and monasteries.",
-  fullDescription: "Ladakh is known for its dramatic landscapes, high-altitude lakes, and Buddhist monasteries.",
+  fullDescription: "Ladakh, often called the “Land of High Passes,” is a breathtaking region in northern India known for its dramatic landscapes and Buddhist heritage. Snow‑capped peaks, crystal‑clear lakes like Pangong and Tso Moriri, and vast cold deserts make it a paradise for adventurers. Ancient monasteries such as Hemis, Thiksey, and Lamayuru showcase rich Tibetan culture and spirituality. Leh, the capital, is a vibrant hub blending tradition with modern comforts. Trekkers, bikers, and nature lovers flock here for thrilling journeys across rugged terrain and serene valleys. A blend of spirituality, adventure, and natural beauty, Ladakh offers travelers an unforgettable Himalayan experience.",
   heroImage: "https://cdn.pixabay.com/photo/2022/10/25/13/41/ladakh-7545887_1280.jpg",
   attractions: [
     { id: 1, name: "Pangong Lake", image: "https://www.clubmahindra.com/blog/images/Pangong-Lake-Ladakh-resized.jpg", description: "Famous blue lake", category: "Nature" },
@@ -1228,7 +1228,7 @@ export const statesData = [
   state: "Lakshadweep",
   slug: "lakshadweep",
   description: "Coral Paradise - Pristine islands with clear lagoons.",
-  fullDescription: "Lakshadweep is known for its untouched beaches, coral reefs, and peaceful environment.",
+  fullDescription: "Lakshadweep, India’s smallest union territory, is a stunning archipelago of 36 islands in the Arabian Sea. Known for its turquoise lagoons, coral reefs, and sandy beaches, it is a paradise for nature lovers and adventure seekers. The capital Kavaratti offers cultural charm, while islands like Agatti, Bangaram, and Minicoy are famed for diving, snorkeling, and water sports. Rich traditions, influenced by Malayalam and Dhivehi cultures, add depth to its coastal beauty. Fishing and coconut cultivation remain vital to local life, alongside growing eco‑tourism. A blend of serenity, culture, and marine wonders, Lakshadweep promises travelers an unforgettable island escape. ",
   heroImage: "https://www.holidify.com/images/compressed/dest_wiki_7722.jpg",
   attractions: [
     { id: 1, name: "Agatti Island", image: "https://manafaru.resortmaldives.net/storage/media/3605/conversions/10.JA-Manafaru-Hero-large.jpg", description: "Gateway island", category: "Beach" },
@@ -1259,7 +1259,7 @@ export const statesData = [
   state: "Puducherry",
   slug: "puducherry",
   description: "The French Riviera of the East - Beaches, culture, and colonial charm.",
-  fullDescription: "Puducherry blends French colonial architecture with Indian culture, offering peaceful beaches and spiritual retreats.",
+  fullDescription: "Puducherry, formerly known as Pondicherry, is a charming union territory on India’s southeastern coast, famed for its French colonial heritage. The city’s old quarters showcase elegant boulevards, pastel‑colored villas, and churches that reflect centuries of European influence. Spiritual seekers are drawn to the Sri Aurobindo Ashram and the international township of Auroville. Scenic Promenade Beach, tranquil backwaters, and lush gardens make it a haven for relaxation and leisure. Karaikal, Mahe, and Yanam add unique cultural flavors with temples, riversides, and coastal beauty. A blend of history, spirituality, and seaside charm, Puducherry offers travelers a truly distinctive experience in South India. ",
   heroImage: "https://travelgallivant.com/wp-content/uploads/2020/10/puducherry-sea-min.jpg",
   attractions: [
     { id: 1, name: "Promenade Beach", image: "https://www.trawell.in/admin/images/upload/09285665Pondicherry_Promenade_Beach_Main.jpg", description: "Seaside walkway", category: "Beach" },
