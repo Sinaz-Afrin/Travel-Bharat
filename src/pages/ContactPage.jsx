@@ -22,30 +22,30 @@ const ContactPage = () => {
       id: 1,
       icon: Phone,
       title: 'Phone',
-      content: '+91 98765 43210',
-      link: 'tel:+919876543210'
+      content: '+91 7207919711',
+      link: 'tel:+917207919711'
     },
     {
       id: 2,
       icon: Mail,
       title: 'Email',
-      content: 'hello@travelbharat.com',
-      link: 'mailto:hello@travelbharat.com'
+      content: 'thetravelbharat@gmail.com',
+      link: 'mailto:thetravelbharat@gmail.com'
     },
     {
       id: 3,
       icon: MapPin,
       title: 'Location',
-      content: 'New Delhi, India',
+      content: 'hi, India',
       link: '#'
     }
   ];
 
   const socialLinks = [
-    { id: 1, icon: Facebook, url: 'https://facebook.com/travelbharat', label: 'Facebook' },
-    { id: 2, icon: Twitter, url: 'https://twitter.com/travelbharat', label: 'Twitter' },
-    { id: 3, icon: Linkedin, url: 'https://linkedin.com/company/travelbharat', label: 'LinkedIn' },
-    { id: 4, icon: Instagram, url: 'https://instagram.com/travelbharat', label: 'Instagram' }
+    { id: 1, icon: Facebook, url: '#', label: 'Facebook' },
+    { id: 2, icon: Twitter, url: 'https://x.com/TheTravelBharat', label: 'Twitter' },
+    { id: 3, icon: Linkedin, url: '#', label: 'LinkedIn' },
+    { id: 4, icon: Instagram, url: 'https://www.instagram.com/thetravelbharat', label: 'Instagram' }
   ];
 
   const validateForm = () => {
