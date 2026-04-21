@@ -36,8 +36,8 @@ const ContactPage = () => {
       id: 3,
       icon: MapPin,
       title: 'Location',
-      content: 'hi, India',
-      link: 'TamilNadu, India'
+      content: 'Tamil Nadu, India',
+      link: '#'
     }
   ];
 
