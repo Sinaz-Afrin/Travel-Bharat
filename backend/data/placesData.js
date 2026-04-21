@@ -1862,6 +1862,7 @@ export const places = [
     name: "Mathura",
     state: "Uttar Pradesh",
     stateSlug: "uttar-pradesh",
+    stateSlug: "uttar-pradesh",
     region: "North India",
     category: "Spiritual",
     description: "Birthplace of Lord Krishna with spiritual and cultural significance. The city attracts pilgrims and devotees annually. The city maintains religious authenticity and traditions. The city represents important pilgrimage site. The city combines spiritual reverence with cultural tourism. The combination of religious importance, spiritual atmosphere, and cultural heritage make city important.",
@@ -2386,6 +2387,7 @@ export const places = [
   {
     name: "St. Paul’s Church",
     state: "Daman and Diu",
+    stateSlug: "daman-and-diu",
     region: "West India",
     category: "Heritage",
     description: "Colonial church",
