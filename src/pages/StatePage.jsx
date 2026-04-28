@@ -17,39 +17,18 @@ const StatePage = () => {
   const navigate = useNavigate();
   const state = slug ? getStateBySlug(slug) : null;
   const [isExpanded, setIsExpanded] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [places, setPlaces] = useState([]);
 
   // Fetch places by state
   useEffect(() => {
     if (state) {
       const fetchPlaces = async () => {
-        try {
-          const fetchedPlaces = await getPlacesByState(slug);
-          setPlaces(fetchedPlaces || []);
-        } catch (error) {
-          console.error('Error fetching places:', error);
-          setPlaces([]);
-        }
+        const fetchedPlaces = await getPlacesByState(slug);
+        setPlaces(fetchedPlaces || []);
       };
       fetchPlaces();
     }
   }, [state]);
-
-  if (loading) {
-    return (
-      <div>
-        <Navbar />
-        <div className="state-loading-container">
-          <div className="text-center">
-            <div className="state-spinner"></div>
-            <p className="state-loading-text">Loading state information...</p>
-          </div>
-        </div>
-        <Footer />
-      </div>
-    );
-  }
 
   if (!state) {
     return (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { MapPin, AlertCircle } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { getTopDestinations } from '../services/api';
@@ -15,35 +15,15 @@ import 'swiper/css/pagination';
  * TopDestinationsCarousel Component
  * Displays a static carousel of top destinations
  * Destinations are fixed and maintain the same order on every page load
- * Static list: Taj Mahal, Jaipur, Kerala, Varanasi, Goa, Ladakh, Mysore Palace, Amritsar, Rishikesh, Jodhpur
  */
 const TopDestinationsCarousel = () => {
   const navigate = useNavigate();
   const [destinations, setDestinations] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchTopDestinations = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-        
-        // Fetch top destinations from API (static, ordered list)
-        const topDestinations = await getTopDestinations();
-        
-        if (topDestinations.length === 0) {
-          setError('No top destinations found in database');
-          return;
-        }
-        
-        setDestinations(topDestinations);
-      } catch (err) {
-        setError(err.message || 'Failed to load destinations');
-        console.error('Error loading top destinations:', err);
-      } finally {
-        setLoading(false);
-      }
+      const topDestinations = await getTopDestinations();
+      setDestinations(topDestinations);
     };
 
     fetchTopDestinations();
@@ -56,35 +36,6 @@ const TopDestinationsCarousel = () => {
   const handleViewAll = () => {
     navigate('/destinations');
   };
-
-  if (loading) {
-    return (
-      <section className="top-destinations-carousel">
-        <div className="carousel-container">
-          <h2 className="carousel-title">Top Destinations</h2>
-          <p className="carousel-subtitle">Discover the most popular places across India</p>
-          <div className="loading-container">
-            <p className="loading-text">Loading destinations...</p>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
-  if (error) {
-    return (
-      <section className="top-destinations-carousel">
-        <div className="carousel-container">
-          <h2 className="carousel-title">Top Destinations</h2>
-          <p className="carousel-subtitle">Discover the most popular places across India</p>
-          <div className="error-container">
-            <AlertCircle size={24} />
-            <p className="error-text">Failed to load destinations: {error}</p>
-          </div>
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section className="top-destinations-carousel">

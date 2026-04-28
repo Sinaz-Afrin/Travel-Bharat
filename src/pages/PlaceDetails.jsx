@@ -13,21 +13,17 @@ const PlaceDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [place, setPlace] = useState(null);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchPlace = async () => {
       try {
-        setLoading(true);
         setError(null);
         const data = await getPlaceById(id);
         setPlace(data);
       } catch (err) {
         console.error('Error fetching place details', err);
-        setError(err.message || 'Failed to fetch place');
-      } finally {
-        setLoading(false);
+        setError(err.message || 'Place not found');
       }
     };
 
@@ -35,24 +31,6 @@ const PlaceDetails = () => {
       fetchPlace();
     }
   }, [id]);
-
-  if (loading) {
-    return (
-      <div>
-        <Navbar />
-        <section className="place-details-section">
-          <div className="place-details-container">
-            <div className="flex items-center justify-center py-24">
-              <div className="animate-spin">
-                <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <Footer />
-      </div>
-    );
-  }
 
   if (error) {
     return (

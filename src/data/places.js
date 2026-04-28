@@ -1,4 +1,4 @@
-export const places = [
+export const allPlaces = [
   {
     name: "Tirupati Balaji Temple",
     state: "Andhra Pradesh",

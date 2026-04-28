@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { AlertCircle, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import PlaceCard from '../components/PlaceCard';
 import Footer from '../components/Footer';
@@ -13,47 +13,17 @@ const StateAllPlaces = () => {
   const navigate = useNavigate();
   const state = slug ? getStateBySlug(slug) : null;
   const [places, setPlaces] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchPlaces = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-        const data = await getPlacesByState(slug);
-        setPlaces(data || []);
-      } catch (err) {
-        console.error('Error fetching places:', err);
-        setError(err.message || 'Failed to fetch places');
-        setPlaces([]);
-      } finally {
-        setLoading(false);
-      }
+      const data = await getPlacesByState(slug);
+      setPlaces(data || []);
     };
 
     if (slug) {
       fetchPlaces();
     }
   }, [slug]);
-
-  if (loading) {
-    return (
-      <div>
-        <Navbar />
-        <section className="section section-alt">
-          <div className="container">
-            <div className="flex items-center justify-center py-24">
-              <div className="animate-spin">
-                <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <Footer />
-      </div>
-    );
-  }
 
   return (
     <div>
@@ -77,14 +47,7 @@ const StateAllPlaces = () => {
             Explore {places.length} amazing destinations
           </p>
 
-          {error && (
-            <div className="error-container">
-              <AlertCircle size={24} />
-              <p className="error-text">Failed to load places: {error}</p>
-            </div>
-          )}
-
-          {!loading && places.length === 0 && (
+          {places.length === 0 && (
             <div className="no-results-container">
               <p className="no-results">
                 No places found in {state?.state}

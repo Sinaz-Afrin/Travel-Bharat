@@ -1,131 +1,97 @@
-import axios from 'axios';
+import { allPlaces } from '../data/places';
 import { statesData, getStateByName } from '../data/statesData';
 import { getTopDestinations as filterTopDestinations, TOP_DESTINATIONS_LIST } from '../data/topDestinationsConfig';
 
-const API_BASE_URL = 'https://travelbharat-api.onrender.com/api'; // render - backend URL
-
-const apiClient = axios.create({
-  baseURL: API_BASE_URL,
-  timeout: 30000,
-  headers: {
-    'Content-Type': 'application/json',
-  },
-});
+/**
+ * Helper function to add unique IDs to places using slug-based naming
+ * @param {Array} places - Array of place objects
+ * @returns {Array} Places with added _id field
+ */
+const placesWithIds = allPlaces.map((place, index) => ({
+  ...place,
+  _id: place.name.toLowerCase().replace(/\s+/g, '-') + '-' + index,
+}));
 
 /**
- * Fetch all places from the backend
+ * Get all places from static data
  * @returns {Promise<Array>} Array of place objects
  */
 export const getAllPlaces = async () => {
-  try {
-    const response = await apiClient.get('/places');
-    return response.data.data || [];
-  } catch (error) {
-    console.error('Error fetching all places:', error);
-    throw error;
-  }
+  return Promise.resolve(placesWithIds);
 };
 
 /**
- * Fetch places filtered by region
+ * Get places filtered by region from static data
  * @param {string} region - Region name
  * @returns {Promise<Array>} Array of filtered place objects
  */
 export const getPlacesByRegion = async (region) => {
-  try {
-    const response = await apiClient.get('/places', {
-      params: { region },
-    });
-    return response.data.data || [];
-  } catch (error) {
-    console.error(`Error fetching places by region (${region}):`, error);
-    throw error;
-  }
+  const filtered = placesWithIds.filter(
+    place => place.region && place.region.toLowerCase() === region.toLowerCase()
+  );
+  return Promise.resolve(filtered);
 };
 
 /**
- * Fetch places filtered by category
+ * Get places filtered by category from static data
  * @param {string} category - Category name
  * @returns {Promise<Array>} Array of filtered place objects
  */
 export const getPlacesByCategory = async (category) => {
-  try {
-    const response = await apiClient.get('/places', {
-      params: { category },
-    });
-    return response.data.data || [];
-  } catch (error) {
-    console.error(`Error fetching places by category (${category}):`, error);
-    throw error;
-  }
+  const filtered = placesWithIds.filter(
+    place => place.category && place.category.toLowerCase() === category.toLowerCase()
+  );
+  return Promise.resolve(filtered);
 };
 
 /**
- * Fetch places filtered by category and state
+ * Get places filtered by category and state from static data
  * @param {string} category - Category name
  * @param {string} stateSlug - State slug (e.g., "tamil-nadu")
  * @returns {Promise<Array>} Array of filtered place objects
  */
 export const getPlacesByCategoryAndState = async (category, stateSlug) => {
-  try {
-    const response = await apiClient.get('/places', {
-      params: { 
-        category,
-        state: stateSlug
-      },
-    });
-    return response.data.data || [];
-  } catch (error) {
-    console.error(`Error fetching places by category (${category}) and state (${stateSlug}):`, error);
-    throw error;
-  }
+  const filtered = placesWithIds.filter(place => {
+    const categoryMatch = place.category && place.category.toLowerCase() === category.toLowerCase();
+    const stateMatch = place.stateSlug && place.stateSlug.toLowerCase() === stateSlug.toLowerCase();
+    return categoryMatch && stateMatch;
+  });
+  return Promise.resolve(filtered);
 };
 
 /**
- * Fetch places filtered by state (using slug)
+ * Get places filtered by state using slug from static data
  * @param {string} slug - State slug (e.g., "tamil-nadu")
  * @returns {Promise<Array>} Array of filtered place objects
  */
 export const getPlacesByState = async (slug) => {
-  try {
-    const response = await apiClient.get(`/places/state/${slug}`);
-    return response.data.data || [];
-  } catch (error) {
-    console.error(`Error fetching places by state (${slug}):`, error);
-    throw error;
-  }
+  const filtered = placesWithIds.filter(
+    place => place.stateSlug && place.stateSlug.toLowerCase() === slug.toLowerCase()
+  );
+  return Promise.resolve(filtered);
 };
 
 /**
- * Fetch a single place by ID
+ * Get a single place by ID from static data
  * @param {string|number} id - Place ID
  * @returns {Promise<Object>} Place object
  */
 export const getPlaceById = async (id) => {
-  try {
-    const response = await apiClient.get(`/places/${id}`);
-    return response.data.data || response.data;
-  } catch (error) {
-    console.error(`Error fetching place with ID (${id}):`, error);
-    throw error;
+  const place = placesWithIds.find(p => p._id === id || p.name.toLowerCase().replace(/\s+/g, '-') === id);
+  if (!place) {
+    return Promise.reject(new Error(`Place not found: ${id}`));
   }
+  return Promise.resolve(place);
 };
 
 /**
- * Fetch random places from the backend
+ * Get random places from static data
  * @param {number} limit - Number of random places to fetch (default: 6)
  * @returns {Promise<Array>} Array of random place objects
  */
 export const getRandomPlaces = async (limit = 6) => {
-  try {
-    const response = await apiClient.get('/places/random', {
-      params: { limit },
-    });
-    return response.data.data || [];
-  } catch (error) {
-    console.error('Error fetching random places:', error);
-    throw error;
-  }
+  const shuffled = [...placesWithIds].sort(() => Math.random() - 0.5);
+  return Promise.resolve(shuffled.slice(0, Math.min(limit, shuffled.length)));
 };
 
 /**
@@ -133,91 +99,53 @@ export const getRandomPlaces = async (limit = 6) => {
  * @returns {Promise<Array>} Array of unique categories
  */
 export const getCategories = async () => {
-  try {
-    const places = await getAllPlaces();
-    const uniqueCategories = new Map();
+  const uniqueCategories = new Map();
 
-    places.forEach((place) => {
-      if (place.category && !uniqueCategories.has(place.category)) {
-        uniqueCategories.set(place.category, {
-          name: place.category,
-          slug: place.category.toLowerCase().replace(/\s+/g, '-'),
-        });
-      }
-    });
+  placesWithIds.forEach((place) => {
+    if (place.category && !uniqueCategories.has(place.category)) {
+      uniqueCategories.set(place.category, {
+        name: place.category,
+        slug: place.category.toLowerCase().replace(/\s+/g, '-'),
+      });
+    }
+  });
 
-    return Array.from(uniqueCategories.values());
-  } catch (error) {
-    console.error('Error extracting categories:', error);
-    throw error;
-  }
+  return Promise.resolve(Array.from(uniqueCategories.values()));
 };
 
 /**
- * Get state data by state name (uses local data)
+ * Get state data by state name
  * @param {string} stateName - State name or ID
  * @returns {Promise<Object>} State data object
  */
 export const getStateData = async (stateName) => {
-  try {
-    // In future, this can be replaced with an API call:
-    // const response = await apiClient.get(`/states/${stateName}`);
-    // return response.data.data || response.data;
-
-    // For now, use local data
-    const state = getStateByName(stateName);
-    if (!state) {
-      throw new Error(`State not found: ${stateName}`);
-    }
-    return state;
-  } catch (error) {
-    console.error(`Error fetching state data (${stateName}):`, error);
-    throw error;
+  const state = getStateByName(stateName);
+  if (!state) {
+    return Promise.reject(new Error(`State not found: ${stateName}`));
   }
+  return Promise.resolve(state);
 };
 
 /**
- * Get all states data (uses local data)
+ * Get all states data
  * @returns {Promise<Array>} Array of state objects
  */
 export const getAllStates = async () => {
-  try {
-    // In future, this can be replaced with an API call:
-    // const response = await apiClient.get('/states');
-    // return response.data.data || [];
-
-    // For now, use local data
-    return statesData;
-  } catch (error) {
-    console.error('Error fetching all states:', error);
-    throw error;
-  }
+  return Promise.resolve(statesData);
 };
 
 /**
  * Get top destinations in fixed order
  * Returns destinations from the TOP_DESTINATIONS_LIST in the specified order
  * Maintains consistency across page loads (no randomization)
- * 
  * @returns {Promise<Array>} Array of top destination place objects
  */
 export const getTopDestinations = async () => {
-  try {
-    // Fetch all places from the API
-    const allPlaces = await getAllPlaces();
-    
-    // Filter using the static list (maintains order)
-    const topDestinations = filterTopDestinations(allPlaces);
-    
-    if (topDestinations.length === 0) {
-      console.warn('No top destinations found in database. Expected:', TOP_DESTINATIONS_LIST);
-    }
-    
-    return topDestinations;
-  } catch (error) {
-    console.error('Error fetching top destinations:', error);
-    throw error;
-  }
-};
+  const topDestinations = filterTopDestinations(placesWithIds);
 
-export default apiClient;
+  if (topDestinations.length === 0) {
+    console.warn('No top destinations found in static data. Expected:', TOP_DESTINATIONS_LIST);
+  }
+
+  return Promise.resolve(topDestinations);
+};

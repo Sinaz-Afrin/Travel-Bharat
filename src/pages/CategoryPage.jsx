@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { AlertCircle, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import PlaceCard from '../components/PlaceCard';
 import Footer from '../components/Footer';
-import { getPlacesByCategory, getPlacesByCategoryAndState } from '../services/api';
+import { getPlacesByCategory } from '../services/api';
 import { statesData } from '../data/statesData';
 import { getCategoryByName } from '../data/categories';
 import '../styles/sections.css';
@@ -13,8 +13,6 @@ const CategoryPage = () => {
   const { categoryName } = useParams();
   const navigate = useNavigate();
   const [places, setPlaces] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
   const [selectedState, setSelectedState] = useState('');
   const [allPlaces, setAllPlaces] = useState([]);
 
@@ -22,19 +20,9 @@ const CategoryPage = () => {
 
   useEffect(() => {
     const fetchPlaces = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-        const data = await getPlacesByCategory(categoryName);
-        setAllPlaces(data || []);
-        setPlaces(data || []);
-      } catch (err) {
-        console.error('Error fetching places for category', categoryName, err);
-        setError(err.message || 'Failed to fetch places');
-        setAllPlaces([]);
-      } finally {
-        setLoading(false);
-      }
+      const data = await getPlacesByCategory(categoryName);
+      setAllPlaces(data || []);
+      setPlaces(data || []);
     };
 
     if (categoryName) {
@@ -92,20 +80,7 @@ const CategoryPage = () => {
             </select>
           </div>
 
-          {loading && (
-            <div className="loading-container">
-              <p className="loading-text">Loading places...</p>
-            </div>
-          )}
-
-          {error && (
-            <div className="error-container">
-              <AlertCircle size={24} />
-              <p className="error-text">Failed to load places: {error}</p>
-            </div>
-          )}
-
-          {!loading && !error && places.length === 0 && (
+          {places.length === 0 && (
             <div className="no-results-container">
               <p className="no-results">
                 {selectedState 
